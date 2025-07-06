@@ -53,7 +53,7 @@ export default function ProjectsPage() {
       categories: ["React", "Full Stack", "E-commerce"],
       image: "/gym.jpeg?height=300&width=500",
       github: "https://github.com/koraykara/Gym-Management-System",
-      live: "https://ecommerce-demo.vercel.app",
+      live: "",
       featured: true,
       stars: 0,
     },
@@ -88,7 +88,7 @@ export default function ProjectsPage() {
       image: "/knn.jpeg?height=300&width=500",
       github:
         "https://github.com/koraykara/Covid-19-Disease-Detection-from-images-using-KNN-algorithm",
-      live: "https://github.com/koraykara/Covid-19-Disease-Detection-from-images-using-KNN-algorithm",
+      live: "",
       featured: false,
       stars: 0,
     },
@@ -109,7 +109,7 @@ export default function ProjectsPage() {
       image: "/art.png?height=300&width=500",
       github:
         "https://github.com/HUbbm409/bbm406-project-2021-artstyleimagetransformation",
-      live: "https://github.com/HUbbm409/bbm406-project-2021-artstyleimagetransformation",
+      live: "",
       featured: true,
       stars: 156,
     },
@@ -122,8 +122,8 @@ export default function ProjectsPage() {
       tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
       categories: ["React", "Frontend", "Portfolio"],
       image: "/portfolio.jpeg?height=300&width=500",
-      github: "https://github.com/koraykara/portfolio",
-      live: "https://koraykara.dev",
+      github: "https://github.com/koraykara/koray-portfolio-website",
+      live: "https://koraykara.netlify.app/",
       featured: false,
       stars: 43,
     },
@@ -145,7 +145,7 @@ export default function ProjectsPage() {
       image: "/covid.jpg?height=300&width=500",
       github:
         "https://github.com/koraykara/Covid-19-Disease-Detection-from-images-using-KNN-algorithm",
-      live: "https://chat-app-demo.vercel.app",
+      live: "",
       featured: true,
       stars: 78,
     },
@@ -158,8 +158,8 @@ export default function ProjectsPage() {
       tech: ["Python", "NLP", "Computer Vision", "PyTorch", "Transformers"],
       categories: ["Research", "AI", "Multimodal Learning"],
       image: "/recipe.jpeg?height=300&width=500",
-      github: "https://github.com/koraykara/spring-api",
-      live: "https://spring-api-demo.herokuapp.com",
+      github: "",
+      live: "https://search.trdizin.gov.tr/tr/yayin/detay/1222272/tarif-kendin-yap-videolarinin-eslestirilmesi-ve-zenginlestirilmesi-icin-cok-kipli-yaklasim",
       featured: false,
       stars: 92,
     },
@@ -364,35 +364,39 @@ export default function ProjectsPage() {
                       ))}
                     </div>
                     <div className="flex space-x-4">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex items-center space-x-2"
-                        asChild
-                      >
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      {project.github && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex items-center space-x-2"
+                          asChild
                         >
-                          <Github className="h-4 w-4" />
-                          <span>Code</span>
-                        </a>
-                      </Button>
-                      <Button
-                        size="sm"
-                        className="flex items-center space-x-2"
-                        asChild
-                      >
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="h-4 w-4" />
+                            <span>Code</span>
+                          </a>
+                        </Button>
+                      )}
+                      {project.live && (
+                        <Button
+                          size="sm"
+                          className="flex items-center space-x-2"
+                          asChild
                         >
-                          <ExternalLink className="h-4 w-4" />
-                          <span>Live Demo</span>
-                        </a>
-                      </Button>
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                            <span>Live Demo</span>
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
@@ -485,35 +489,39 @@ export default function ProjectsPage() {
                       )}
                     </div>
                     <div className="flex space-x-3">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex items-center space-x-1 text-xs"
-                        asChild
-                      >
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      {project.github && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex items-center space-x-1 text-xs"
+                          asChild
                         >
-                          <Github className="h-3 w-3" />
-                          <span>Code</span>
-                        </a>
-                      </Button>
-                      <Button
-                        size="sm"
-                        className="flex items-center space-x-1 text-xs"
-                        asChild
-                      >
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="h-3 w-3" />
+                            <span>Code</span>
+                          </a>
+                        </Button>
+                      )}
+                      {project.live && (
+                        <Button
+                          size="sm"
+                          className="flex items-center space-x-1 text-xs"
+                          asChild
                         >
-                          <ExternalLink className="h-3 w-3" />
-                          <span>Live</span>
-                        </a>
-                      </Button>
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            <span>Live</span>
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

@@ -71,9 +71,22 @@ export default function HomePage() {
               Software Developer • Tech & Algorithm Enthusiast
             </p>
             <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-              I love building modern and large scale , solving real-world problems with code, and sharing what I learn.
+              <span className="font-semibold text-blue-700 dark:text-blue-400">
+                I’m passionate about developing modern, scalable software solutions
+              </span>
+              {" "}and{" "}
+              <span className="font-semibold text-purple-700 dark:text-purple-400">
+                solving real-world problems through clean, efficient code.
+              </span>
               <br />
-              Welcome to my digital playground — explore my projects, photography, and thoughts on technology!
+              <span className="font-semibold text-pink-700 dark:text-pink-400">
+                This is my digital playground
+              </span>
+              {" "}— a space where I share my projects, technical insights, and moments captured through my lens.
+              <br />
+              <span className="font-semibold text-indigo-700 dark:text-indigo-400">
+                Welcome, and feel free to explore!
+              </span>
             </p>
           </div>
 

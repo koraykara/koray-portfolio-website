@@ -50,7 +50,7 @@ export default function ProjectsPage() {
       longDescription:
         "This system provides a comprehensive solution for gym operations, including member sign-up, trainer and customer login with role-based access, encrypted password storage, dynamic filtering of trainers and lessons, and PDF export capabilities. Both customers and trainers have personalized dashboards with profile management, workout requests, lesson tracking, and image upload support. Built for clarity and control in gym workflows.",
       tech: ["PHP", "JavaScript", "CSS", "MySQL"],
-      categories: ["React", "Full Stack", "E-commerce"],
+      categories: ["Full Stack"],
       image: "/gym.jpeg?height=300&width=500",
       github: "https://github.com/koraykara/Gym-Management-System",
       live: "",
@@ -64,33 +64,12 @@ export default function ProjectsPage() {
       longDescription:
         "This project is a professional website developed for Zeybek Hukuk Danışmanlık, featuring a dynamic admin panel, service listings, contact forms, and a fully responsive design. The backend was built with Spring Boot and PostgreSQL, while the frontend uses React and Tailwind CSS to ensure performance and elegant UI.",
       tech: ["React", "Spring Boot", "PostgreSQL", "Tailwind CSS"],
-      categories: ["Full Stack", "Web Development", "Enterprise"],
+      categories: ["Full Stack", "Web Development"],
       image: "/zeybek.jpeg?height=300&width=500",
       github: "https://github.com/2PPDSA/ZEYBEK",
       live: "https://zeybekhukukdanismanlik.com/",
       featured: true,
       stars: 89,
-    },
-    {
-      title: "COVID-19 Detection from Images",
-      description:
-        "Image classification project using a custom k-NN algorithm to detect COVID-19 from medical images.",
-      longDescription:
-        "Implemented a COVID-19 classification system using a custom k-Nearest Neighbor algorithm from scratch. Combined pixel-level and Gabor feature extraction to improve accuracy. Achieved 93% accuracy by enhancing feature representation and refining classification boundaries.",
-      tech: [
-        "Python",
-        "k-NN",
-        "Gabor Filter",
-        "Image Processing",
-        "Jupyter Notebook",
-      ],
-      categories: ["Data Visualization", "API"],
-      image: "/knn.jpeg?height=300&width=500",
-      github:
-        "https://github.com/koraykara/Covid-19-Disease-Detection-from-images-using-KNN-algorithm",
-      live: "",
-      featured: false,
-      stars: 0,
     },
     {
       title: "Art Style Image Transformation",
@@ -105,7 +84,7 @@ export default function ProjectsPage() {
         "VGG19",
         "Deep Learning",
       ],
-      categories: ["Computer Vision", "Deep Learning", "AI Art"],
+      categories: ["Machine Learning"],
       image: "/art.png?height=300&width=500",
       github:
         "https://github.com/HUbbm409/bbm406-project-2021-artstyleimagetransformation",
@@ -120,10 +99,10 @@ export default function ProjectsPage() {
       longDescription:
         "Features include responsive design, dark/light mode toggle, smooth page transitions, SEO optimization, and performance optimization.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
-      categories: ["React", "Frontend", "Portfolio"],
+      categories: ["Web Development"],
       image: "/portfolio.jpeg?height=300&width=500",
       github: "https://github.com/koraykara/koray-portfolio-website",
-      live: "https://koraykara.netlify.app/",
+      live: "https://koraykara.dev",
       featured: false,
       stars: 43,
     },
@@ -141,7 +120,7 @@ export default function ProjectsPage() {
         "Matplotlib",
         "Scikit-learn",
       ],
-      categories: ["Machine Learning", "Image Processing", "Classification"],
+      categories: ["Machine Learning"],
       image: "/covid.jpg?height=300&width=500",
       github:
         "https://github.com/koraykara/Covid-19-Disease-Detection-from-images-using-KNN-algorithm",
@@ -156,7 +135,7 @@ export default function ProjectsPage() {
       longDescription:
         "This project explores a novel multi-modal approach to improve the alignment and enrichment of 'Do It Yourself' (DIY) videos. Using visual and textual data jointly, the TARİF system aims to extract instructional content, segment videos into meaningful steps, and enhance user comprehension through image-text alignment. Conducted as part of a TÜBİTAK STAR-supported undergraduate research initiative under the supervision of Pınar Duygulu Şahin, the project tackles challenges in video understanding, cross-modal retrieval, and automatic annotation generation. The system combines natural language processing and computer vision to associate video segments with descriptive captions extracted from large-scale online sources such as YouTube.",
       tech: ["Python", "NLP", "Computer Vision", "PyTorch", "Transformers"],
-      categories: ["Research", "AI", "Multimodal Learning"],
+      categories: ["Research", "Machine Learning"],
       image: "/recipe.jpeg?height=300&width=500",
       github: "",
       live: "https://search.trdizin.gov.tr/tr/yayin/detay/1222272/tarif-kendin-yap-videolarinin-eslestirilmesi-ve-zenginlestirilmesi-icin-cok-kipli-yaklasim",
@@ -178,7 +157,7 @@ export default function ProjectsPage() {
         "CSS",
         "Bootstrap",
       ],
-      categories: ["Java", "Spring Boot", "E-commerce"],
+      categories: ["Web Development", "E-commerce", "Full Stack"],
       image: "/online-book-store.jpeg?height=300&width=500",
       github: "https://github.com/koraykara/Online-BookStore",
       live: "",
@@ -344,10 +323,6 @@ export default function ProjectsPage() {
                       <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
                         {project.title}
                       </h3>
-                      <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm">
-                        <Star className="h-4 w-4 mr-1" />
-                        {project.stars}
-                      </div>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                       {project.longDescription}
@@ -461,10 +436,6 @@ export default function ProjectsPage() {
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                         {project.title}
                       </h3>
-                      <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm">
-                        <Star className="h-3 w-3 mr-1" />
-                        {project.stars}
-                      </div>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                       {project.description}
@@ -518,7 +489,7 @@ export default function ProjectsPage() {
                             rel="noopener noreferrer"
                           >
                             <ExternalLink className="h-3 w-3" />
-                            <span>Live</span>
+                            <span>Live Demo</span>
                           </a>
                         </Button>
                       )}

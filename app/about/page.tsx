@@ -65,7 +65,7 @@ export default function AboutPage() {
     {
       name: "JavaScript",
       category: "Languages",
-      level: "Advanced",
+      level: "Intermediate",
       color: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300",
     },
     // {
@@ -77,7 +77,7 @@ export default function AboutPage() {
     {
       name: "MATLAB",
       category: "Languages",
-      level: "Advanced",
+      level: "Intermediate",
       color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
     },
     {
@@ -91,7 +91,7 @@ export default function AboutPage() {
     {
       name: "Spring Boot",
       category: "Frameworks",
-      level: "Expert",
+      level: "Advanced",
       color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
     },
     {
@@ -121,7 +121,7 @@ export default function AboutPage() {
     {
       name: "Simulink",
       category: "Frameworks",
-      level: "Expert",
+      level: "Intermediate",
       color: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300",
     },
     {
@@ -147,13 +147,13 @@ export default function AboutPage() {
     {
       name: "Jenkins",
       category: "DevOps",
-      level: "Advanced",
+      level: "Intermediate",
       color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
     },
     {
       name: "Git",
       category: "DevOps",
-      level: "Expert",
+      level: "Advanced",
       color: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300",
     },
     {
@@ -205,19 +205,19 @@ export default function AboutPage() {
     {
       name: "Real-time Systems",
       category: "Specialized",
-      level: "Expert",
+      level: "Intermediate",
       color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
     },
     {
       name: "Embedded Systems",
       category: "Specialized",
-      level: "Expert",
+      level: "Intermediate",
       color: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",
     },
     {
       name: "Control Systems",
       category: "Specialized",
-      level: "Expert",
+      level: "Intermediate",
       color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
     },
   ]
@@ -351,13 +351,15 @@ export default function AboutPage() {
               <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">About Me</h2>
               <div className="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="text-xl leading-relaxed">
-                  Koray Kara is a Flight Control Software Engineer at Turkish Aerospace (TUSAŞ), where he develops
-                  real-time, safety-critical software for the HÜRJET supersonic jet. He graduated from Hacettepe
-                  University with a B.Sc. in Computer Engineering (CGPA: 3.55/4.00), ranked in the top 1% nationally,
-                  and has interned at ASELSAN and TÜBİTAK BİLGEM. His work spans embedded systems, control algorithms,
-                  and software verification under DO-178C standards. He is also actively engaged in academic research,
-                  content creation on YouTube, and experiments with AI-assisted code generation tools to bridge
-                  engineering and education.
+                  <span className="font-bold">
+                    Flight Control Software Engineer at Turkish Aerospace Industries (TAI)
+                  </span>
+                  , developing <span className="font-bold">real-time, safety-critical systems software</span> for advanced aerospace platforms.
+                  Holds a <span className="font-bold">B.Sc. in Computer Engineering from Hacettepe University (CGPA: 3.55/4.00)</span> and currently pursuing an <span className="font-bold">M.Sc. in Computer Science with a focus on Image Processing</span>.
+                  <br /><br />
+                  Experienced in <span className="font-bold">software development for embedded and mission-critical systems</span>.
+                  Previously interned at <span className="font-bold">ASELSAN</span> and <span className="font-bold">TÜBİTAK BILGEM</span>.
+                  Passionate about <span className="font-bold">solving algorithms</span>, learning new technologies, and bridging engineering and education through <span className="font-bold">academic research</span> and <span className="font-bold">content creation on YouTube.</span>.
                 </p>
               </div>
             </CardContent>

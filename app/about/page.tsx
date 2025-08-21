@@ -81,7 +81,7 @@ export default function AboutPage() {
       color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
     },
     {
-      name: "SQL",
+      name: "SQL", 
       category: "Languages",
       level: "Advanced",
       color: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",

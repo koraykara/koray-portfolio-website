@@ -167,7 +167,7 @@ export default function VideosPage() {
       duration: "15m",
       playlistUrl:
         "https://youtu.be/UcHq5wqCzCw?si=X_z2ZP8F7NQFIfxr",
-      featured: true,
+      featured: true, 
       views: "4K",
     },
   ];

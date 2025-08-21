@@ -156,6 +156,20 @@ export default function VideosPage() {
       featured: false,
       views: "288",
     },
+    {
+      id: 8,
+      title: "1 LeetCode a Day",
+      description:
+        "Solve 1 LeetCode problem every day! Short and focused videos that build your problem-solving skills across arrays, graphs, trees, and dynamic programming.",
+      category: "Data Structures And Algorithms",
+      thumbnail: "/shorts.png?height=200&width=350",
+      videoCount: 6,
+      duration: "15m",
+      playlistUrl:
+        "https://youtu.be/UcHq5wqCzCw?si=X_z2ZP8F7NQFIfxr",
+      featured: true,
+      views: "4K",
+    },
   ];
 
   // Get all unique categories
@@ -287,7 +301,13 @@ export default function VideosPage() {
                   style={{
                     animationDelay: `${index * 200}ms`,
                   }}
-                  onClick={() => window.open(playlist.playlistUrl, "_blank", "noopener,noreferrer")}
+                  onClick={() =>
+                    window.open(
+                      playlist.playlistUrl,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
                   tabIndex={0}
                   role="link"
                   aria-label={playlist.title}
@@ -343,10 +363,7 @@ export default function VideosPage() {
                           <span>{playlist.duration}</span>
                         </div>
                       </div>
-                      <Badge
-                        variant="secondary"
-                        className="px-3 py-1 text-xs"
-                      >
+                      <Badge variant="secondary" className="px-3 py-1 text-xs">
                         {playlist.category}
                       </Badge>
                     </div>
@@ -400,7 +417,13 @@ export default function VideosPage() {
                   style={{
                     animationDelay: `${index * 100}ms`,
                   }}
-                  onClick={() => window.open(playlist.playlistUrl, "_blank", "noopener,noreferrer")}
+                  onClick={() =>
+                    window.open(
+                      playlist.playlistUrl,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
                   tabIndex={0}
                   role="link"
                   aria-label={playlist.title}

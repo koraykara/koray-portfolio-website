@@ -40,7 +40,7 @@ export const roles: Role[] = [
     start: "2021-11",
     end: null,
     summary:
-      "Building real-time, safety-critical flight control software for advanced aerospace platforms, working with multidisciplinary teams from design through testing.",
+      "Building real-time, safety-critical flight control software in C++ for advanced aerospace platforms, combining model-based development with hand-written embedded code and working with multidisciplinary teams from design through testing.",
     highlights: [
       "Design and develop flight control software for real-time, safety-critical aerospace systems used in advanced training platforms.",
       "Improved automation and data acquisition workflows by implementing custom C++ libraries for embedded computing environments.",

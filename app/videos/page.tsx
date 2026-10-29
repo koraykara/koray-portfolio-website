@@ -1,11 +1,13 @@
 import type { Metadata } from "next"
 import youtube from "@/data/youtube.json"
 import { VideosView, type Video, type Playlist } from "./videos-view"
+import { pageMetadata } from "@/lib/site"
 
-export const metadata: Metadata = {
-  title: "Videos | Koray Kara",
+export const metadata: Metadata = pageMetadata({
+  title: "Videos",
   description: "Every video from Koray Kara's YouTube channel: algorithms, data structures, interview prep and career talks.",
-}
+  path: "/videos",
+})
 
 // Keep the client bundle small: only send what the page shows.
 function shortDescription(text: string) {

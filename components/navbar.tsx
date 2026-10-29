@@ -1,112 +1,119 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
-import { Menu, X, Sun, Moon } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Menu, Moon, Sun, X } from "lucide-react"
+import { navItems } from "@/lib/site"
 
-// Add the Videos page to the navigation items
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/experience", label: "Experience" },
-  { href: "/projects", label: "Projects" },
-  { href: "/blogs", label: "Blogs" },
-  { href: "/videos", label: "Videos" },
-  { href: "/photography", label: "Photography" },
-  { href: "/connect", label: "Connect" },
-]
+const isActive = (pathname: string, href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href))
 
 export function Navbar() {
   const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
+  useEffect(() => setMounted(true), [])
+
+  // Close the menu on navigation and with Escape.
+  useEffect(() => setOpen(false), [pathname])
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false)
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [open])
 
-  if (!mounted) {
-    return null
-  }
+  const isDark = mounted && resolvedTheme === "dark"
 
   return (
-    <nav className="fixed top-0 left-0 md:left-20 right-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-lg sm:text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+    <header className="fixed top-0 left-0 md:left-20 right-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200/60 dark:border-gray-700/50">
+      <nav aria-label="Main" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="shrink-0 font-bold text-lg sm:text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+          >
             Koray Kara
-          </div>
+          </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-wrap items-center space-x-4 lg:space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-medium transition-all duration-200 hover:text-blue-600 dark:hover:text-blue-400 relative px-1 py-0.5 ${
-                  pathname === item.href ? "text-blue-600 dark:text-blue-400" : "text-gray-700 dark:text-gray-300"
-                }`}
-              >
-                {item.label}
-                {pathname === item.href && (
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />
-                )}
-              </Link>
-            ))}
-          </div>
+          {/* Desktop links: only from lg up so they never crowd on tablets */}
+          <ul className="hidden lg:flex items-center gap-1 xl:gap-2">
+            {navItems.map((item) => {
+              const active = isActive(pathname, item.href)
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={active ? "page" : undefined}
+                    className={`relative rounded-md px-2.5 py-2 text-sm font-medium transition-colors ${
+                      active
+                        ? "text-blue-600 dark:text-blue-400"
+                        : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    }`}
+                  >
+                    {item.label}
+                    {active && <span aria-hidden className="absolute inset-x-2.5 -bottom-[13px] h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
 
-          <div className="flex items-center space-x-2 sm:space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors duration-200"
-              aria-label="Toggle theme"
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setTheme(isDark ? "light" : "dark")}
+              className="flex h-10 w-10 items-center justify-center rounded-full text-gray-700 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
             >
-              {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
+              {/* Same size before and after mount, so nothing shifts */}
+              {isDark ? <Sun className="h-4 w-4" aria-hidden /> : <Moon className="h-4 w-4" aria-hidden />}
+            </button>
 
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle navigation"
+            <button
+              type="button"
+              className="lg:hidden flex h-10 w-10 items-center justify-center rounded-full text-gray-700 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              aria-controls="mobile-nav"
+              aria-label={open ? "Close menu" : "Open menu"}
             >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
+              {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
+            </button>
           </div>
         </div>
-      </div>
+      </nav>
 
-      {/* Mobile Navigation */}
+      {/* Mobile / tablet menu */}
       <div
-        className={`md:hidden fixed top-16 left-0 w-full transition-all duration-300 z-40 ${
-          mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-        } overflow-hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 shadow`}
+        id="mobile-nav"
+        hidden={!open}
+        className="lg:hidden border-t border-gray-200/60 dark:border-gray-700/50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg motion-safe:animate-fade-in"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors duration-200 ${
-                pathname === item.href
-                  ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
+        <ul className="mx-auto grid max-w-7xl grid-cols-1 gap-1 px-4 py-3 sm:grid-cols-2 sm:px-6">
+          {navItems.map((item) => {
+            const active = isActive(pathname, item.href)
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`block rounded-lg px-3 py-2.5 text-base font-medium transition-colors ${
+                    active
+                      ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+                      : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
       </div>
-    </nav>
+    </header>
   )
 }

@@ -1,500 +1,187 @@
-"use client"
-
-import { useState, useEffect, useRef } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { MapPin, Calendar, GraduationCap, Building, Filter } from "lucide-react"
+import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight, Building2, Cpu, GraduationCap, MapPin, Brain, ShieldCheck, Workflow } from "lucide-react"
+import { pageMetadata, site } from "@/lib/site"
+import { education, roles } from "@/data/experience"
+import { focusAreas, skillGroups } from "@/data/skills"
+import { monthsBetween } from "@/lib/dates"
+
+export const metadata: Metadata = pageMetadata({
+  title: "About",
+  description:
+    "Koray Kara is a Flight Control Software Engineer at Turkish Aerospace (TUSAŞ) with a B.Sc. and M.Sc. from Hacettepe University, working on safety-critical real-time software and AI research in medical imaging.",
+  path: "/about",
+})
+
+const FOCUS_ICONS = {
+  "safety-critical": ShieldCheck,
+  "real-time": Cpu,
+  "model-based": Workflow,
+  "ai-research": Brain,
+} as const
 
 export default function AboutPage() {
-  const [visibleSections, setVisibleSections] = useState<string[]>([])
-  const [selectedCategory, setSelectedCategory] = useState("All")
-  const observerRef = useRef<IntersectionObserver | null>(null)
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([])
+  const current = roles.find((r) => r.end === null)!
+  const years = Math.floor(monthsBetween(current.start, null) / 12)
+  const msc = education.find((d) => d.id === "msc")!
+  const bsc = education.find((d) => d.id === "bsc")!
 
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("data-section") || ""
-            setVisibleSections((prev) => [...new Set([...prev, id])])
-          }
-        })
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "50px",
-      },
-    )
-
-    sectionRefs.current.forEach((ref) => {
-      if (ref && observerRef.current) {
-        observerRef.current.observe(ref)
-      }
-    })
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect()
-      }
-    }
-  }, [])
-
-  const techStack = [
-    // Languages
-    {
-      name: "Java",
-      category: "Languages",
-      level: "Expert",
-      color: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300",
-    },
-    {
-      name: "C/C++",
-      category: "Languages",
-      level: "Advanced",
-      color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    },
-    {
-      name: "Python",
-      category: "Languages",
-      level: "Advanced",
-      color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
-    },
-    {
-      name: "JavaScript",
-      category: "Languages",
-      level: "Intermediate",
-      color: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300",
-    },
-    // {
-    //   name: "TypeScript",
-    //   category: "Languages",
-    //   level: "Advanced",
-    //   color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    // },
-    {
-      name: "MATLAB",
-      category: "Languages",
-      level: "Intermediate",
-      color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
-    },
-    {
-      name: "SQL", 
-      category: "Languages",
-      level: "Advanced",
-      color: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",
-    },
-
-    // Frameworks & Libraries
-    {
-      name: "Spring Boot",
-      category: "Frameworks",
-      level: "Advanced",
-      color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
-    },
-    {
-      name: "React",
-      category: "Frameworks",
-      level: "Advanced",
-      color: "bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300",
-    },
-    // {
-    //   name: "Next.js",
-    //   category: "Frameworks",
-    //   level: "Advanced",
-    //   color: "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300",
-    // },
-    // {
-    //   name: "Node.js",
-    //   category: "Frameworks",
-    //   level: "Advanced",
-    //   color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
-    // },
-    // {
-    //   name: "Express.js",
-    //   category: "Frameworks",
-    //   level: "Advanced",
-    //   color: "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300",
-    // },
-    {
-      name: "Simulink",
-      category: "Frameworks",
-      level: "Intermediate",
-      color: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300",
-    },
-    {
-      name: "Qt",
-      category: "Frameworks",
-      level: "Advanced",
-      color: "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300",
-    },
-
-    // DevOps & Tools
-    // {
-    //   name: "Docker",
-    //   category: "DevOps",
-    //   level: "Advanced",
-    //   color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    // },
-    // {
-    //   name: "Kubernetes",
-    //   category: "DevOps",
-    //   level: "Intermediate",
-    //   color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    // },
-    {
-      name: "Jenkins",
-      category: "DevOps",
-      level: "Intermediate",
-      color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
-    },
-    {
-      name: "Git",
-      category: "DevOps",
-      level: "Advanced",
-      color: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300",
-    },
-    {
-      name: "VectorCast",
-      category: "DevOps",
-      level: "Advanced",
-      color: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",
-    },
-    {
-      name: "AWS",
-      category: "DevOps",
-      level: "Advanced",
-      color: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300",
-    },
-    // {
-    //   name: "Linux",
-    //   category: "DevOps",
-    //   level: "Advanced",
-    //   color: "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300",
-    // },
-
-    // Databases
-    {
-      name: "PostgreSQL",
-      category: "Databases",
-      level: "Advanced",
-      color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    },
-    {
-      name: "MongoDB",
-      category: "Databases",
-      level: "Advanced",
-      color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
-    },
-    {
-      name: "MySQL",
-      category: "Databases",
-      level: "Advanced",
-      color: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
-    },
-
-    // Specialized
-    {
-      name: "DO-178C",
-      category: "Standards",
-      level: "Advanced",
-      color: "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300",
-    },
-    {
-      name: "Real-time Systems",
-      category: "Specialized",
-      level: "Intermediate",
-      color: "bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300",
-    },
-    {
-      name: "Embedded Systems",
-      category: "Specialized",
-      level: "Intermediate",
-      color: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",
-    },
-    {
-      name: "Control Systems",
-      category: "Specialized",
-      level: "Intermediate",
-      color: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
-    },
+  const quickInfo = [
+    { icon: Building2, title: "Turkish Aerospace", text: "TUSAŞ · since 2021", tint: "text-blue-600 dark:text-blue-400" },
+    { icon: GraduationCap, title: "Hacettepe University", text: "B.Sc. & M.Sc.", tint: "text-purple-600 dark:text-purple-400" },
+    { icon: MapPin, title: site.location, text: "Based in", tint: "text-emerald-600 dark:text-emerald-400" },
+    { icon: Brain, title: "AI research", text: "Medical image segmentation", tint: "text-pink-600 dark:text-pink-400" },
   ]
 
-  // Get all unique categories
-  const allCategories = ["All", ...Array.from(new Set(techStack.map((tech) => tech.category))).sort()]
-
-  // Filter tech stack based on selected category
-  const filteredTechStack =
-    selectedCategory === "All" ? techStack : techStack.filter((tech) => tech.category === selectedCategory)
-
-  const getLevelColor = (level: string) => {
-    switch (level) {
-      case "Expert":
-        return "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300"
-      case "Advanced":
-        return "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300"
-      case "Intermediate":
-        return "bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300"
-      default:
-        return "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300"
-    }
-  }
-
   return (
-    <div className="min-h-screen py-16 px-8 lg:px-16">
+    <div className="min-h-screen py-12 sm:py-16 px-4 sm:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
-        {/* Hero Section */}
-        <div
-          ref={(el) => { sectionRefs.current[0] = el; }}
-          data-section="hero"
-          className={`mb-20 transition-all duration-700 ${
-            visibleSections.includes("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Profile Image */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative">
-                <div className="w-80 h-80 relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full animate-spin-slow"></div>
-                  <div className="absolute inset-2 bg-white dark:bg-gray-900 rounded-full flex items-center justify-center">
-                    <Image
-                      src="/koray.jpeg?height=288&width=288"
-                      alt="Koray Kara"
-                      width={288}
-                      height={288}
-                      className="w-72 h-72 rounded-full object-cover border-4 border-white dark:border-gray-900"
-                    />
-                  </div>
-                </div>
-                {/* Floating badges */}
-                <div className="absolute -top-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg animate-bounce">
-                  Software Engineer
-                </div>
-                <div className="absolute -bottom-4 -left-4 bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg animate-pulse">
-                  Hacettepe University Graduate
-                </div>
-              </div>
-            </div>
-
-            {/* Hero Content */}
-            <div className="text-center lg:text-left space-y-6">
-              <div>
-                <h1 className="text-5xl sm:text-6xl font-light mb-4 text-gray-900 dark:text-white">
-                  <span className="font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    Koray Kara
-                  </span>
-                </h1>
-                <h2 className="text-2xl sm:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-4">
-                  Flight Control Software Engineer
-                </h2>
-                <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-                  Developing real-time, safety-critical software for supersonic aircraft at Turkish Aerospace
-                </p>
-              </div>
-
-              {/* Quick Info Cards */}
-              <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto lg:mx-0">
-                <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-0 flex items-center space-x-3">
-                    <Building className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                    <div>
-                      <div className="font-semibold text-sm text-gray-900 dark:text-white">TUSAŞ</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Turkish Aerospace</div>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-0 flex items-center space-x-3">
-                    <GraduationCap className="h-5 w-5 text-purple-600 dark:text-purple-400" />
-                    <div>
-                      <div className="font-semibold text-sm text-gray-900 dark:text-white">Hacettepe Uni.</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Computer Engineering</div>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-0 flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-green-600 dark:text-green-400" />
-                    <div>
-                      <div className="font-semibold text-sm text-gray-900 dark:text-white">Ankara, Turkey</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Based in</div>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-0 flex items-center space-x-3">
-                    <Calendar className="h-5 w-5 text-red-600 dark:text-red-400" />
-                    <div>
-                      <div className="font-semibold text-sm text-gray-900 dark:text-white">CGPA 3.55/4.00</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Academic Excellence</div>
-                    </div>
-                  </CardContent>
-                </Card>
+        {/* Hero */}
+        <section aria-labelledby="about-title" className="mb-16 sm:mb-20 grid items-center gap-10 lg:grid-cols-[auto_1fr] lg:gap-16 motion-safe:animate-fade-in-up">
+          <div className="flex justify-center">
+            <div className="relative h-56 w-56 sm:h-72 sm:w-72">
+              <div aria-hidden className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 motion-safe:animate-spin-slow" />
+              <div className="absolute inset-2 overflow-hidden rounded-full border-4 border-white dark:border-gray-900 bg-white dark:bg-gray-900">
+                <Image src="/koray.jpeg" alt="Portrait of Koray Kara" width={320} height={320} className="h-full w-full object-cover" priority />
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Biography Section */}
-        <div
-          ref={(el) => { sectionRefs.current[1] = el; }}
-          data-section="biography"
-          className={`mb-20 transition-all duration-700 ${
-            visibleSections.includes("biography") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <Card className="p-8 lg:p-12 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-700 border-0 shadow-xl">
-            <CardContent className="p-0">
-              <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">About Me</h2>
-              <div className="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-xl leading-relaxed">
-                  <span className="font-bold">
-                    Flight Control Software Engineer at Turkish Aerospace Industries (TAI)
-                  </span>
-                  , developing <span className="font-bold">real-time, safety-critical systems software</span> for advanced aerospace platforms.
-                  Holds a <span className="font-bold">B.Sc. in Computer Engineering from Hacettepe University (CGPA: 3.55/4.00)</span> and currently pursuing an <span className="font-bold">M.Sc. in Computer Science with a focus on Image Processing</span>.
-                  <br /><br />
-                  Experienced in <span className="font-bold">software development for embedded and mission-critical systems</span>.
-                  Previously interned at <span className="font-bold">ASELSAN</span> and <span className="font-bold">TÜBİTAK BILGEM</span>.
-                  Passionate about <span className="font-bold">solving algorithms</span>, learning new technologies, and bridging engineering and education through <span className="font-bold">academic research</span> and <span className="font-bold">content creation on YouTube.</span>.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Technical Toolkit Section */}
-        <div
-          ref={(el) => { sectionRefs.current[2] = el; }}
-          data-section="toolkit"
-          className={`transition-all duration-700 ${
-            visibleSections.includes("toolkit") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">Technical Toolkit</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Technologies and tools I use to build robust, scalable, and safety-critical software systems.
+          <div className="text-center lg:text-left">
+            <h1 id="about-title" className="text-4xl sm:text-5xl font-light tracking-tight text-gray-900 dark:text-white">
+              About{" "}
+              <span className="font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Koray Kara
+              </span>
+            </h1>
+            <p className="mt-4 text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300">
+              {site.jobTitle} at {site.employer.name}
             </p>
-          </div>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-400 mx-auto lg:mx-0">
+              {site.description}
+            </p>
 
-          {/* Filter Section */}
-          <div className="mb-12">
-            <div className="flex items-center justify-center mb-6">
-              <Filter className="h-5 w-5 text-gray-600 dark:text-gray-400 mr-2" />
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white">Filter by Category</h3>
-            </div>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {allCategories.map((category) => (
-                <Button
-                  key={category}
-                  variant={selectedCategory === category ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setSelectedCategory(category)}
-                  className={`rounded-full transition-all duration-200 ${
-                    selectedCategory === category
-                      ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg scale-105"
-                      : "hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 dark:hover:border-blue-600"
-                  }`}
+            <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-2xl mx-auto lg:mx-0">
+              {quickInfo.map(({ icon: Icon, title, text, tint }) => (
+                <li
+                  key={title}
+                  className="flex items-center gap-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 text-left shadow-sm"
                 >
-                  {category}
-                  {category !== "All" && (
-                    <Badge variant="secondary" className="ml-2 px-2 py-0 text-xs bg-white/20 text-current border-0">
-                      {techStack.filter((tech) => tech.category === category).length}
-                    </Badge>
-                  )}
-                </Button>
+                  <Icon className={`h-5 w-5 shrink-0 ${tint}`} aria-hidden />
+                  <div>
+                    <div className="text-sm font-semibold text-gray-900 dark:text-white">{title}</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">{text}</div>
+                  </div>
+                </li>
               ))}
-            </div>
-            <div className="text-center mt-4">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Showing {filteredTechStack.length} of {techStack.length} technologies
+            </ul>
+          </div>
+        </section>
+
+        {/* Biography */}
+        <section aria-labelledby="bio-title" className="mb-16 sm:mb-20">
+          <div className="rounded-3xl border-0 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-700 p-6 sm:p-10 lg:p-12 shadow-xl">
+            <h2 id="bio-title" className="mb-6 text-center text-3xl font-semibold text-gray-900 dark:text-white">
+              About me
+            </h2>
+            <div className="mx-auto max-w-3xl space-y-5 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              <p>
+                I am a <strong className="text-gray-900 dark:text-white">Flight Control Software Engineer at Turkish Aerospace (TUSAŞ)</strong>,
+                where for {years}+ years I have been building <strong className="text-gray-900 dark:text-white">real-time, safety-critical software</strong>{" "}
+                for advanced aerospace platforms in <strong className="text-gray-900 dark:text-white">C++</strong>, following{" "}
+                <strong className="text-gray-900 dark:text-white">DO-178C</strong> processes on real-time operating systems such as Green Hills INTEGRITY.
+              </p>
+              <p>
+                I hold a <strong className="text-gray-900 dark:text-white">{bsc.degree} in {bsc.field}</strong> ({bsc.start}–{bsc.end}) and an{" "}
+                <strong className="text-gray-900 dark:text-white">{msc.degree} in {msc.field}</strong> ({msc.start}–{msc.end}), both from Hacettepe
+                University. My M.Sc. thesis studied <strong className="text-gray-900 dark:text-white">region-aware super-resolution for medical image segmentation</strong>{" "}
+                on MRI and CT data.
+              </p>
+              <p>
+                Before Turkish Aerospace I interned at <strong className="text-gray-900 dark:text-white">ASELSAN</strong> and{" "}
+                <strong className="text-gray-900 dark:text-white">TÜBİTAK BİLGEM</strong>, and worked as an undergraduate research fellow on a
+                TÜBİTAK multimodal learning project. Outside work I solve algorithm problems and teach them through{" "}
+                <Link href="/videos" className="font-medium text-blue-700 dark:text-blue-400 underline underline-offset-2 hover:no-underline">
+                  YouTube videos
+                </Link>{" "}
+                and{" "}
+                <Link href="/blogs" className="font-medium text-blue-700 dark:text-blue-400 underline underline-offset-2 hover:no-underline">
+                  articles
+                </Link>
+                .
               </p>
             </div>
           </div>
+        </section>
 
-          {/* Tech Stack Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {filteredTechStack.map((tech, index) => (
-              <Card
-                key={tech.name}
-                className={`group hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer border-2 hover:border-blue-300 dark:hover:border-blue-600 ${
-                  visibleSections.includes("toolkit") ? "animate-fade-in-up" : ""
-                }`}
-                style={{
-                  animationDelay: `${index * 50}ms`,
-                }}
-              >
-                <CardContent className="p-4 text-center">
-                  <div
-                    className={`w-12 h-12 mx-auto mb-3 rounded-xl ${tech.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-200`}
-                  >
-                    <span className="text-xl font-bold">{tech.name.charAt(0)}</span>
+        {/* Focus areas */}
+        <section aria-labelledby="focus-title" className="mb-16 sm:mb-20">
+          <div className="mb-10 text-center">
+            <h2 id="focus-title" className="text-3xl font-semibold text-gray-900 dark:text-white">What I work on</h2>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {focusAreas.map((area) => {
+              const Icon = FOCUS_ICONS[area.id as keyof typeof FOCUS_ICONS] ?? Cpu
+              return (
+                <article
+                  key={area.id}
+                  className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm transition-shadow hover:shadow-lg"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-500/10">
+                      <Icon className="h-5 w-5 text-blue-600 dark:text-blue-400" aria-hidden />
+                    </span>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{area.title}</h3>
                   </div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                    {tech.name}
-                  </h3>
-                  <Badge className={`text-xs px-2 py-1 ${getLevelColor(tech.level)} border-0`}>{tech.level}</Badge>
-                </CardContent>
-              </Card>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">{area.text}</p>
+                  <ul className="mt-4 flex flex-wrap gap-1.5">
+                    {area.tags.map((t) => (
+                      <li key={t} className="rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* Technical toolkit */}
+        <section aria-labelledby="toolkit-title">
+          <div className="mb-10 text-center">
+            <h2 id="toolkit-title" className="text-3xl font-semibold text-gray-900 dark:text-white">Technical toolkit</h2>
+            <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">Grouped by where I use them.</p>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {skillGroups.map((g) => (
+              <div key={g.title} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">{g.title}</h3>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {g.skills.map((s) => (
+                    <li
+                      key={s}
+                      className="rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-3 py-1 text-sm text-gray-800 dark:text-gray-200"
+                    >
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
 
-          {/* No Results */}
-          {filteredTechStack.length === 0 && (
-            <div className="text-center py-16">
-              <div className="text-gray-400 dark:text-gray-500 mb-4">
-                <Filter className="h-16 w-16 mx-auto mb-4" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No technologies found</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                No technologies match the selected category "{selectedCategory}". Try selecting a different filter.
-              </p>
-              <Button variant="outline" onClick={() => setSelectedCategory("All")} className="px-6">
-                Show All Technologies
-              </Button>
-            </div>
-          )}
-        </div>
-
-        {/* Stats Section */}
-        <div
-          ref={(el) => { sectionRefs.current[3] = el; }}
-          data-section="stats"
-          className={`mt-20 transition-all duration-700 ${
-            visibleSections.includes("stats") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border-blue-200 dark:border-blue-700">
-              <CardContent className="p-0">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</div>
-                <div className="text-gray-600 dark:text-gray-300 text-sm">Years Experience</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border-purple-200 dark:border-purple-700">
-              <CardContent className="p-0">
-                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">{techStack.length}</div>
-                <div className="text-gray-600 dark:text-gray-300 text-sm">Technologies</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 border-green-200 dark:border-green-700">
-              <CardContent className="p-0">
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">3</div>
-                <div className="text-gray-600 dark:text-gray-300 text-sm">Major Projects</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 border-red-200 dark:border-red-700">
-              <CardContent className="p-0">
-                <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">1%</div>
-                <div className="text-gray-600 dark:text-gray-300 text-sm">Top Graduate</div>
-              </CardContent>
-            </Card>
+          <div className="mt-12 text-center">
+            <Link
+              href="/experience"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:from-blue-700 hover:to-purple-700"
+            >
+              See my experience
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   )

@@ -1,42 +1,17 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowUpRight, Briefcase, Calendar, GraduationCap, MapPin, Sparkles } from "lucide-react"
+import { ArrowUpRight, Briefcase, Calendar, GraduationCap, MapPin, Sparkles, Target } from "lucide-react"
 import { roles, education, beyondWork, type Role } from "@/data/experience"
+import { formatDuration, formatMonth, monthsBetween } from "@/lib/dates"
+import { focusAreas } from "@/data/skills"
+import { pageMetadata } from "@/lib/site"
 
-export const metadata: Metadata = {
-  title: "Experience | Koray Kara",
+export const metadata: Metadata = pageMetadata({
+  title: "Experience",
   description:
-    "Flight Control Software Engineer at Turkish Aerospace. Experience in safety-critical aerospace software, research and full-stack development.",
-}
-
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-
-const parse = (ym: string) => {
-  const [y, m] = ym.split("-").map(Number)
-  return { y, m }
-}
-
-const formatMonth = (ym: string) => {
-  const { y, m } = parse(ym)
-  return `${MONTHS[m - 1]} ${y}`
-}
-
-// Inclusive month count, like LinkedIn ("Jun 2020 – Aug 2020 · 3 mos").
-function monthsBetween(start: string, end: string | null) {
-  const s = parse(start)
-  const now = new Date()
-  const e = end ? parse(end) : { y: now.getFullYear(), m: now.getMonth() + 1 }
-  return (e.y - s.y) * 12 + (e.m - s.m) + 1
-}
-
-function formatDuration(months: number) {
-  const y = Math.floor(months / 12)
-  const m = months % 12
-  const parts = []
-  if (y) parts.push(`${y} ${y === 1 ? "yr" : "yrs"}`)
-  if (m) parts.push(`${m} ${m === 1 ? "mo" : "mos"}`)
-  return parts.join(" ")
-}
+    "Koray Kara's experience: Flight Control Software Engineer at Turkish Aerospace building real-time, safety-critical C++ software, plus research at TÜBİTAK and internships at ASELSAN and TÜBİTAK BİLGEM.",
+  path: "/experience",
+})
 
 const TYPE_STYLES: Record<Role["type"], string> = {
   "Full-time": "bg-emerald-50 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-500/10 dark:text-emerald-300 dark:ring-emerald-400/20",
@@ -58,13 +33,13 @@ export default function ExperiencePage() {
     <div className="min-h-screen py-12 sm:py-16 px-4 sm:px-8 lg:px-16">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <header className="text-center mb-12 animate-fade-in-up">
+        <header className="text-center mb-12 motion-safe:animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl font-light mb-6 text-gray-900 dark:text-white">Experience</h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Flight Control Software Engineer at <span className="font-medium text-gray-900 dark:text-white">Turkish Aerospace</span>,
-            building real-time, safety-critical software for aerospace platforms. Backed by a B.Sc. and M.Sc. from
-            Hacettepe University, research in multimodal learning and medical imaging, and a long-running passion for
-            algorithms.
+            building real-time, safety-critical C++ software for aerospace platforms. Backed by a B.Sc. and an M.Sc.
+            (2026) in Computer Science from Hacettepe University, and AI research in multimodal learning and medical
+            imaging.
           </p>
         </header>
 
@@ -79,6 +54,23 @@ export default function ExperiencePage() {
                 {s.value}
               </div>
               <div className="mt-1 text-sm text-gray-600 dark:text-gray-400">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Core expertise */}
+        <SectionTitle icon={Target}>Core expertise</SectionTitle>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-16 sm:mb-20">
+          {focusAreas.map((a) => (
+            <div key={a.id} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white">{a.title}</h3>
+              <ul className="mt-3 flex flex-wrap gap-1.5">
+                {a.tags.map((t) => (
+                  <li key={t} className="rounded-md bg-blue-50 dark:bg-blue-500/10 px-2 py-0.5 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {t}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -188,7 +180,7 @@ function RoleItem({ role, last }: { role: Role; last: boolean }) {
         <img src={role.logo} alt="" className="h-full w-full object-contain" />
         {isCurrent && (
           <span className="absolute -right-1 -top-1 flex h-3.5 w-3.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-white dark:border-gray-900 bg-emerald-500" />
           </span>
         )}

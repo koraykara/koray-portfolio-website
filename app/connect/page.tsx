@@ -1,6 +1,12 @@
-"use client"
-
+import type { Metadata } from "next"
 import { Mail, Github, Linkedin, Instagram, BookOpen } from "lucide-react"
+import { pageMetadata } from "@/lib/site"
+
+export const metadata: Metadata = pageMetadata({
+  title: "Connect",
+  description: "Get in touch with Koray Kara by email or on GitHub, LinkedIn, YouTube and Medium.",
+  path: "/connect",
+})
 
 export default function ConnectPage() {
   const contactInfo = [
@@ -71,7 +77,7 @@ export default function ConnectPage() {
   ]
 
   return (
-    <div className="min-h-screen py-16 px-8 lg:px-16">
+    <div className="min-h-screen py-12 sm:py-16 px-4 sm:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -91,7 +97,7 @@ export default function ConnectPage() {
               return (
                 <div
                   key={contact.label}
-                  className={`flex flex-col items-start rounded-2xl bg-white dark:bg-[#23293a] ${contact.border} ${contact.hover} shadow-md transition-all duration-200 p-8 min-h-[220px] hover:scale-105 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500`}
+                  className={`flex flex-col items-start rounded-2xl bg-white dark:bg-[#23293a] ${contact.border} ${contact.hover} shadow-md transition-all duration-200 p-8 min-h-[220px] motion-safe:hover:-translate-y-1 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500`}
                 >
                   <div className="flex items-center mb-4">
                     <Icon className={`h-9 w-9 mr-4 ${contact.color}`} />
@@ -99,8 +105,6 @@ export default function ConnectPage() {
                   </div>
                   <a
                     href={contact.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="text-blue-700 dark:text-blue-300 font-medium break-all mb-2 underline"
                   >
                     {contact.value}
@@ -118,13 +122,13 @@ export default function ConnectPage() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex flex-col items-start rounded-2xl bg-white dark:bg-[#23293a] ${social.border} ${social.hover} shadow-md transition-all duration-200 p-8 min-h-[220px] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                  className={`flex flex-col items-start rounded-2xl bg-white dark:bg-[#23293a] ${social.border} ${social.hover} shadow-md transition-all duration-200 p-8 min-h-[220px] motion-safe:hover:-translate-y-1`}
                 >
                   <div className="flex items-center mb-4">
                     {social.isYoutube ? (
                       <img
                         src="/youtube.png"
-                        alt="YouTube"
+                        alt=""
                         className="h-9 w-9 mr-4 rounded-lg shadow-sm"
                         style={{ background: "transparent" }}
                       />

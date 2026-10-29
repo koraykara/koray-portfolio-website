@@ -1,0 +1,46 @@
+# Refreshes data/youtube.json every day so new uploads, view counts and
+# playlists show up on the Videos page. A commit here triggers a Netlify deploy.
+name: Update YouTube videos
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # every day at 04:17 UTC
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-youtube
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The script only uses Node built-ins, so no npm install is needed.
+      - name: Fetch channel data
+        run: node scripts/fetch-youtube.mjs
+
+      - name: Commit if anything besides the timestamp changed
+        run: |
+          if git diff --quiet -- data/youtube.json; then
+            echo "No changes."
+            exit 0
+          fi
+          if diff -q <(git show HEAD:data/youtube.json | jq 'del(.fetchedAt)') <(jq 'del(.fetchedAt)' data/youtube.json) > /dev/null; then
+            echo "Only the fetch timestamp changed, skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/youtube.json
+          git commit -m "Update YouTube videos data"
+          git push

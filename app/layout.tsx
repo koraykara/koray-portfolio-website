@@ -51,9 +51,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="flex min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
             <Sidebar />
-            <div className="flex-1 ml-20">
+            <div className="flex-1 md:ml-20 min-w-0">
               <Navbar />
-              <main className="pt-16">
+              <main className="pt-16 pb-16 md:pb-0">
                 <div className="page-transition">{children}</div>
               </main>
             </div>

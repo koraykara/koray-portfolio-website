@@ -49,7 +49,7 @@ export default function VideosPage() {
       description:
         "Learn stack and queue with real-world examples and clean code. Perfect for CS students and interview prep.",
       category: "Data Structures And Algorithms",
-      thumbnail: "/Stack_Queue.png?height=200&width=350",
+      thumbnail: "/Stack_Queue.jpg?height=200&width=350",
       videoCount: 10,
       duration: "2h 30m",
       playlistUrl:
@@ -120,7 +120,7 @@ export default function VideosPage() {
       description:
         "Understand the fundamentals of recursion with clear explanations and practical problem-solving examples including base cases, stack behavior, and backtracking.",
       category: "Data Structures And Algorithms",
-      thumbnail: "/waterjug.jpeg?height=200&width=350",
+      thumbnail: "/waterJug.jpeg?height=200&width=350",
       videoCount: 2,
       duration: "46m",
       playlistUrl:
@@ -162,7 +162,7 @@ export default function VideosPage() {
       description:
         "Solve 1 LeetCode problem every day! Short and focused videos that build your problem-solving skills across arrays, graphs, trees, and dynamic programming.",
       category: "Data Structures And Algorithms",
-      thumbnail: "/shorts.png?height=200&width=350",
+      thumbnail: "/shorts.jpg?height=200&width=350",
       videoCount: 6,
       duration: "15m",
       playlistUrl:

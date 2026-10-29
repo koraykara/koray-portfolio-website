@@ -85,7 +85,7 @@ export default function ProjectsPage() {
         "Deep Learning",
       ],
       categories: ["Machine Learning"],
-      image: "/art.png?height=300&width=500",
+      image: "/art.jpg?height=300&width=500",
       github:
         "https://github.com/HUbbm409/bbm406-project-2021-artstyleimagetransformation",
       live: "",

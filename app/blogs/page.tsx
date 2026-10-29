@@ -64,7 +64,7 @@ export default function BlogsPage() {
       readTime: "9 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/understanding-the-power-of-the-slow-and-fast-pointer-technique-in-computer-science-1388c5ddf569",
-      image: "/slow_fast.png",
+      image: "/slow_fast.jpg",
       // views: "2.7k",
     },
     {
@@ -75,7 +75,7 @@ export default function BlogsPage() {
       readTime: "8 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-exploring-the-coin-change-problem-subsets-6957b279c92d",
-      image: "/subset.png",
+      image: "/subset.jpg",
       // views: "1.5k",
     },
     {
@@ -87,7 +87,7 @@ export default function BlogsPage() {
       readTime: "8 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-exploring-the-coin-change-problem-finding-the-minimum-number-of-coins-92a76a724c62",
-      image: "/coinchange.png",
+      image: "/coinchange.jpg",
       // views: "2.9k",
     },
     {
@@ -98,7 +98,7 @@ export default function BlogsPage() {
       readTime: "4 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-solving-the-permutations-problem-f2bfd7ff0954",
-      image: "/permutation.png",
+      image: "/permutation.jpg",
       // views: "3.5k",
     },
     {
@@ -109,7 +109,7 @@ export default function BlogsPage() {
       readTime: "11 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-solving-the-binary-tree-maximum-path-sum-problem-f9e5e9b9b740",
-      image: "/max_path_sum.png",
+      image: "/max_path_sum.jpg",
       // views: "2.3k",
     },
     {
@@ -120,7 +120,7 @@ export default function BlogsPage() {
       readTime: "5 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-count-good-nodes-in-binary-tree-cf0b1ffa9afd",
-      image: "/good_nodes.png",
+      image: "/good_nodes.jpg",
       // views: "2.8k",
     },
     {
@@ -131,7 +131,7 @@ export default function BlogsPage() {
       readTime: "6 min read",
       category: "DS & Algorithms",
       slug: "https://medium.com/@koray.kara98.kk/daily-leetcode-problems-problem-199-binary-tree-right-side-view-54cf24d33b88",
-      image: "/right_side_view.png",
+      image: "/right_side_view.jpg",
       // views: "1.8k",
     },
   ];

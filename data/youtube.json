@@ -1,0 +1,1519 @@
+{
+  "channel": {
+    "handle": "@koraykara6270",
+    "url": "https://www.youtube.com/@koraykara6270"
+  },
+  "fetchedAt": "2026-10-29T10:44:22.959Z",
+  "playlists": [
+    {
+      "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
+      "title": "Binary Trees",
+      "videoCount": 17
+    },
+    {
+      "id": "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I",
+      "title": "PodcastShort",
+      "videoCount": 5
+    },
+    {
+      "id": "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6",
+      "title": "Günde 1 Leetcode",
+      "videoCount": 7
+    },
+    {
+      "id": "PLYz3B3MBs9Ekp3zlDQ7POJ2h8f2VNamPx",
+      "title": "Kariyer Sohbetleri",
+      "videoCount": 1
+    },
+    {
+      "id": "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI",
+      "title": "Stack and Queue",
+      "videoCount": 11
+    },
+    {
+      "id": "PLYz3B3MBs9El9l9DHCTEfBKyj8phEgTti",
+      "title": "Tries",
+      "videoCount": 1
+    },
+    {
+      "id": "PLYz3B3MBs9Ek36cr6aRmND5SDTtuBjsFd",
+      "title": "Recursion",
+      "videoCount": 2
+    },
+    {
+      "id": "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh",
+      "title": "Dinamik Programlama",
+      "videoCount": 18
+    },
+    {
+      "id": "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX",
+      "title": "Graphs",
+      "videoCount": 14
+    },
+    {
+      "id": "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt",
+      "title": "Backtracking",
+      "videoCount": 6
+    },
+    {
+      "id": "PLYz3B3MBs9EnuW4i2jhpiJzaiXsEJOnK3",
+      "title": "Concepts",
+      "videoCount": 1
+    },
+    {
+      "id": "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_",
+      "title": "Blind75",
+      "videoCount": 32
+    }
+  ],
+  "videos": [
+    {
+      "id": "RHTvDRtyD-Q",
+      "title": "L17. Right/Left View of Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Right View ve Left View kavramlarını kapsamlı şekilde ele alıyoruz. “View” problemlerinde amaç şudur:\n\n✅ Left View: Ağaca soldan baktığında her seviyede görünen ilk düğümler\n✅ Right View: Ağaca sağdan baktığında her seviyede görünen son düğümler\n\nYani aslında bu problem, tree’yi level level düşündüğünde her level’dan sadece 1 tane temsilci node seçmek demektir.\n\nNeden önemli?\n\nRight/Left view soruları, tree’de:\n\nLevel order (BFS) mantığını\n\nveya DFS ile level takip etmeyi\nöğreten çok güçlü problemlerdir. Ayrıca LeetCode “Binary Tree Right Side View” gibi klasik soruların temelidir.\n\nYaklaşım 1: BFS (Level Order) ile çözüm (en net yöntem)\n\nBFS ile:\n\nQueue’ya root’u koyarsın\n\nHer seviyede levelSize kadar node’u sırayla pop edersin\n\nLeft view için: o seviyede pop edilen ilk node’u kaydedersin\n\nRight view için: o seviyede pop edilen son node’u kaydedersin\n\nÇocukları queue’ya ekleyip sonraki seviyeye geçersin\n\nBu yöntem hem anlaşılır hem de doğru “level-by-level” yaklaşımıyla sorunu çözer.\n\nYaklaşım 2: DFS ile çözüm (recursion + level)\n\nDFS’te kritik fikir:\n\nHer node’a bir level (depth) bilgisi taşırsın\n\nBir seviyeyi ilk kez gördüğünde listeye eklersin\n\nRight view istiyorsan DFS’te genelde önce right, sonra left gezersin.\nLeft view istiyorsan önce left, sonra right gezersin.\nÇünkü “ilk görülen node” o seviyenin view sonucu olur.\n\nEdge-case’ler\n\nBoş ağaç\n\nTek node\n\nDengesiz (zincir) ağaçlar\n\nAynı seviyede kaç node olduğu (BFS’te levelSize yönetimi)\n\nKarmaşıklık\n\nZaman: O(n) (her node en fazla bir kez işlenir)\n\nEk bellek:\n\nBFS: O(w) (en geniş seviyedeki node sayısı)\n\nDFS: O(h) (ağacın yüksekliği, recursion stack)\n\nBu dersin sonunda right/left view sorularını hem BFS hem DFS ile rahatça çözebilecek ve tree’de “level mantığı”nı çok daha sağlam oturtmuş olacaksın.\n\n#BinaryTree #RightView #LeftView #RightSideView #LeftSideView #TreeView #Java #JavaProgramming #BinaryTreeJava #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #TreeProblems #TreeTraversal #BFS #DFS #LevelOrderTraversal\n#BreadthFirstSearch #DepthFirstSearch #Queue #Recursion #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #CodingTutorial #LearnJava #Programming\n#Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#AlgorithmTutorial #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreePatterns #LevelBasedProblems #TreeConcepts",
+      "publishedAt": "2026-03-20T06:11:12-07:00",
+      "durationSeconds": 770,
+      "views": 74,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "M1iQL3VtG_c",
+      "title": "L16. Zig-Zag or Spiral Traversal in Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Zig-Zag (Spiral) Traversal konusunu kapsamlı şekilde ele alıyoruz. Zig-zag traversal, tree’yi level level (seviye seviye) gezer ama her seviyede yönü değiştirir:\n\n✅ Zig-zag mantığı:\n\nseviye: soldan sağa\n\nseviye: sağdan sola\n\nseviye: soldan sağa\n\n… böyle devam eder\n\nYani aslında bu problem, Level Order Traversal (BFS) üzerine “her seviyede yön değiştir” kuralı eklenmiş halidir. Bu yüzden level order’ı iyi anladıysan zig-zag da çok hızlı oturur.\n\nZig-zag traversal nerelerde kullanılır?\n\nHer seviyeyi ayrı ayrı işleyip yön değiştirmen gereken problemlerde\n\n“Zigzag Level Order Traversal” gibi LeetCode sorularında\n\nTree üzerinde “katman + yön” bilgisi istenen durumlarda\n\nYaklaşım 1: BFS (Queue) + yön bayrağı (en yaygın)\n\nTemel fikir:\n\nQueue ile level order gibi gez\n\nHer seviyede levelSize kadar node işlersin\n\nO seviyenin sonucunu:\n\nsoldan sağa gideceksen normal sırayla ekle\n\nsağdan sola gideceksen ters sırayla ekle (ör. index ile tersten yerleştir veya sona eklemek yerine başa ekle)\n\nHer seviye bitince yönü değiştir (leftToRight = !leftToRight)\n\nBu yöntem hem anlaşılır hem de interview’larda en çok beklenen çözümlerden biridir.\n\nYaklaşım 2: 2 Stack (klasik spiral çözüm)\n\nBazı çözümlerde 2 stack kullanılır:\n\nBir stack “soldan sağa” seviye için,\n\nDiğeri “sağdan sola” seviye için çalışır.\nBir stack boşalınca diğerine geçilir ve yön otomatik olarak değişmiş olur.\n\nEdge-case’ler\n\nBoş ağaç\n\nTek node\n\nÇok dengesiz (zincir) ağaç\n\nHer seviyede kaç node olduğu (levelSize) yönetimi\n\nKarmaşıklık\n\nZaman: O(n) (her node bir kez işlenir)\n\nEk bellek: O(w) (queue en geniş seviyeye kadar büyüyebilir; w = maximum width)\n\nBu dersin sonunda zig-zag traversal’ı Java’da rahatça yazabilecek ve level tabanlı traversal sorularında yön değiştirme mantığını sağlam şekilde oturtmuş olacaksın.\n\n#ZigZagTraversal #SpiralTraversal #BinaryTree #ZigzagLevelOrder #LevelOrderTraversal #BFS #TreeTraversal #Java #JavaProgramming #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #ZigZagTraversalJava #SpiralTraversalJava #BFSJava\n#Queue #Stack #TwoStacks #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #DepthFirstSearch #BreadthFirstSearch #CodingTutorial #LearnJava\n#Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA\n#DataStructuresInJava #AlgorithmTutorial #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeProblems #TraversalPatterns",
+      "publishedAt": "2026-03-20T06:05:24-07:00",
+      "durationSeconds": 576,
+      "views": 15,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "kTTCyDHVJTg",
+      "title": "L15. Check it two trees are Identical or Not | Java",
+      "description": "Bu videoda iki binary tree’nin identical (aynı) olup olmadığını kapsamlı şekilde ele alıyoruz. “Identical trees” demek, iki ağacın sadece aynı değerleri içermesi değil; aynı zamanda tam olarak aynı yapıya (structure) sahip olması demektir.\n\n✅ İki ağaç identical ise:\n\nHer iki ağaçta karşılaştırılan düğümlerin değeri aynı olmalı\n\nVe bu düğümlerin sol alt ağaçları da aynı, sağ alt ağaçları da aynı olmalı\n\nYani “node değerleri + yerleşim (sol/sağ) + null’lar” dahil her şey birebir eşleşmeli\n\nNeden önemli?\n\nBu problem, tree konusundaki en temel düşünme biçimlerinden birini öğretir:\n\n“Bir node eşitse, alt ağaçları da eşit mi?” mantığı\n\nDFS/recursion ile iki yapıyı aynı anda gezme\nAyrıca interview’larda çok sık sorulan “same tree / identical tree” tipi soruların temelidir.\n\nEn klasik çözüm: DFS + Recursion (aynı anda gez)\n\nMantık çok nettir:\n\nİki node da null ise → bu kısım eşleşiyor (true)\n\nSadece biri null ise → yapı bozulmuş demektir (false)\n\nİkisi de null değilse:\n\nDeğerleri eşit mi?\n\nSol alt ağaçlar eşit mi?\n\nSağ alt ağaçlar eşit mi?\nHepsi “evet” ise ağaçlar identical’dır.\n\nBu yaklaşım, preorder/inorder/postorder fark etmeksizin uygulanabilir; önemli olan iki ağacı aynı anda senkron şekilde gezmektir.\n\nAlternatif yaklaşım: Iterative (Queue/Stack)\n\nRecursion yerine:\n\nİki ağacı iki queue ile BFS yaparak karşılaştırabilir\n\nveya stack ile DFS yapabilirsin\nAma recursion genelde en temiz ve en anlaşılır çözümdür.\n\nEdge-case’ler (çok önemli)\n\nHer iki ağaç boşsa → identical (true)\n\nDeğerler aynı ama yapı farklıysa → identical değildir\n\nBir tarafta child varken diğer tarafta null varsa → identical değildir\n\nKarmaşıklık\n\nZaman: O(n) (en kötü durumda tüm düğümler karşılaştırılır)\n\nEk bellek: O(h) (recursion stack; iterative’de queue/stack boyutuna göre değişir)\n\nBu dersin sonunda “same tree / identical tree” sorularını Java’da temiz şekilde çözecek ve tree karşılaştırma mantığını sağlam oturtmuş olacaksın.\n\n#IdenticalTrees #SameTree #BinaryTree #TreeComparison #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #TreeTraversal #TreeProblems #TreeAlgorithms #TreeDataStructure #DepthFirstSearch\n#AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO\n#TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava\n#StructuralEquality #TreeEquality #BinaryTrees #RecursionInJava #IterativeDFS #BFS #Queue #Stack #NullCheck #SameStructure",
+      "publishedAt": "2026-03-20T05:59:56-07:00",
+      "durationSeconds": 477,
+      "views": 12,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "a0AypwBR0l4",
+      "title": "L14. Maximum Path Sum in Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Maximum Path Sum konusunu kapsamlı şekilde ele alıyoruz. Bu problem, tree soruları içinde en çok kafa karıştıran ama mantığı oturduğunda çok hızlı çözülen “klasik”lerden biridir.\n\n✅ Maximum Path Sum nedir?\nBir path (yol), ağaçta bir düğümden başlayıp diğer bir düğümde bitebilir ve path boyunca her adımda parent-child bağlantısını takip eder.\nPath mutlaka root’tan başlamak zorunda değildir ve leaf’te bitmek zorunda da değildir. Önemli olan: Seçtiğin yol üzerindeki düğüm değerlerinin toplamı maksimum olsun.\n\nNeden zor görünüyor?\n\nÇünkü burada iki farklı kavram aynı anda yönetilir:\n\nBir node üzerinden geçen en iyi “tam yol” (left + node + right)\n\nParent’a döndürebileceğin en iyi “tek kol” (node + max(left, right))\nParent’a aynı anda iki kolu birden götüremezsin; çünkü parent ile path birleşirken sadece tek taraftan devam edebilir.\n\nTemel fikir (Bottom-up DFS / Postorder mantığı)\n\nHer node için şu iki şeyi düşünürüz:\n\nA) Downward gain (parent’a dönen değer):\nBu node’dan başlayıp aşağı doğru giden en iyi toplam.\nBurada negatif katkı yapan alt ağaçları genelde 0’a kırpma fikri vardır (negatifse ekleme, yolu kötüleştirir).\n\nB) Global maximum (cevap):\nBu node’u “tepe” kabul edip sol ve sağdan gelen katkıları birleştiririz:\nleftGain + nodeVal + rightGain\nVe bunu global maksimumla kıyaslayıp güncelleriz.\n\nBu yaklaşım sayesinde her node bir kez işlenir, maksimum path sum hızlı ve doğru çıkar.\n\nEdge-case’ler (çok önemli)\n\nAğaçta tüm değerler negatif olabilir. Bu durumda “0’a kırpma” mantığını doğru uygulamak gerekir; genelde cevap en büyük (en az negatif) tek node olur.\n\nBoş ağaç / tek node gibi durumlar\n\nDengesiz (zincir) ağaçlar\n\nKarmaşıklık\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: O(h) (recursion stack; h = tree height)\n\nBu dersin sonunda “Maximum Path Sum” probleminin mantığını net oturtacak ve Java ile interview seviyesinde temiz bir çözüm yazabileceksin.\n\n#MaximumPathSum #BinaryTree #MaxPathSum #BinaryTreeProblems #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #PostorderTraversal #TreeDP #DynamicProgramming #TreeAlgorithms #TreeDataStructure\n#DepthFirstSearch #AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving\n#BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview\n#ProblemSolvingJava #BottomUpDP #PathSum #TreePath #MaxSumPath #NegativeValues #GlobalMaximum #DownwardGain #BinaryTrees #RecursionInJava",
+      "publishedAt": "2026-03-20T05:54:51-07:00",
+      "durationSeconds": 1061,
+      "views": 10,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "qHBWZ_v_7m0",
+      "title": "L13. Diameter of Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Diameter (ağacın çapı) kavramını kapsamlı şekilde anlatıyoruz ve Java ile nasıl çözüldüğünü netleştiriyoruz.\n\n✅ Diameter (çap) nedir?\nBinary tree’nin çapı, ağaç içindeki iki düğüm arasındaki en uzun yolun uzunluğudur.\nBu yol root’tan geçmek zorunda değildir — ağacın herhangi bir yerinde olabilir.\n\nÖnemli not: Bazı kaynaklar diameter’ı edge sayısı ile, bazıları node sayısı ile ölçer.\nLeetCode “Diameter of Binary Tree” probleminde genellikle edge sayısı üzerinden cevap beklenir. (Videoda hangi tanımı kullandığını baştan net söylemek yeterli.)\n\nTemel fikir (en doğru düşünme şekli)\n\nHer düğümü “tepe noktası” gibi düşün:\n\nO düğümden sola doğru en uzun derinlik (left height)\n\nO düğümden sağa doğru en uzun derinlik (right height)\n\nEğer bir yol o düğümden geçiyorsa, o yolun uzunluğu kabaca:\nleftHeight + rightHeight (edge tanımı için)\n(node tanımı kullanıyorsan +1 gibi bir fark eklenebilir)\n\nVe diameter aslında tüm düğümler için bu değerin maksimumu.\n\nNeden postorder / bottom-up DFS?\n\nDiameter hesaplamak için her node’un “çocuklarından gelen height bilgisine” ihtiyacın var. Bu yüzden en doğal akış:\n\nÖnce sol ve sağ alt ağaçların height’ını hesapla\n\nSonra o node üzerinden geçen “en uzun yolu” güncelle\n\nArdından parent’a height döndür\n\nBu yaklaşım sayesinde:\n\nHer node bir kez işlenir (tekrar tekrar height hesaplamazsın)\n\n“height + diameter güncelleme” aynı DFS içinde yapılır\n\nBu videoda neleri netleştiriyoruz?\n\nDiameter tanımı (root’tan geçmek zorunda değil!)\n\nHeight ile diameter arasındaki bağlantı\n\nBottom-up DFS mantığı (postorder düşünme)\n\nEdge-case’ler: boş ağaç, tek node, zincir ağaç (diameter = n-1 edge)\n\nKarmaşıklık:\n\nZaman: O(n)\n\nEk bellek: O(h) (recursion stack)\n\nBu dersin sonunda diameter sorularında “height topla + global maksimumu güncelle” mantığını çok net kuracak ve Java ile temiz bir çözüm yazabileceksin.\n\n#DiameterOfBinaryTree #BinaryTree #TreeDiameter #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA #CodingInterview\n#LeetCode #ComputerScience #DFS #Recursion #PostorderTraversal #TreeHeight #MaximumDepth #TreeDepth #TreeProblems #TreeAlgorithms\n#TreeDataStructure #DepthFirstSearch #AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals\n#ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries\n#TechInterview #ProblemSolvingJava #TreeDP #BottomUpDP #BinaryTrees #LongestPath #EdgeCount #NodeCount #BinaryTreeRecursion #HeightAndDiameter",
+      "publishedAt": "2026-03-20T05:46:48-07:00",
+      "durationSeconds": 880,
+      "views": 12,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "UoEZyRnqn9I",
+      "title": "L12. Check for Balanced Binary Tree | Java",
+      "description": "Bu videoda Balanced Binary Tree kavramını ve bir binary tree’nin balanced olup olmadığını Java ile nasıl kontrol edeceğimizi kapsamlı şekilde anlatıyoruz.\n\n✅ Balanced Binary Tree (yaygın tanım):\nBir ağaçta her node için sol ve sağ alt ağaçların yükseklik (height) farkı en fazla 1 ise ağaç “balanced” kabul edilir.\nYani her node için şu koşul sağlanmalı:\n|height(left) − height(right)| ≤ 1\n\nBu tanım (özellikle LeetCode’daki “Balanced Binary Tree” probleminde) standarttır ve performans açısından çok kritik bir fikri temsil eder: Ağaç çok dengesiz olursa bazı işlemler (arama/ekleme gibi) pratikte yavaşlar.\n\nNeden “her node için” şartı önemli?\n\nSadece root’taki yükseklik farkına bakmak yetmez. Root dengeli görünse bile alt ağaçların içinde dengesizlik olabilir. Bu yüzden kontrolü tüm node’lar için doğru yapmamız gerekir.\n\nEn iyi yaklaşım: Bottom-up DFS (yükseklikle birlikte denge kontrolü)\n\nBalanced kontrolü için en verimli yöntem şudur:\n\nÖnce alt ağaçların height’ını hesaplarız (postorder mantığı)\n\nAynı anda “dengesiz” bir durum görürsek bunu yukarıya taşırız\n\nBöylece her node’u bir kez işleyerek sonuca gideriz\n\nPratikte bu yaklaşım, “height hesapla” probleminin bir üst versiyonu gibidir:\n\nEğer alt ağaç dengesizse → direkt “dengesiz” bilgisi döndür\n\nDeğilse → height farkına bak, şart bozuluyorsa “dengesiz” de\n\nHer şey yolundaysa → height = 1 + max(leftHeight, rightHeight)\n\nBu yöntem, gereksiz tekrar hesaplamaları önlediği için interview’larda da en çok beklenen çözümdür.\n\nBu videoda neleri netleştiriyoruz?\n\nBalanced binary tree ne demek? (tanım + örnekler)\n\nNeden sadece root kontrolü yetmez?\n\nDFS ile “height + balance” bilgisini birlikte üretme mantığı\n\nEdge-case’ler: boş ağaç (balanced sayılır), tek node, zincir ağaçlar\n\nKarmaşıklık:\n\nZaman: O(n)\n\nEk bellek: O(h) (recursion stack)\n\nBu dersin sonunda balanced tree kontrolünü Java’da temiz şekilde yazabilecek ve “bottom-up” düşünme mantığını güçlü bir şekilde oturtmuş olacaksın.\n\n#BalancedBinaryTree #BinaryTree #CheckBalanced #TreeBalance #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #PostorderTraversal #TreeHeight #HeightOfBinaryTree #MaximumDepth #TreeDepth\n#TreeProblems #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #DepthFirstSearch #AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding\n#InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeDP #BottomUpDP #BinaryTrees #AVLTree",
+      "publishedAt": "2026-03-20T05:41:52-07:00",
+      "durationSeconds": 730,
+      "views": 9,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "7_VEB-Pjdhs",
+      "title": "L11. Maximum Depth in Binary Tree | Height of Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Maximum Depth (Maximum Height) konusunu kapsamlı şekilde ele alıyoruz. “Maximum depth” ve “height” kavramları, bir binary tree’nin ne kadar derin olduğunu ölçmek için kullanılır ve tree sorularının en temel taşlarından biridir.\n\n✅ Temel tanım:\n\nMaximum Depth: Root’tan başlayıp en derin yaprağa (leaf) kadar olan en uzun yolun node sayısı (bazı kaynaklarda “edge sayısı” olarak da tanımlanabilir; videoda hangi tanımı kullandığını netleştirmen yeterli).\n\nPratikte LeetCode gibi platformlarda çoğunlukla node sayısı üzerinden hesaplanır: tek node varsa depth = 1.\n\nNeden önemli?\n\nMaximum depth / height; birçok problemin doğrudan veya dolaylı temelidir:\n\nBalanced tree kontrolü\n\nDiameter (en uzun yol)\n\nMinimum depth\n\nSubtree tabanlı DP problemleri\n\nAğacın performans analizleri (çok dengesiz ağaçlarda işler zorlaşır)\n\nÇözüm fikri (en yaygın yaklaşım: DFS / Recursion)\n\nBu problemde en net mantık şudur:\n\nBoş ağaçsa derinlik 0\n\nDeğilse:\ndepth(root) = 1 + max(depth(left), depth(right))\n\nYani önce sol ve sağ alt ağaçların derinliğini bulur, sonra büyüğünü seçip 1 eklersin. Bu yüzden bu problem, recursion ve “alt ağaçtan sonuç topla” mantığını öğrenmek için mükemmel bir örnektir.\n\nAlternatif yaklaşım: BFS / Level Order\n\nBir diğer popüler çözüm BFS ile seviyeleri saymaktır:\n\nQueue ile level level gez\n\nKaç level geçtiysen maximum depth odur\nBu yaklaşım, recursion yerine iterative düşünmek isteyenler için güzel bir alternatiftir.\n\nBu videoda neleri netleştiriyoruz?\n\nDepth vs Height terimleri (aynı/benzer kullanım farkları)\n\nDFS (recursive) çözüm mantığı\n\nBFS (level order) çözüm mantığı (opsiyonel)\n\nEdge-case’ler: boş ağaç, tek node, zincir ağaç\n\nKarmaşıklık:\n\nDFS: Zaman O(n), bellek O(h) (call stack)\n\nBFS: Zaman O(n), bellek O(w) (en geniş level)\n\nBu dersin sonunda maximum depth/height sorularında hızlıca doğru yaklaşımı seçebilir ve Java’da temiz bir çözüm yazabilirsin.\n\n#BinaryTree #MaximumDepth #TreeHeight #HeightOfBinaryTree #MaxDepth #TreeDepth #DataStructures #Algorithms #DSA #Java\n#JavaProgramming #BinaryTreeJava #TreeProblems #LeetCode #CodingInterview #ComputerScience #DFS #BFS #Recursion #Stack\n#LevelOrder #BreadthFirstSearch #DepthFirstSearch #TreeTraversal #TreeAlgorithms #TreeDataStructure #CodingTutorial #LearnJava #Programming #Coding\n#InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#AlgorithmTutorial #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeDP #BalancedBinaryTree #DiameterOfBinaryTree",
+      "publishedAt": "2026-03-20T03:00:24-07:00",
+      "durationSeconds": 498,
+      "views": 8,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "G5oFG3uo1Sw",
+      "title": "L10. iterative Inorder Traversal in Binary Tree | Java | Stack",
+      "description": "Bu videoda Binary Tree Iterative Inorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Inorder traversal’ın temel sırası şöyledir:\n\n✅ Inorder sırası: Left → Root → Right\n\nBu derste inorder’u recursive değil, iterative şekilde yazıyoruz. Yani recursion kullanmadan, Stack ile inorder traversal mantığını kuruyoruz. Iterative inorder özellikle:\n\nÇok derin ağaçlarda recursion derinliği yüzünden risk almak istemediğinde\n\nInterview’da “recursive biliyorum, iterative de göstereyim” demek istediğinde\n\nStack’in tree traversal’larda nasıl “call stack” gibi çalıştığını anlamak istediğinde\n\nçok işine yarar.\n\nNeden iterative inorder biraz daha “tricky”?\n\nPreorder’da node’u görür görmez visit edersin. Inorder’da ise bir node’u ziyaret etmeden önce mutlaka sol tarafı sonuna kadar inmen gerekir. Recursion bunu otomatik yapar. Iterative yaklaşımda ise bu “sola inme” sürecini biz stack ile yönetiriz.\n\nTemel fikir:\n\n“Sol tarafa olabildiğince in” ve geçtiğin node’ları stack’e koy\n\nSol bittiğinde stack’ten pop et (bu node artık visit edilecek)\n\nSonra sağ çocuğa geç ve aynı işlemi tekrar et\n\nBu sayede inorder sırası (Left-Root-Right) bozulmadan korunur.\n\nBu videoda neleri netleştiriyoruz?\n\nRecursive inorder vs iterative inorder farkı\n\nStack ile “sola inme” ve “geri dönüp ziyaret etme” mantığı\n\n\n\nÖrnek ağaç üzerinde dry-run: stack’in içi adım adım nasıl değişiyor?\n\nEdge-case’ler: boş ağaç, tek node, sadece sol/sağ zincir ağaçlar\n\nKarmaşıklık:\n\nZaman: O(n) (her node push/pop ile toplamda sınırlı sayıda işlenir)\n\nEk bellek: O(h) (stack en fazla ağacın yüksekliği kadar büyür; worst-case O(n))\n\nBu dersin sonunda iterative inorder traversal’ı Java’da rahatça yazabilecek ve “stack ile tree traversal” mantığını çok daha sağlam oturtmuş olacaksın.\n\n\n#BinaryTree #InorderTraversal #IterativeTraversal #IterativeInorder #TreeTraversal #DFS #Stack #Java #JavaProgramming #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #InorderTraversalJava #StackDataStructure #JavaStack\n#DepthFirstSearch #TraversalAlgorithms #TreeAlgorithms #TreeDataStructure #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering\n#CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #NonRecursive #IterativeDFS #JavaDSA #DataStructuresInJava #AlgorithmTutorial\n#CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeProblems #TraversalPatterns #DSAJava #CodingInJava #BinarySearchTree",
+      "publishedAt": "2026-03-20T02:00:33-07:00",
+      "durationSeconds": 602,
+      "views": 8,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "ShOBQv9RfJ0",
+      "title": "L9. Iterative Postorder Traversal using Stack | Java | Binary Tree",
+      "description": "Bu videoda Binary Tree Iterative Postorder Traversal konusunu kapsamlı şekilde ele alıyoruz ve özellikle 2 Stack kullanarak postorder traversal’ı recursion olmadan nasıl yaptığımızı anlatıyoruz.\n\n✅ Postorder sırası: Left → Right → Root\n\nPostorder traversal, “önce çocukları tamamen işle, en son kökü işle” mantığı istediğimiz durumlarda çok güçlüdür. Örneğin:\n\nTree silme / cleanup (önce alt ağaçlar, en sonda kök)\n\nExpression tree değerlendirme (önce operandlar, sonra operatör)\n\nAlt ağaçlardan bilgi toplayan problemler (height, subtree sum, diameter gibi)\n\nNeden iterative postorder zor, 2 stack neden iyi bir çözüm?\n\nRecursive postorder’da call stack doğal şekilde “geri dönüş” sırasını ayarlar. Iterative postorder’da bunu kendimiz yönetmek zorundayız. Tek stack ile de yapılır ama daha “tricky” olabilir.\n\n2 stack yaklaşımı ise mantığı basitleştirir:\n\nİlk stack (S1) ile ağacı gezerken node’ları belirli bir sırayla işleriz ve ikinci stack’e (S2) aktarırız.\n\nS2’den pop ettiğimizde postorder sırasını elde ederiz.\n\nBu yöntemin fikri şuna dayanır:\nPostorder (Left-Right-Root) çıktısı, uygun bir ara sırayı “tersine çevirerek” üretilebilir. 2 stack yaklaşımı bu tersleme işini güvenli ve anlaşılır şekilde yapar.\n\nBu videoda neleri netleştiriyoruz?\n\nRecursive postorder vs iterative postorder farkı\n\n2 stack algoritmasının adım adım mantığı (S1 ve S2 nasıl değişir?)\n\nÖrnek bir ağaç üzerinde dry-run: hangi node hangi stack’e ne zaman gider?\n\nEdge-case’ler: boş ağaç, tek node, zincir ağaçlar\n\nKarmaşıklık:\n\nZaman: O(n) (her node stack’lere sınırlı sayıda girip çıkar)\n\nEk bellek: O(n) (S2 tüm node’ları tutabildiği için)\n\nBu dersin sonunda iterative postorder traversal’ı Java’da net şekilde yazabilecek ve “2 stack ile traversal” mantığını sağlam şekilde oturtmuş olacaksın.\n\n#BinaryTree #PostorderTraversal #IterativeTraversal #IterativePostorder #TwoStacks #2Stack #TreeTraversal #DFS #Stack #Java\n#JavaProgramming #DataStructures #Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #PostorderTraversalJava\n#StackDataStructure #JavaStack #DepthFirstSearch #TraversalAlgorithms #TreeAlgorithms #TreeDataStructure #CodingTutorial #LearnJava #Programming #Coding\n#InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #NonRecursive #IterativeDFS #JavaDSA\n#DataStructuresInJava #AlgorithmTutorial #CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeProblems #TraversalPatterns",
+      "publishedAt": "2026-03-19T10:41:31-07:00",
+      "durationSeconds": 952,
+      "views": 13,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "PQJkUASCST8",
+      "title": "L8. Iterative Preorder Traversal in Binary Tree | Java | Stack",
+      "description": "Bu videoda Binary Tree Iterative Preorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Preorder traversal’ın temel sırası şöyledir:\n\n✅ Preorder sırası: Root → Left → Right\n\nBu videonun odağı ise recursive değil, iterative yaklaşım: yani recursion kullanmadan, Stack ile preorder traversal’ı nasıl yazacağımız. Iterative çözüm özellikle:\n\nRecursion derinliği (stack overflow) riski olan büyük ağaçlarda\n\nInterview’da “recursive biliyorum, iterative de göstereyim” dediğin durumlarda\n\nKodun kontrolünü daha açık şekilde yönetmek istediğinde\n\nçok işe yarar.\n\nNeden Stack kullanıyoruz?\n\nPreorder’da “önce root’u işle, sonra sol alt ağaç, sonra sağ alt ağaç” gideriz. Recursion bunu call stack ile otomatik yapar. Iterative çözümde ise bu davranışı biz Stack ile taklit ederiz.\n\nEn kritik fikir:\n\nStack LIFO çalışır (son giren ilk çıkar)\n\nBiz traversal sırasında önce sağ çocuğu, sonra sol çocuğu stack’e koyarız\nÇünkü stack’ten çıkarken sol önce gelsin isteriz (Root-Left-Right düzeni korunsun).\n\nBu videoda neleri netleştiriyoruz?\n\nRecursive preorder ile iterative preorder arasındaki fark\n\nStack ile preorder yazmanın adım adım mantığı\n\nÖrnek bir ağaç üzerinde dry-run (stack’in içi nasıl değişiyor?)\n\nEdge-case’ler: boş ağaç, tek node, sadece sol/sağ zincir ağaçlar\n\nKarmaşıklık:\n\nZaman: O(n) (her node 1 kez işlenir)\n\nEk bellek: O(h) (stack en fazla ağacın yüksekliği kadar büyür; worst-case zincirde O(n))\n\nBu dersin sonunda iterative preorder traversal’ı Java’da rahatça yazabilecek ve “stack ile tree traversal” mantığını sağlam oturtmuş olacaksın.\n\n\n\n#BinaryTree #PreorderTraversal #IterativeTraversal #IterativePreorder #TreeTraversal #DFS #Stack #Java #JavaProgramming #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #PreorderTraversalJava #StackDataStructure #JavaStack\n#DepthFirstSearch #TraversalAlgorithms #TreeAlgorithms #TreeDataStructure #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering\n#CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #StackOverflow #NonRecursive #IterativeDFS #JavaDSA #DataStructuresInJava\n#AlgorithmTutorial #CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeProblems #TraversalPatterns #DSAJava #codinginjava",
+      "publishedAt": "2026-03-19T07:17:35-07:00",
+      "durationSeconds": 410,
+      "views": 8,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "O_GSlLOCZaI",
+      "title": "L7. Level Order Traversal of Binary Tree | BFS | Java",
+      "description": "Bu videoda Binary Tree Level Order Traversal konusunu kapsamlı şekilde ele alıyoruz. Level order traversal, bir binary tree’de düğümleri seviyelere (level) göre, yani katman katman ziyaret etme yöntemidir. Bu traversal yaklaşımı BFS (Breadth-First Search) mantığıyla çalışır.\n\n✅ Level Order (BFS) fikri:\nÖnce root, sonra root’un çocukları, sonra onların çocukları… yani “yakından uzağa” ilerleriz.\n\nNeden Queue kullanılır?\n\nBFS’te ziyaret edeceğimiz düğümleri sıraya koymamız gerekir. Queue (FIFO) bu iş için idealdir:\n\nRoot’u queue’ya ekleriz\n\nQueue’dan sıradaki node’u alırız\n\nOnun çocuklarını (left/right) queue’ya ekleriz\n\nQueue bitene kadar devam ederiz\n\nBu sayede her node doğru sırayla (level level) işlenir.\n\nLevel order traversal nerelerde çok kullanılır?\n\nLevel-by-level çıktı üretmek (ör. her seviyeyi ayrı liste olarak)\n\nEn kısa yol / en az adım mantığına benzeyen problemler (tree’de “en yakın” node aramak gibi)\n\nZigzag level order, right-side view, minimum depth gibi LeetCode sorularının temeli\n\nTree’de “katman bilgisi” (depth/level) gereken her yerde\n\nBu videoda neleri netleştiriyoruz?\n\nBFS ile DFS farkı (neden BFS “genişler”, DFS “derinleşir”?)\n\nJava’da queue ile level order traversal nasıl yazılır?\n\nNull kontrolleri, edge-case’ler (boş ağaç, tek node)\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez işlenir)\n\nEk bellek: O(w) (en geniş level’daki node sayısı; queue bu kadar büyüyebilir)\n\nBu dersin sonunda Level Order Traversal’ı Java ile rahatça yazabilecek ve level tabanlı tree sorularında doğru yaklaşımı hızlıca seçebileceksin.\n\n#BinaryTree #LevelOrderTraversal #BFS #BreadthFirstSearch #TreeTraversal #Queue #Java #JavaProgramming #DataStructures #Algorithms\n#DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #LevelOrderTraversalJava #BFSJava #QueueDataStructure #TreeDataStructure\n#TreeAlgorithms #TraversalAlgorithms #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving\n#BigO #TimeComplexity #SpaceComplexity #MinimumDepth #ZigzagTraversal #RightSideView #LeetCodeJava #TreeProblems #LevelOrder #BreadthFirstTraversal\n#GraphTraversal #BFSAlgorithm #JavaDSA #DataStructuresInJava #AlgorithmTutorial #CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava",
+      "publishedAt": "2026-03-19T05:28:32-07:00",
+      "durationSeconds": 612,
+      "views": 20,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "nZevChYudaw",
+      "title": "L6. Postorder Traversal of Binary Tree | Java",
+      "description": "Bu videoda Binary Tree Postorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Postorder traversal, bir binary tree’de düğümleri belirli bir sırayla ziyaret etme yöntemidir ve temel kuralı şudur:\n\n✅ Postorder sırası: Left → Right → Root\n\nBu sıralama, özellikle “önce alt ağaçları tamamen işle, en sonda kökü işle” mantığı istediğimiz durumlarda çok güçlüdür. Yani postorder, bir node’a ait karar/sonuç üretmeden önce onun çocuklarından gelen sonuçların hazır olmasını sağlar.\n\nPostorder ne zaman çok işimize yarar?\n\nTree deletion / memory cleanup: Önce çocukları silip en son kökü silmek mantıklıdır.\n\nExpression Tree değerlendirme: Operatörler kökteyken, önce operandları (alt ağaçları) hesaplamak gerekir.\n\nAlt ağaçlardan bilgi toplayan problemler:\nÖrn: “height, subtree sum, diameter, balanced kontrolü” gibi sorularda önce çocukların değerleri hesaplanır, sonra kök için sonuç üretilir.\n\nBu videoda neleri netleştiriyoruz?\n\nPostorder mantığı: Neden Left-Right-Root?\n\nRecursive yaklaşım (en yaygın):\nFonksiyon akışı nasıl ilerler, call stack nasıl çalışır, hangi sırayla print/visit olur?\n\nIterative yaklaşım (Stack ile):\nRecursion kullanmadan postorder nasıl yapılır? (İpucu: tek stack + takip edilen “son ziyaret edilen node” mantığı veya 2 stack yaklaşımı)\n\nTraversal karşılaştırması:\n\nPreorder: Root-Left-Right\n\nInorder: Left-Root-Right\n\nPostorder: Left-Right-Root\nHangi problemde hangisi daha uygun?\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: O(h) (ağacın yüksekliği; recursion/stack nedeniyle)\n\nBu dersin sonunda postorder traversal’ı Java’da rahatça okuyup yazabilecek ve tree sorularında doğru traversal seçimini daha hızlı yapabileceksin.\n\nPlaylist: https://youtu.be/UOvIjcrzo7c?si=aba-HL2341GOtVoR",
+      "publishedAt": "2026-03-19T05:10:50-07:00",
+      "durationSeconds": 386,
+      "views": 7,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "J6Sm5fqxRbY",
+      "title": "L5. Inorder Traversal of Binary Tree Java | Code Explanation (Kod Açıklaması)",
+      "description": "Bu videoda Binary Tree Inorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Inorder traversal, bir binary tree’de düğümleri belirli bir sırayla ziyaret etme yöntemidir ve temel kuralı şudur:\n\n✅ Inorder sırası: Left → Root → Right\n\nBu yaklaşım özellikle Binary Search Tree (BST) yapılarında çok kritik bir yere sahiptir; çünkü BST üzerinde inorder traversal uyguladığınızda, düğümler genellikle küçükten büyüğe sıralı şekilde elde edilir (BST kuralı: sol alt ağaç - kök - sağ alt ağaç). Bu yüzden inorder traversal, “ağacı sıralı olarak okumak”, “veriyi artan sırada almak”, “BST doğrulamak” gibi birçok problemde en temel araçlardan biridir.\n\nBu videoda öğreneceklerin\n\nInorder traversal mantığı: Neden önce sol alt ağaç, sonra kök, sonra sağ alt ağaç?\n\nRecursive yaklaşım: En yaygın ve en anlaşılır yöntem. Çağrı yığını (call stack) nasıl çalışır?\n\nIterative yaklaşım (Stack ile): Recursion kullanmadan inorder nasıl yazılır? Stack neden gerekiyor?\n\nTraversal karşılaştırması: Preorder / Inorder / Postorder farkı, hangi senaryoda hangisi seçilir?\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: recursive’de O(h) (ağacın yüksekliği), iterative’de de stack nedeniyle benzer\n\nSık yapılan hatalar: “Left-Root-Right” sırasını karıştırmak, stack kullanımında yanlış push/pop, null kontrolleri.\n\n📌 Eğer ağaç (tree) sorularında zorlanıyorsan, inorder traversal’ı iyi oturtmak sana hem LeetCode sorularında hem de coding interview’lerde ciddi hız kazandırır.\n\n#BinaryTree#InorderTraversal#Inorder#TreeTraversal#DFS#DepthFirstSearch#DataStructures#Algorithms#DSA#CodingInterview#LeetCode#Java#JavaProgramming#ComputerScience#BinarySearchTree#BST#Recursive#Recursion#Stack#IterativeTraversal#TreeAlgorithms#TreeDataStructure#BinaryTrees#LeetCodeJava#InterviewPrep#SoftwareEngineering#AlgorithmTutorial#DataStructuresInJava#TreeProblems#TraversalAlgorithms#InorderTraversalJava#BinaryTreeJava#BSTTraversal#SortedTraversal#TreeBasics#TreeConcepts#CodingTutorial#LearnJava#Programming#Coding#TechInterview#CSFundamentals#ProblemSolving#BigO#TimeComplexity#SpaceComplexity#CallStack#StackDataStructure#CodingQuestions#LeetCodeProblems",
+      "publishedAt": "2026-01-25T04:01:59-08:00",
+      "durationSeconds": 341,
+      "views": 52,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "1psjOPpYB9E",
+      "title": "L4. Preorder Traversal of Binary Tree  | Java | Code Explanation",
+      "description": "Bu videoda Binary Tree üzerinde Preorder Traversal (Root → Left → Right) mantığını çok net bir şekilde anlatıyorum ve Java kodunu satır satır açıklıyoruz.\n\n✅ Bu videodan sonra:\n\nPreorder sırasının neden Root-Left-Right olduğunu anlarsın\n\nRecursive yaklaşımı rahatça yazarsın\n\nPreorder çıktısını elle takip edebilir hale gelirsin (mülakatlarda çok işine yarar)\n\n📌 Playlist: Binary Trees https://youtu.be/66ZwT8E7lJI?si=_TZQ3BF5L5T1Hmyg",
+      "publishedAt": "2026-01-18T01:00:06-08:00",
+      "durationSeconds": 466,
+      "views": 32,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "66ZwT8E7lJI",
+      "title": "L3. Binary Tree Traversals in Binary Tree | BFS | DFS",
+      "description": "Bu videoda Binary Tree üzerinde en temel traversal yöntemlerini öğreniyoruz:\n✅ BFS (Level Order Traversal) ve ✅ DFS (Preorder / Inorder / Postorder).\n\n🎯 Bu videodan sonra:\n\nDFS’in 3 türünü (pre/in/post) karıştırmazsın\n\n⏱️ Chapters:\n00:00 Giriş: Traversal nedir?\n00:32 DFS – Inorder Traversal \n03:20 DFS – Preorder Traversal\n05:45 DFS – Postorder Traversal\n08:31 Özet + sonraki ders\n09:16 BFS - Level Order Traversal\n\n#BinaryTree #TreeTraversal #BFS\n#DFS #LevelOrder #Preorder #Inorder #Postorder\n#DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #Java #computerscience",
+      "publishedAt": "2026-01-11T06:11:18-08:00",
+      "durationSeconds": 622,
+      "views": 42,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "HDL4z5LaatM",
+      "title": "L2. Binary Tree Representation in Java (Node Class + Building Trees)",
+      "description": "Bu videoda Binary Tree’yi Java’da nasıl temsil edeceğini (Node sınıfı, left/right referansları) ve kod üzerinden ağaç oluşturma mantığını anlatıyorum.\n\n✅ Bu videodan sonra:\n\nNode sınıfı ile Binary Tree modellemeyi bilirsin\n\nleft / right ilişkisini doğru kurarsın\n\nAğaç oluşturma (manual build) ve temel kullanım netleşir\n\n⏱️ Chapters:\n00:00 Introduction\n02:03 Java’da Binary Tree yapısı (Node class)\n02:36 Tree oluşturma örneği (code)\n05:05 Kısa özet + sonraki ders\n\n📌 Playlist: (link)\n💬 Sorun olursa yorumlara yaz\n\n#BinaryTree #Java #DataStructures\n#Algorithms #DSA #BinaryTrees #CodingInterview #LeetCode #ComputerScience #TreeDataStructure #JavaProgramming #SoftwareEngineering",
+      "publishedAt": "2026-01-08T07:30:14-08:00",
+      "durationSeconds": 313,
+      "views": 44,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "UOvIjcrzo7c",
+      "title": "L1. Introduction to Trees | Types of Trees",
+      "description": "Bu videoda Trees konusuna giriş yapıyoruz ve en sık kullanılan ağaç türlerini net örneklerle ayırıyoruz: Full, Complete, Perfect ve Balanced Binary Tree.\n\n✅ Bu videodan sonra:\n\nTree temel terminolojisini (root/child/leaf) kavrarsın\n\nFull vs Complete vs Perfect farkını karıştırmazsın\n\n“Balanced” ne demek, ne zaman önemli — netleşir\n\n🧠 Not: Bu seri Binary Trees playlist’inin 1. dersi. \n\n00:00 Introduction\n04:01 Full Binary Tree\n04:48 Complete Binary Tree\n06:09 Perfect Binary Tree\n06:50 Balanced Binary Tree\n08:11 Degenerate Binary Tree\n08:41 Summary + Next Lesson\n\n💬 Sorun olursa yoruma yaz, birlikte çözelim.\n\n#BinaryTree #DataStructures #Algorithms\n#Trees #BinaryTrees #DSA #ComputerScience #CodingInterview #LeetCode #Java #BinaryTreeTypes #FullBinaryTree #CompleteBinaryTree #PerfectBinaryTree #BalancedBinaryTree",
+      "publishedAt": "2026-01-06T07:30:21-08:00",
+      "durationSeconds": 561,
+      "views": 54,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
+      ]
+    },
+    {
+      "id": "ARzhtekO79E",
+      "title": "Mini yorum kolajı 😊",
+      "description": "Bu videoda kanaldan gelen bazı yorumları toparlayıp mini bir yorum kolajı yaptım 😊\n\nLeetCode • Veri Yapıları • Algoritmalar • Java içerikleri gelmeye devam.\n📌 Bilgisayar Mühendisliği / Yazılım okuyan bir tanıdığına önerirsen çok sevinirim.\n\n💬 Sıradaki video için konu öner: (Binary Trees / DP / Graph / Arrays)\nAbone olmayı unutma 🙌\n\n#shorts #leetcode #bilgisayarmuhendisligi #yazilim #algoritma #java",
+      "publishedAt": "2026-01-03T08:15:51-08:00",
+      "durationSeconds": 32,
+      "views": 66,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "R9E01RJeG_o",
+      "title": "Microsoft’ta Bir Gün: Hangi Problemler Çözülüyor? | Ömer Güray ⚙️ #podcast",
+      "description": "Konuğuma sordum: “Microsoft’ta günün nasıl geçiyor? Hangi problemleri çözüyorsunuz?” Gerçek bir yazılım mühendisinin günlük akışı, ekip içi süreçler ve çözdükleri teknik zorluklar—hepsi bu kısa videoda. 👇\n\n\n#Microsoft #LifeAtMicrosoft #YazılımMühendisliği #SoftwareEngineer #SWE #DeveloperLife #BigTech #WorkDay #GünlükRutin #ProblemSolving #Coding #Code #CleanCode #SystemDesign #Algorithms #Architecture #DesignPatterns #Cloud #Azure #DevOps #CI #CD #Microservices #DistributedSystems #Scalability #Performance #Reliability #Observability #Testing #UnitTests #IntegrationTests #CodeReview #PairProgramming #Agile #Scrum #Kanban #Productivity #DevTools #IDE #Git #GitHub #PullRequest #Mentorship #Career #TechCareers #InterviewPrep #LeetCode #CS #AI #MachineLearning #Data #Backend #Frontend #FullStack #APIs #REST #gRPC #Kubernetes #Docker #Containers #Security #Authentication #Authorization #Telemetry #Monitoring #IncidentResponse #Postmortem #TechCulture #Teamwork #Communication #WorkLifeBalance #Türkiye #Ankara #İstanbul #SiliconValley #Shorts #YouTubeShorts #Reels #fyp #Explore #TechTikTok",
+      "publishedAt": "2025-11-30T05:58:39-08:00",
+      "durationSeconds": 102,
+      "views": 1200,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I"
+      ]
+    },
+    {
+      "id": "F7cq4-YM9e8",
+      "title": "Mülakat Ortamı: Editor mü, Google Docs mu? | Ömer Güray",
+      "description": "#codinginterview  #microsoftinterview  #faang \n#algorithms  #systemdesigninterview  #livecoding \n#CoderPad #hackerrank  #CodeSignal\n#leetcode  #datastructures  #BigO #interviewpreparation \n#SoftwareEngineer #Yazılım #Mülakat #SilikonVadisi #YurtDışındaYazılım #Kariyer\n#MülakatHazırlık #YazılımMülakatı #techcareers \n#interviewtips  #problemsolving",
+      "publishedAt": "2025-11-13T10:58:18-08:00",
+      "durationSeconds": 161,
+      "views": 1000,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I"
+      ]
+    },
+    {
+      "id": "ao_HfvTS4DU",
+      "title": "“Mülakatlara Nasıl Hazırlandın?” — Konuğum Ömer Güray Anlatıyor #algorithms #codinginterview",
+      "description": "Konuğum Ömer Güray’a soruyorum: “Mülakatlara nasıl hazırlandın?”\nCevabında günlük DSA rutini, haftalık System Design çalışmaları ve STAR tabanlı davranışsal hazırlığı özetliyor.\n\n#MicrosoftInterview #FAANG #InterviewPrep\n#CodingInterview #SystemDesignInterview #Algorithms\n#DataStructures #LeetCode #BigO #BehavioralInterview\n#STARMethod #SoftwareEngineer #TechCareer #Yazılım #Arrays #Strings #HashMap #TwoPointers #BinarySearch\n#Graphs #BFS #DFS #DynamicProgramming #Recursion\n#Scalability #DistributedSystems #Microservices\n#APIDesign #DatabaseDesign #SQL #NoSQL #Caching #Azure",
+      "publishedAt": "2025-11-13T10:45:40-08:00",
+      "durationSeconds": 160,
+      "views": 796,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I"
+      ]
+    },
+    {
+      "id": "G3uFiL3Dq00",
+      "title": "Microsoft’ta Mülakat: Hangi Konulara Hazırlanmalı? Algoritma + System Design",
+      "description": "Microsoft mülakatlarında öne çıkan başlıklar:\n\nAlgoritma/DSA: array-string, hash map, two pointers, binary search, graph/BFS-DFS, DP, Big-O\n\n#Microsoft #MicrosoftInterview #CodingInterview\n#SystemDesign #SystemDesignInterview #Algorithms\n#DataStructures #LeetCode #BigO #TimeComplexity\n#BehavioralInterview #STARMethod #SoftwareEngineer\n#TechCareer #FAANG #SWE #InterviewTips #Yazılım",
+      "publishedAt": "2025-11-12T10:23:12-08:00",
+      "durationSeconds": 108,
+      "views": 583,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I"
+      ]
+    },
+    {
+      "id": "9WdUn2h-VS4",
+      "title": "Algoritma mı System Design mı? Microsoft/FAANG Mülakatında Öncelik Ne?",
+      "description": "Konuğum Ömer Güray, “Mülakatta algoritmaya mı yoksa system design’a mı ağırlık verilmeli?” sorusuna kendi stratejisiyle cevap veriyor.\nTam bölümü burada bulabilirsin: Microsoft’ta Yazılımcı Olmak | Silikon Vadisi Mülakatları, Kanada’ya Göç, FAANG Tavsiyeleri\n\n#Microsoft #FAANG #InterviewPrep #Algorithms #SystemDesign #SilikonVadisi #Yazılım #Algorithms #SystemDesign #Microsoft\n#FAANG #CodingInterview #SoftwareEngineer\n#LeetCode #DataStructures #SystemDesignInterview\n#SilikonVadisi #KanadaGöç #YurtDışındaYazılım\n#TechCareer #InterviewTips",
+      "publishedAt": "2025-11-12T10:18:17-08:00",
+      "durationSeconds": 80,
+      "views": 1700,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EloJsM4oRSxp_nqiAAo5X1I"
+      ]
+    },
+    {
+      "id": "ZWljIHplesY",
+      "title": "Günde 1 LeetCode #7 - Climbing Stairs",
+      "description": "Günde 1 LeetCode serimizde bugün Climbing Stairs (LC70) sorununu memoization (top-down DP) ile çözdük. 🪜\nFikir: f(n) = f(n-1) + f(n-2) → sonuçları cache’leyip tekrar hesaplamayı önlüyoruz.\nZaman: O(n) | Bellek: O(n)\n\nDaha fazla DP için abone olmayı unutma! 🔔\n\n#leetcode #uniquepaths #dynamicprogramming #leetcode75 #leetcodeproblems #dailycodingproblem #programming #computerscience #dsa #algorithms #datastructures #interviewprep #codinginterview #softwareengineering #devcommunity #codinglife #csstudent #technicalinterview #gridproblems #javaprogramming #pythoncode #100daysofcode #youtubeshorts #shorts #techshorts #viralshorts #studytok #studywithme #techcareer #developerlife #climbingstairs",
+      "publishedAt": "2025-10-12T11:20:00-07:00",
+      "durationSeconds": 359,
+      "views": 74,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "UcHq5wqCzCw",
+      "title": "Günde 1 LeetCode #6 - 🧭 Unique Paths Sorusu Açıklaması | DP Çözümü İçin Tıkla! 🚀 #shorts",
+      "description": "LeetCode’un klasik sorularından biri olan Unique Paths problemini kısa ve sade şekilde anlattım! 📦\nDinamik programlama (DP) çözümü için 👉 detaylı videoyu kaçırma!\n\n🧠 Problem: m x n grid üzerinde (0,0)'dan (m-1,n-1)'e sadece sağa veya aşağıya giderek kaç farklı yol vardır?\n\n📌 Problem zorluğu: Medium\n📚 Çözüm yaklaşımı: DP tabanlı (tabulation, memoization)\n\n🔔 Daha fazla algoritma, LeetCode sorusu ve mülakat hazırlığı için abone olmayı unutma!\n\n#leetcode #uniquepaths #dynamicprogramming #leetcode75 #leetcodeproblems #dailycodingproblem #programming #computerscience #dsa #algorithms #datastructures #interviewprep #codinginterview #softwareengineering #devcommunity #codinglife #csstudent #technicalinterview #gridproblems #javaprogramming #pythoncode #100daysofcode #youtubeshorts #shorts #techshorts #viralshorts #studytok #studywithme #techcareer #developerlife",
+      "publishedAt": "2025-08-18T02:00:44-07:00",
+      "durationSeconds": 99,
+      "views": 1300,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "Xw6NsMxLVTQ",
+      "title": "Günde 1 LeetCode #5 - En Kârlı Hisse Ne Zaman Alınır? | Best Time to Buy and Sell Stock 🔥 #shorts",
+      "description": "Bu videoda LeetCode’un en çok çözülen sorularından biri olan Best Time to Buy and Sell Stock problemini açıklıyorum!\n📊 Problem: En yüksek kârı sağlamak için bir hisse senedi ne zaman alınmalı ve satılmalı?\n\nTam çözümlü video 📽️ burada 👉  https://youtu.be/clFPYPA7ELs?si=RUahcMxAiquvulNb\n\n⚡ Daha fazla algoritma, veri yapısı ve LeetCode sorusu için takipte kal!\n💡 Kısa ve öz algoritma açıklamalarıyla her gün 1 adım ileri!\n\n#leetcode #programming #softwareengineer #codingshorts #dailycoding #algorithms #datastructures #codinglife #javaprogramming #pythoncode #devcommunity #interviewprep #softwaredevelopment #computerscience #besttimetobuyandsellstock #shorts",
+      "publishedAt": "2025-08-17T02:00:45-07:00",
+      "durationSeconds": 89,
+      "views": 342,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "x7tQ_eF-8b4",
+      "title": "Günde 1 LeetCode #4 - Contains Duplicate  #leetcode #python #algorithms #javascript #coding",
+      "description": "Bu kısa videoda LeetCode’un en popüler sorularından biri olan “Contains Duplicate” problemini çözüyoruz! 🔍\nHashSet kullanarak O(n) sürede nasıl çözüm bulacağımızı gösterdim.\n\n📌 Problem: Dizide tekrar eden bir eleman var mı?\n📈 Zorluk: Easy\n🧠 Veri Yapısı: HashSet\n\n🎥 Daha fazla LeetCode çözümü ve algoritma videosu için abone ol!\n#leetcode #coding #programming #shorts #leetcode #containsduplicate #leetcode75 #leetcodeeasy #programming #softwareengineering #developer #codinglife #interviewprep #computerscience #datastructures #algorithms #codinginterview #techcommunity #dsa #arrayproblems #hashset #javaprogramming #pythoncode #100daysofcode #youtubeshorts #shorts #viralshorts #techshorts #csstudent #dailycodingproblem #devcommunity #grindmode #studytok #studywithme",
+      "publishedAt": "2025-08-16T02:01:17-07:00",
+      "durationSeconds": 87,
+      "views": 1400,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "ipqBAYnFRi0",
+      "title": "Günde 1 LeetCode #3 - List Cycle Problemi 💻 #shorts\" #leetcode #python #algorithms #coding",
+      "description": "LeetCode 141 - Linked List Cycle problemine hızlı bir çözüm! 🚀\n\nVideoda bahsettiğim video linki: https://youtu.be/-6lAz1pJczI?si=h_RsAsiJQg9V-4nF\n\nBu videoda Floyd's Tortoise and Hare algoritması ile cycle tespitini adım \nadım anlatıyorum. \n\n💻 Problem: https://leetcode.com/problems/linked-list-cycle/\n📌 Kullanılan Dil: Java\n📚 Algoritma: Floyd's Cycle Detection (Tortoise & Hare)\n\n#leetcode #linkedlistcycle #floydalgorithm #detectcycle #datastructures #linkedlist #algorithms #codinginterview #interviewprep #programming #softwareengineering #developer #computerscience #javaprogramming #pythoncode #dsa #techshorts #youtubeshorts #shorts #dailycodingproblem #leetcode75 #leetcodeeasy #csstudent #devcommunity #100daysofcode #grindmode #studytok #techcareer #codechallenge #codinglife #learncoding",
+      "publishedAt": "2025-08-15T06:01:30-07:00",
+      "durationSeconds": 135,
+      "views": 632,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "gObc8eumtNs",
+      "title": "Günde 1 LeetCode #2 – Rotting Oranges 🍊 | BFS ile Zaman Tabanlı Yayılma! #algorithms #leetcode",
+      "description": "🍊 LeetCode’un en garip ama en mantıklı BFS sorusu karşında: Rotting Oranges!\nTaze ve çürük portakallar arasında geçen bu \"çürütme simülasyonu\" aslında bir zaman tabanlı BFS problemi.\nHer dakika yayılmayı modellemek, gerçek dünyadaki hastalık yayılımına çok benziyor!\n\nBu videoda soruyu tanıtıyorum, çözümün mantığını veriyorum ve seni tam çözüme yönlendiriyorum.\n🧠 Eğer algoritma mantığını öğrenmek, teknik görüşmelere hazırlanmak ya da BFS’te uzmanlaşmak istiyorsan bu video tam senlik!\n\n📌 Tam çözüm ve detaylar için YouTube kanalımda görüşürüz!\n👇 Aşağıdaki linkten geçiş yap!\n📎 Çözüm Videosu: https://youtu.be/5u0_hV3NsdA?si=0RDiOiCmsjmLqIUl\n\n\n#leetcode #rotatingoranges #bfsalgorithm #codinginterview\n#algorithms #datastructures #pythonshorts #dailycoding\n#gunde1leetcode #shorts #programlama #kodlama #softwareengineer",
+      "publishedAt": "2025-07-19T00:24:33-07:00",
+      "durationSeconds": 87,
+      "views": 1800,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "MzkZGHOCfEE",
+      "title": "Günde 1 Leetcode #1",
+      "description": "🚀 Leetcode 1 – Two Sum sorusunu hızlıca çözüyoruz!\n🎯 Hedef: Verilen sayı dizisinde, toplamı hedef değeri veren iki indeks bulun.\n📌 Bu video, HashMap ile nasıl O(n) zamanda çözüm yapılacağını gösteriyor.\n🧠 Her gün bir Leetcode sorusu çözüyoruz. Takipte kal ve algoritma becerini geliştir!\n\n🔔 Abone ol ve “Günde 1 Leetcode” serisini kaçırma!\n📂 Kaynak kod ve açıklama için yorumlara göz atabilirsin.                      #algoritma     #education #leetcode #leetcode #twosum #algorithms #shorts #javaprogramming #datastructures #gunde1leetcode #programlama #codinginterview",
+      "publishedAt": "2025-07-14T10:00:26-07:00",
+      "durationSeconds": 86,
+      "views": 1700,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
+      ]
+    },
+    {
+      "id": "-j_ySela7MI",
+      "title": "L11. Asteroid Collision | Stack and Queue Playlist",
+      "description": "Bu videoda LeetCode’daki Asteroid Collision sorusunu beraber çözüyoruz.\nÇarpışan asteroidlerin mantığını stack kullanarak nasıl modelleyeceğimizi adım adım anlatıyorum.\n\nKafanda \"Neden stack?\", \"Nasıl çalışıyor bu mantık?\" gibi sorular varsa bu video sana göre.\nKod kısmına geçmeden önce sorunun mantığını oturtuyoruz, sonra beraber kodluyoruz.\n\n💬 Videoda neler var?\n\nSoruyu sade bir şekilde anlatıyorum\n\nStack’in neden işe yaradığını açıklıyorum\n\nKodu satır satır yazıp anlatıyorum\n\nUç durumları da beraber düşünüyoruz\n\nEğer sen de algoritma pratiği yapmak istiyorsan ya da stack konusunu daha iyi kavramak istiyorsan, beklerim! 🙌\nYeni videolar için abone olmayı unutma. 😊",
+      "publishedAt": "2025-07-05T08:45:11-07:00",
+      "durationSeconds": 1078,
+      "views": 122,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "ZO3seHrio9o",
+      "title": "L10. Next Greater Element - II | Stack and Queue Playlist",
+      "description": "Bu videoda “Next Greater Element” sorusunu birlikte adım adım çözüyoruz.\nStack kullanarak nasıl daha verimli bir çözüm üretebiliriz, hangi durumlarda hangi yaklaşım daha mantıklı olur gibi konulara değindim.\n\nSorunun mantığını önce örneklerle anlattım, sonra da kodlama kısmına geçtik.\nEğer veri yapıları ve algoritmalarla ilgileniyorsan ya da mülakatlara hazırlanıyorsan, bu tarz sorulara mutlaka göz atmalısın.\n\nVideoyu faydalı bulursan beğenmeyi ve abone olmayı unutma.\nYorumlarda başka hangi soruların çözümünü görmek istediğini de yazabilirsin :)\n\n#nextgreaterelement #algoritma #leetcode #yazılımmülakatı",
+      "publishedAt": "2025-06-06T04:28:07-07:00",
+      "durationSeconds": 873,
+      "views": 119,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "GrwhfDv0V6Q",
+      "title": "Microsoft’ta Yazılımcı Olmak | Silikon Vadisi Mülakatları, Kanada’ya Göç, FAANG Tavsiyeleri",
+      "description": "Bu bölümde konuğum Hüseyin Ömer ile yazılım kariyerinde yurt dışına açılma yolculuğunu konuştuk. Türkiye’den Kanada’ya göç, ardından Microsoft’ta yazılımcı olarak işe başlama süreci, Silikon Vadisi tarzı mülakatlar ve FAANG’e giriş için altın değerinde tavsiyeler bu videoda!\n\nKonuştuğumuz Başlıca Konular:\n\nKanada’ya göç süreci ve yazılımcı olarak yerleşmek\n\nMicrosoft mülakatları nasıl geçiyor?\n\nLeetCode ve teknik hazırlık süreci\n\nGitHub projeleri, sistem tasarımı ve algoritmalar\n\nFAANG’e başvuran Türk yazılımcılara özel öneriler\n\nEğer sen de yazılım kariyerini yurt dışına taşımayı düşünüyorsan ya da FAANG şirketlerine hazırlanıyorsan, bu videoyu mutlaka sonuna kadar izle!\n\n📌 Konuğum Hüseyin Ömer Güray hakkında:\n\n🔗 LinkedIn: linkedin.com/in/huseyinomerguray\n🌐 Projesi: cornerstrikers.com\n\n🔔 Abone olmayı unutma ve videoyu beğenerek bize destek olabilirsin!",
+      "publishedAt": "2025-05-02T10:00:20-07:00",
+      "durationSeconds": 3711,
+      "views": 823,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Ekp3zlDQ7POJ2h8f2VNamPx"
+      ]
+    },
+    {
+      "id": "51UqQfM9eNs",
+      "title": "L9. Next Greater Element | Stack and Queue Playlist",
+      "description": "Bu videoda, \"Next Greater Element\" probleminin çözümünü yapıyoruz. Stack ve queue kullanarak, her elemanın sağında bulunan ilk büyük sayıyı nasıl bulabileceğimizi adım adım anlatıyoruz. Basit örneklerle konuyu doğal bir dille ele alıyor, kod satırlarını ve mantığı kolayca kavrayabileceğiniz şekilde açıklıyoruz. Eğer algoritmalar ve veri yapılarıyla ilgili kafanızda soru işaretleri varsa veya pratik yapmak istiyorsanız, bu video tam size göre! İzlerken bu konsept hakkında çok şey öğreneceğinizden eminim. Sorularınızın olması durumunda yorumlar kısmına beklerim. İyi seyirler.\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2025-03-19T10:00:07-07:00",
+      "durationSeconds": 1155,
+      "views": 117,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "kIKK4BTQwtE",
+      "title": "L8. Implement Min Stack | Stack and Queue Playlist",
+      "description": "Bu videoda, Min Stack (Minimum Yığın) veri yapısını nasıl uygulayacağımızı detaylı bir şekilde anlatıyorum. 📌 Min Stack, klasik yığın (stack) yapısına ek olarak, her adımda minimum değeri O(1) zaman karmaşıklığında bulmamızı sağlar.\n\n🚀 Bu videoda öğrenecekleriniz:\n✅ Stack veri yapısının temelleri\n✅ Min Stack’in amacı ve avantajları\n✅ Min Stack’i verimli bir şekilde nasıl uygulayabiliriz?\n✅ Javaile kod örneği\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2025-02-23T06:29:45-08:00",
+      "durationSeconds": 1244,
+      "views": 113,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "5AjSQI8nsdg",
+      "title": "L7. Check for Balanced Parentheses | Stack and Queue",
+      "description": "Selamlar,\n\nBugün Stack ve Queue play listinde bu veri yapılarını uyguladığımız ilk problemi çözdük. Soruda Stack veri yapısını neden kullanmamız gerektiğini anlayıp çözümün kodlamasının nasıl olduğunu öğreneceksiniz. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\niyi seyirler.\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-10-05T03:29:34-07:00",
+      "durationSeconds": 827,
+      "views": 185,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "lzkqMsMi9Pk",
+      "title": "L6. Introduction to Stack and Queue | Queue Implementation using 2 Stacks",
+      "description": "Selamlar,\n\nBugün, Stack veri yapısını kullanarak Queue veri yapısının nasıl implement edileceğini adım adım anlatıyoruz. Kuyruklar, veri yapılarında sıklıkla kullanılan ve FIFO (First In, First Out - İlk Giren İlk Çıkar) prensibiyle çalışan bir veri yapısıdır. Bu video sayesinde, kuyruk (queue) veri yapısını stack ile nasıl implement edeceğinizi ve verimli bir şekilde nasıl kullanabileceğinizi öğreneceksiniz. Videoda, uygulama adımlarını ve kod örneklerini bulacaksınız.  Sorularınızın olması durumunda yorumlar kısmına beklerim. 😉\n\nEğer videoyu beğendiyseniz, kanalıma abone olmayı ve bildirimleri açmayı unutmayın! Yorumlarınızı da bekliyorum.\n\nİyi seyirler!\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-09-17T10:48:51-07:00",
+      "durationSeconds": 520,
+      "views": 135,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "VGCdGKl6Ja4",
+      "title": "L5. Introduction to Stack and Queue | Stack Implementation using Queue Data Structure",
+      "description": "Selamlar,\n\nBugün, Queue veri yapısını kullanarak Stack veri yapısının nasıl implement edileceğini adım adım anlatıyoruz. Kuyruklar, veri yapılarında sıklıkla kullanılan ve FIFO (First In, First Out - İlk Giren İlk Çıkar) prensibiyle çalışan bir veri yapısıdır. Bu video sayesinde, kuyruk veri yapısını stack ile nasıl implement edeceğinizi ve verimli bir şekilde nasıl kullanabileceğinizi öğreneceksiniz. Videoda, uygulama adımlarını ve kod örneklerini bulacaksınız.  Sorularınızın olması durumunda yorumlar kısmına beklerim. 😉\n\nEğer videoyu beğendiyseniz, kanalıma abone olmayı ve bildirimleri açmayı unutmayın! Yorumlarınızı da bekliyorum.\n\nİyi seyirler!\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-08-31T06:23:34-07:00",
+      "durationSeconds": 477,
+      "views": 119,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "bsg3u2jvunw",
+      "title": "L4. Introduction to Stack and Queue | Queue Implementation using Linked List Data Structure",
+      "description": "Selamlar\n\nBugün, Bağlantılı Liste (Linked List) kullanarak Kuyruk (Queue) veri yapısının nasıl implement edileceğini adım adım anlatıyoruz. Kuyruklar, veri yapılarında sıklıkla kullanılan ve FIFO (First In, First Out - İlk Giren İlk Çıkar) prensibiyle çalışan bir veri yapısıdır. Bağlantılı listeler ise, dinamik veri yapıları arasında ÇOK ÖNEMLİ bir yere sahiptir. Bu video sayesinde, kuyruk veri yapısını bağlantılı liste ile nasıl inşa edeceğinizi ve verimli bir şekilde nasıl kullanabileceğinizi öğreneceksiniz. Videoda, uygulama adımlarını ve kod örneklerini bulacaksınız. Kodlamaya meraklıysanız ya da veri yapıları konusunda kendinizi geliştirmek istiyorsanız, bu video tam size göre! Sorularınızın olması durumunda yorumlar kısmına beklerim. 😉\n\nEğer videoyu beğendiyseniz, kanalıma abone olmayı ve bildirimleri açmayı unutmayın! Yorumlarınızı da bekliyorum.\n\nİyi seyirler!\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-08-18T03:56:36-07:00",
+      "durationSeconds": 917,
+      "views": 145,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "gDt6x5S5b1k",
+      "title": "L3. Introduction to Stack and Queue | Stack Implementation using Linked Lİst Data Structure",
+      "description": "Selamlar,\n\nBugün Stack veri yapısını Linked List kullanarak nasıl implement edeceğimize baktık. Lİnked List veri yapısını da konsept olarak anladıktan sonra stack implementasyonuna nasıl uygulanacağını kodladık. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\nİyi seyirler\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-08-06T03:34:45-07:00",
+      "durationSeconds": 897,
+      "views": 127,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "KzpIvxE6sm0",
+      "title": "L2. Introduction to Stack and Queue | Queue Implementation using Array Data Structure",
+      "description": "Selamlar,\n\nBugün Circular Queue veri yapısını array kullanarak nasıl implement edildiğine baktık. Konsept olarak probleme nasıl yaklaşmamız gerektiğini anladıktan sonra LeetCode'da bu çözümü kodladık. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\nİyi seyirler.\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-08-05T08:39:28-07:00",
+      "durationSeconds": 1039,
+      "views": 141,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "PdLMVfS0RUc",
+      "title": "L1. Introduction to Stack and Queue | Implementation using Stack Data Structure",
+      "description": "Selamlar.\n\nBugün Stack ve Queue veri yapılarını anlatacağımız serinin ilk videosunu çektik. Bu seride stack ve queue yapılarının ne olduğunu ve ne tarz problemlerde bize kolaylık sağlayacağını öğreneceğiz. Bu ilk videoda bu veri yapılarının özelliklerini ve stack veri yapısının array kullanarak implementasyonuna baktık. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\nİyi seyirler.\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
+      "publishedAt": "2024-08-04T08:54:09-07:00",
+      "durationSeconds": 1172,
+      "views": 156,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
+      ]
+    },
+    {
+      "id": "qOKqpRP4hFM",
+      "title": "DP 19. Unique Binary Search Trees (Benzersiz İkili Arama Ağaçları) - Java Dynamic Programming",
+      "description": "Selamlar\n\nBugün çok güzel ve popüler bir soruya bakıyoruz. Soru kısaca bizden bize verilen integer n değeri ile kaç farklı BST üretebileceğimizi soruyor. Videoda probleme nasıl yaklaşılması gerektiği konsept olarak anlatıldıktan sonra problemin çok basit bir kodlamaya nasıl dönüştüğünü göreceksiniz. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-04-30T13:49:51-07:00",
+      "durationSeconds": 1207,
+      "views": 317,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "pa6seRpZrdo",
+      "title": "DP 18. Perfect Squares (Tam Kareler) - Dynamic Programming (Dinamik Programlama) - Java",
+      "description": "Merhaba \n\nBugün LeetCode 'da Perfect Square isminde bir soruyu inceledik. \n \nPerfect Square problemi, bir sayının bir karesi olup olmadığını belirlemeyi amaçlar. Örneğin, 9'un bir karesi olduğunu biliyoruz çünkü 3 * 3 = 9. Ancak, 10'un bir tam kare değildir çünkü hiçbir tam sayının karesi 10'a eşit değildir.\n\nBu problemi çözmek için farklı yaklaşımlar kullanılabilir, ancak en etkili ve yaygın olanlardan biri dinamik programlama ve matematiksel yöntemlerdir.\n\nDinamik programlama kullanarak, bir tablo oluştururuz ve her bir sayının bir kare olup olmadığını işaretleriz. Daha sonra, verilen bir sayının bir kare olup olmadığını kontrol etmek için bu tabloya bakabiliriz. Videoda probleme nasıl yaklaşmamız gerektiğini ve dinamik programlamada kullandığımız \"Memoization\" optimizasyon yöntemine giden yolları adım adım göreceksiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-04-27T02:45:51-07:00",
+      "durationSeconds": 1351,
+      "views": 191,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "RwGZdRoHsZA",
+      "title": "DP 17. Longest Increasing Subsequence | Memoization",
+      "description": "Merhaba,\n\nBugün Dinamik Programlama konusunda popüler bir soru olan Longest Increasing Subsequence sorusunu çözdük. Videoda probleme nasıl yaklaşmamız gerektiğini konsept olarak anlamaya ve sonrasında kodlamaya çalıştık ve çözümümüzü memoization optimizasyon yöntemini kullanarak optimize etmeye çalıştık.   \n\nİyi seyiler:\n\nProblem Linki: https://leetcode.com/problems/longest-increasing-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-04-01T13:50:33-07:00",
+      "durationSeconds": 1474,
+      "views": 175,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "B86jEmIgW0c",
+      "title": "DP 15. Minimum Insertions to Make String Palindrome",
+      "description": "Merhaba\n\nBugün Leetcode'da dinamik stringler üzerinde DP konusu ile alakalı bir soru çözümü yaptık. Bize verilen bir string'e minimum kaç tane ekleme yapmalıyız ki o string palindrome olsun sorusuna çözüm aradık ve problemi küçük parçalara ayırıp hangi konseptleri kullanarak optimizasyon yapacağımızı anlamaya çalıştık. Sorularınızın olması durumunda yorumlar kısmına beklerim. \n\nİyi seyiler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-03-23T05:36:23-07:00",
+      "durationSeconds": 870,
+      "views": 163,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "pxAMJ7zf4CM",
+      "title": "L1. Implement TRIE | INSERT | SEARCH | STARTSWITH",
+      "description": "Merhaba, \n\nBugün Trie veri yapısı ile ilgili yeni bir playlist'e başlıyoruz. Bu veri yapısı Hızlı Arama,  Dinamik Ekleme ve Silme, Alfabenin Hiyerarşik Temsili ve veri sıkıştırma amaçlı uygulamaları mevcut. \n\nBu videoda Trie veri yapısının mantığını ve implementasyonunu hakkında konuştuk. Herhangi bir sorunuz olması durumunda yorumlar kısmına beklerim. :)\n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-03-10T07:35:43-07:00",
+      "durationSeconds": 2227,
+      "views": 174,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9El9l9DHCTEfBKyj8phEgTti"
+      ]
+    },
+    {
+      "id": "yYSab2Bi0zs",
+      "title": "Palindrome Partitioning (Palindrom Bölümleme) | Leetcode | Recursion | Java",
+      "description": "Selamlar! \n\nBugün Leetcode'da Recursion / Backtracking ile alakalı bir soru çözdük. Bu problem bize verilen bir string içerisindeki tüm palindromic substringleri içeren listeleri döncürmek. Bu problemin çözümü için gereken sezgisel yaklaşımı ve konsepti anlayıp problemi kodladık. Sorularınızın olması durumunda yorumlar kısmına beklerim\n\nİyi seyirler.",
+      "publishedAt": "2024-02-17T23:00:24-08:00",
+      "durationSeconds": 1404,
+      "views": 137,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Ek36cr6aRmND5SDTtuBjsFd"
+      ]
+    },
+    {
+      "id": "_yhRqV0Kqr8",
+      "title": "Leetcode 365 Water and Jug Problem (Recursion)",
+      "description": "Selamlar,\n\nBugün LeetCode'da popüler bir problem olan Water Jug problemini çözdük. Videoda konsept olarak nasıl çözebileceğimizi anlatıp problemin çözümünü kodladık. Sorularınızı yorumlar kısmına bekliyorum. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
+      "publishedAt": "2024-01-19T08:05:29-08:00",
+      "durationSeconds": 1366,
+      "views": 256,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Ek36cr6aRmND5SDTtuBjsFd"
+      ]
+    },
+    {
+      "id": "sPEgKrFVweA",
+      "title": "N-Queens | Leetcode Hard | Backtracking",
+      "description": "Merhaba,\n\nBugün Leetcode'da Hard kategorisinde bir Backtracing soruna bakacağız. Bu problem satranç oyunundan esinlenerek üretilmiş bir problem. N×N’lik bir satranç tahtasına (orjinal satranç tahtası 8×8’lik olmakla beraber problem tahtanın küçültülmüş bir kısmında tasarlanmıştır) N adet vezirin birbirini yemeden nasıl yerleştirileceği tartışılır. Bilindiği üzere satranç oyununda vezirler satır sütün veya diyagonal olarak (ileri, geri, sağa, sola veya istenilen bir çapraz yöne) istedikleri kadar hareket edebilmektedirler.\n\nVideoda sorunun konsept olarak nasıl çözülebileceğini tartıştık ve sonrasında çözümü kodladık. Herhangi bir sorunuz olursa yorumlar kısmına beklerim.\n\nİyi seyirler.",
+      "publishedAt": "2024-01-12T07:43:11-08:00",
+      "durationSeconds": 2372,
+      "views": 226,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "gILW8tn8NXE",
+      "title": "DP 14. Longest Palindromic Subsequence (En Uzun Palindromik Dizi)",
+      "description": "Merhaba\n\nBugün LCS konusuna devam ediyoruz. Bu problem iki string içerisinde en uzun ortak alt diziyi bulmaya yarayan algoritmayı içeren bir soru. Biz bu sorunun çözümüyle birlikte çok fazla problem çözebiliriz. Bu videoda da bu problemlerden birinin çözümünü paylaşıyorum. Soru çözüm videosunda bir dizi içerisinde en uzun palindromic alt dizinin uzunluğunu nasıl bulacağımızı detaylı bir şekilde anlattım. Sorularınız olursa yorumlar kısmına yazmaktan çekinmeyin. \n\nİyi seyirler.\nLeetcode Problem Linki: https://leetcode.com/problems/longest-palindromic-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2024-01-10T11:07:27-08:00",
+      "durationSeconds": 804,
+      "views": 222,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "xl1goJKiHoQ",
+      "title": "G-11. Detonate the maximum bombs. (En fazla bombayı patlat)",
+      "description": "Selamlar! \n\nBu videoda, Leetcode da ilginç bir soru çözdük. \"En fazla bombayı patlat (Detonate the maximum bombs.)\" Soru, verilen bomba listesiyle, tek bir bombayı patlatarak maksimum kaç bombanın etkilenebileceğini bulmayı gerektiriyor.\n\n🔍 Sorunun Temeli:\nBomba listesinde her bomba, konumu ve etki alanı yarıçapıyla belirtilmiş. Tek bir bombanın patlaması, etki alanındaki diğer bombaları da patlatabilir. Bizim görevimiz ise tek bir bombayı seçip patlattığımızda etkilenebilecek maksimum bomba sayısını bulmak.\n\n🛠️ Çözüm Yolları:\nVideoda, soruyu çözmek için kullanabileceğimiz pratik çözüm stratejilerini paylaşıyorum. Veri yapısı seçimi, algoritma analizi yaparak etkili bir çözüm üretmeye çalıştık.\n\n🔗 Video Linki: https://leetcode.com/problems/detonate-the-maximum-bombs/",
+      "publishedAt": "2023-12-19T09:00:47-08:00",
+      "durationSeconds": 1395,
+      "views": 186,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "o1Pmxllj5oc",
+      "title": "DP 13. En Uzun Ortak Alt Diziyi (Longest Common Subsequence) Yazdırma | String'lerde Dp",
+      "description": "Merhaba\n\nBugün LCS sorusunun devamı niteliğinde bir soruya bakacağız. Geçtiğimiz 2 videoda LCS problemini memoization ve tabulation yöntemlerini kullanarak çözmüştük. Bu videoda da bize verilen 2 string'in LCS string değerini tabulation yöntemindeki dp array'ini kullanarak bulmaya çalıştık. \n\nİyi seyirller...\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-28T13:00:33-08:00",
+      "durationSeconds": 1015,
+      "views": 365,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "PfNteSmP-ik",
+      "title": "DP 12. En Uzun Ortak Alt Dizi (Longest Common Substring) | DP on Strings 🔥",
+      "description": "Selamlar,\n\nBugün serinin bir önceki videosundaki soruyu memoization optimizasyon yöntemini  kullanarak çözmüştük. Bu videoda bu yöntemi kullanarak nasıl tabulation yöntemiyle çevirebileceğimizi göreceğiz.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-22T07:00:31-08:00",
+      "durationSeconds": 942,
+      "views": 350,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "Pi7uR_rmYZ4",
+      "title": "Dp 11. En Uzun Ortak Alt Dizi (Longest Common Subsequence) | Top - Down | String'lerde DP",
+      "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-18T02:42:44-08:00",
+      "durationSeconds": 1620,
+      "views": 527,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "ALLqb9e3EPE",
+      "title": "DP 10. Longest Increasing Path in a Matrix (Bir Matriste En Uzun Artan Yol).",
+      "description": "Merhaba,\n\nBugün DP on Grids konusuyla alakalı bir soru çözeceğiz. Kodlamayı ve konsept olarak yaklaşımı yine seçip seçmeme (pick-non pick) konsepti ile yapacağız. Fakat bu sefer gidebileceğimiz yer 4 adet. Soruda bize verilen problemleri alt problemlere nasıl bölüp optimal çözüme ulaşacağımızı anlattık. \n\nProblem linki: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-17T00:20:12-08:00",
+      "durationSeconds": 1220,
+      "views": 249,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "bgYIIE4YE-M",
+      "title": "DP 9. Best Time to Buy and Sell Stock (Stok Almak ve Satmak İçin En İyi Zaman)",
+      "description": "Merhaba,\n\nBugün DP on Subsequence konusuyla alakalı bir soru çözeceğiz. Kodlama ve seçip seçmeme (pick-non pick) konseptini içeren bu dinamik programlama sorusunda bize verilen problemleri alt problemlere bölüp optimal çözüme ulaşmayı hedefledik. \n\nO(n) time ve O(1) space ile çözdüğüm videoya bu linkten ulaşabilirsiniz: https://www.youtube.com/watch?v=clFPYPA7ELs&t=9s\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-11T22:00:14-08:00",
+      "durationSeconds": 1199,
+      "views": 246,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "sKZ-2IrAc2Q",
+      "title": "DP 8. Üçgen. (Triangle) | Sabit Başlangıç ​​Noktası ve Değişken Bitiş Noktası | GRIDS'te DP",
+      "description": "Selamlar, \n\nBugün yine bir dinamik programlama sorusuyla  devam ediyoruz. Problemin ismi Triangle. Bu problem bize bir üçgen dizisi verildiğinde, minimum yol toplamını yukarıdan aşağıya döndürmemizi istiyor. İlk önce soruya nasıl yaklaşmamız gerektiğini gösterip \"Brute Force\" bir şekilde çözdükten sonra Memoization optimizasyon yöntemini kullanarak problemi optimize ettik. \n\nProbleme aşağıdaki linkten ulaşabillirsiniz.\nİyi seyirler. \nProblem linki: https://leetcode.com/problems/triangle/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-11-07T12:26:19-08:00",
+      "durationSeconds": 1123,
+      "views": 233,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "1EjJpSUaOR4",
+      "title": "DP-7 DP On Grids - Maximum Number of Moves In a Grid",
+      "description": "Selamlar\n\nBugün yine bir dinamik programlama çözeceğiz. Soruyu kısaca açıklayalım. \nBize pozitif tamsayılardan oluşan 0-indeksli m x n matris gridi veriliyor. Matrisin ilk sütunundaki herhangi bir hücreden başlayabilir ve grid üzerinde şu şekilde hareket edebiliriz.\n\nBir hücreden (satır, sütun), herhangi bir hücreye geçebilirsiniz: (satır - 1, sütun + 1), (satır, sütun + 1) ve (satır + 1, sütun + 1), öyle ki değeri taşındığımız hücre, mevcut hücrenin değerinden kesinlikle daha büyük olmalıdır.\n\nSoru bizden olabilecek maksimum hareket sayısını döndürmemizi istiyor.\n\nAyrıca sosyal hesaplarımdan da benimle iletişime geçebilirsiniz: \nYoutube\nyoutube.com/@koraykara6270\nInstagram\ninstagram.com/koraykara98\nLinkedIn\nlinkedin.com/in/koray-kara-424b19146\nMedium\nmedium.com/@koray.kara98.kk\n#programlama #dinamik programlama #recursion #leetcodesolutions \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-10-23T08:51:15-07:00",
+      "durationSeconds": 1037,
+      "views": 311,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "J_7RXqqCvTc",
+      "title": "DP 6. Grid üzerinde Minimum Yol Toplamı | GRIDS'te DP",
+      "description": "Soru Linki: https://leetcode.com/problems/minimum-path-sum/description/\n\nTam Oynatma Listesi:\n https://www.youtube.com/watch?v=JkHCDroTV4E&list=PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh\n\nBu videoda size ızgaralardaki yol toplamı özelliğini öğreten Minimum Yol toplamı problemini çözüyoruz.\n\nAyrıca sosyal hesaplarımdan da benimle iletişime geçebilirsiniz: \nYoutube\nyoutube.com/@koraykara6270\nInstagram\ninstagram.com/koraykara98\nLinkedIn\nlinkedin.com/in/koray-kara-424b19146\nMedium\nmedium.com/@koray.kara98.kk\n#programlama #dinamik programlama #recursion #leetcodesolution",
+      "publishedAt": "2023-09-30T02:26:02-07:00",
+      "durationSeconds": 1228,
+      "views": 470,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "EBmI4w6efP4",
+      "title": "Generate Parentheses (Tüm Parantezleri Oluşturma) | BACKTRACKING konsepti | Recursion",
+      "description": "Selamlar arkadaşlar! \n\nBu videoda, Generate All Parentheses sorusunu çözeceğiz. Generate All Parentheses sorusu, n çift parantez kullanarak oluşturulabilecek tüm geçerli parantez dizilerini üretmeyi amaçlıyor. Bu videoda, bu soruyu çözmek için gerekli adımları ve algoritmaları açıklıyoruz.",
+      "publishedAt": "2023-09-22T13:40:56-07:00",
+      "durationSeconds": 871,
+      "views": 140,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "uTAVKVgBz7A",
+      "title": "DP 5. Grid üzerinde Benzersiz Yollar | Grid üzerinde DP Hakkında Her Şeyi Öğrenin | TÜM TEKNİKLER 🔥",
+      "description": "Merhaba arkadaşlar! \nBu videoda, LeetCode üzerindeki \"Unique Paths\" sorusunu nasıl çözeceğinizi ve sorunun çözümünü adım adım nasıl anlayabileceğinizi göstereceğim. Bu soruda, dinamik programlama konseptini kullanarak bir ızgarada farklı yolları hesaplayacağız.\n\nVideoyu Beğenmeyi, Paylaşmayı ve Abone Olmayı Unutmayın!\n\nEğer bu video size yardımcı olduysa, lütfen beğenmeyi unutmayın, böylece daha fazla kişiye ulaşabiliriz. Eğer problemle ilgili sorularınız varsa, lütfen yorumlar bölümünde paylaşın ve ben veya diğer izleyiciler size yardımcı olmaktan mutluluk duyarız.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-09-15T08:10:17-07:00",
+      "durationSeconds": 1053,
+      "views": 452,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "YXMC1Ep9o1c",
+      "title": "DP 4. LeetCode House Robber 2 Sorusu Çözümü ve Stratejileri| 1 boyutlu DP | Alt Dizilerde DP",
+      "description": "Merhaba arkadaşlar! \n\nBu videoda, LeetCode'in zorlu sorularından biri olan 'House Robber 2' sorusunun çözümünü inceleyeceğiz. \n\nSorunun mantığını, stratejisini ve kodlama adımlarını öğrenmek için videonun konsepti anlattığım kısmını izlemeyi unutmayın.\n\nSorularınız veya yorumlarınız varsa lütfen paylaşın. Abone olmayı ve beğenmeyi unutmayın, böylece daha fazla programlama içeriği için bildirimleri alabilirsiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-09-03T01:53:30-07:00",
+      "durationSeconds": 1222,
+      "views": 581,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "wkRqnt60aU8",
+      "title": "DP 3. Bitişik Olmayan Elemanların Maksimum Toplamı | Ev Hırsızı | 1 Boyutlu Dizilerde DP",
+      "description": "Merhaba arkadaşlar! \nBu videoda, \"Maximum Sum of Non-Adjacent Elements\" problemini çözerek dinamik programlamanın temelini öğrenmeyi hedefliyoruz. Java dilini kullanarak adım adım ilerliyoruz ve 1 boyutlu DP konseptini örneklerle açıklıyoruz. En büyük toplamı nasıl elde edebileceğinizi öğrenmek için videoyu sonuna kadar izlemeyi unutmayın. Videoda dinamik programlamada optimizasyon yöntemlerinden olan \"Memoization\" ve \"Tabulation\" yöntemlerine ek olarak \"SPACE OPTİMİZATİON\" metodunu da öğreniyoruz. \n\n Beğenmeyi ve kanala abone olmayı unutmayın, iyi seyirler!\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-08-20T00:00:11-07:00",
+      "durationSeconds": 1714,
+      "views": 721,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "qI_LQqHI79A",
+      "title": "DP 2. Frog Jump (Zıplayan Kurbağa Sorusu) | Dinamik Programlama | 1D DP",
+      "description": "Merhaba arkadaşlar!\n\nBu videoda, \"Frog Jump\" problemini nasıl dinamik programlama kullanarak çözdüğümü anlatıyorum.\n\nAdım adım çözümü izlemek ve dinamik programlamanın  mantığını anlamak için videonun her adımını dikkatlice izlemenizi öneririm. \n\nHerhangi bir sorunuz veya yorumunuz varsa aşağıdaki yorum kısmına belirtebilirsiniz.\n\nBeğenmeyi ve abone olmayı unutmayın. Görüşmek üzere!\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-08-12T11:19:59-07:00",
+      "durationSeconds": 1577,
+      "views": 1500,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "JkHCDroTV4E",
+      "title": "DP 1. Dinamik Programlamaya Giriş | Memoization | Tablolama | Alan (Space) Optimizasyon Teknikleri",
+      "description": "Dinamik programlama konusunda yeni bir seriye başlıyoruz! \n\nSerinin ilk videosu olan bu videoda dinamik programlanın ne olduğunu, ne tarz problemlere uygulanabileceğini ve soruları çözerken sıkça uygulanan optimizasyon tekniklerini açıkladık. \n\nFibonacci sorusunu memoization, tabulation ve space optimizasyon teknikleriyle çözdük. \n\nAbone olmayı unutmayın! 🚀🎥 \n\n#programlama  #DinamikProgramlama #fibonacci \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
+      "publishedAt": "2023-08-06T02:02:15-07:00",
+      "durationSeconds": 1657,
+      "views": 6200,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
+      ]
+    },
+    {
+      "id": "jjUciiXIehU",
+      "title": "G-10. Topological Sort Algorithm (Topolojik Sıralama Algoritması) | DFS",
+      "description": "Selamlar!\nBu videoda, LeetCode'da Topolojik Sıralama (Topological Ordering) sorusunu nasıl çözeceğimizi adım adım öğreneceğiz. Topolojik sıralama, veri yapıları ve graf teorisi alanında oldukça önemli bir konu ve çeşitli projelerde veya iş akışlarında kullanılabiliyor.\n\nVideoda Neler Bulacaksınız?\n\nTopolojik Sıralama kavramının ne olduğuna dair temel bir açıklama.\nLeetCode'da verilen bir örnek sorunun nasıl çözüleceğini adım adım göreceksiniz.\nGiriş verilerini nasıl temsil edeceğimizi ve graf yapısının nasıl oluşturulacağını anlayacaksınız.\nTopolojik sıralama algoritmasını DFS (Derinlik Öncelikli Gezinme) ile nasıl uygulanacağını göreceksiniz.",
+      "publishedAt": "2023-07-27T10:32:49-07:00",
+      "durationSeconds": 907,
+      "views": 2900,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "aUw2HjiX-Yo",
+      "title": "Bunu 2D Matrix/Grid Sorunları için yapmayın ❌❌ Hatadan kaçının ✅  ⏰⌛ #shorts",
+      "description": "",
+      "publishedAt": "2023-07-24T17:00:00-07:00",
+      "durationSeconds": 49,
+      "views": 218,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "CKUGozcPYbo",
+      "title": "G-9. Bipartite Graph (İkili Grafik)| BFS | Java",
+      "description": "Merhaba arkadaşlar! \n\nBu videoda, LeetCode platformundaki \"Is Graph Bipartite? (Grafik İki Parçalı mı?)\" sorusunu çözeceğim. Bu soru, graf teorisi ve derinlik öncelikli arama (DFS) veya genişlik öncelikli arama (BFS) kullanarak çözebileceğimiz bir problemdir. (Ben videoda BFS yöntemini kullandım.)\n\nSorun kısaca şöyle: Bize bir graf veriliyor ve bu grafın düğümlerini iki gruba ayırmamızı istiyor. Her iki gruptaki düğümler, grafın kenarlarıyla bağlanmaması gerek. Yani, aynı gruptaki düğümler arasında kenar olmamalıdır. Amacımız, verilen grafın iki renk kullanarak iki gruba ayrılıp ayrılamayacağını belirlemektir. Bu tür problemler, sosyal ağ analizi, harita düzenleme ve veritabanı yönetimi gibi birçok alanda uygulamalı olarak karşımıza çıkabilir.\n\nBu videoyu izleyerek, \"Is Bipartite?\" sorusunun nasıl çözüleceğini adım adım göreceksiniz. Graf teorisine ve DFS/BFS algoritmalarının nasıl uygulanacağına dair temel bilgilere sahip olacaksınız.\n\nAyrıca, çözümün karmaşıklığı ve neden bu yaklaşımın tercih edildiğini de açıklayarak, algoritmanın nasıl çalıştığını daha iyi anlamış olacaksınız.\n\nKanalıma abone olmayı ve videoyu beğenmeyi unutmayın, böylece algoritmalar ve programlama konularında daha fazla içerik üretmeme destek olmuş olursunuz.\n\nTeşekkürler, iyi seyirler!",
+      "publishedAt": "2023-07-18T07:30:04-07:00",
+      "durationSeconds": 1716,
+      "views": 230,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "UO0_XbeOhOc",
+      "title": "DFS, BFS farkı - Özet #shorts",
+      "description": "",
+      "publishedAt": "2023-07-17T13:27:34-07:00",
+      "durationSeconds": 50,
+      "views": 356,
+      "isShort": true,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "5u0_hV3NsdA",
+      "title": "G-8. Rotten Oranges (Çürük Portakallar) | Java",
+      "description": "Merhabalar! \n\nBu videoda, popüler bir algoritma ve veri yapıları sorusu olan \"Rotting Oranges\"i çözdük. Bu soru, LeetCode'da bulunan Graf veri yapısı ile ilgili güzel bir problem.\n\nKısaca açıklamak gerekirse, verilen bir grid (ızgara) üzerinde çürümüş portakalları ve taze portakalları temsil eden sayılar bulunmaktadır. Çürümüş portakallar birim zamanda (saniyede bir) dört yönde (kuzey, güney, doğu, batı) çevrelerindeki taze portakalları çürütebilir. Amacımız, tüm taze portakalları çürümüş hale gelene kadar kaç birim zaman geçtiğini bulmak.\n\nBu videoyu izleyerek, bu algoritmanın nasıl etkili bir şekilde çözüleceğini konsept olarak adım adım öğreneceksiniz. Ayrıca, çözümün karmaşıklığı ve işleyişini anlatarak algoritmanın nasıl çalıştığını daha iyi anlayacaksınız.\n\nKanalıma abone olmayı ve videoyu beğenmeyi unutmayın, böylece algoritma ve programlama konularında daha fazla içerik üretmemi sağlamış olursunuz. Ayrıca, yorumlarda diğer algoritmalar hakkında görüşlerinizi ve önerilerinizi belirtmeyi unutmayın.\n\nTeşekkürler, iyi seyirler!",
+      "publishedAt": "2023-07-16T00:37:21-07:00",
+      "durationSeconds": 1832,
+      "views": 220,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "jzQo6HdK2s0",
+      "title": "G-7. DFS Kullanarak Yönlendirilmemiş (Undirected) Grafikte Bir Döngü Algılama | Java",
+      "description": "Bu videoda bir undirected Graf'da herhangi bir döngü (Cycle) bulunup bulunmadığını algılamak için bir algoritma geliştirdik. Sorunun konsept ve kodlama olarak çözümünü videoda bulabilirsiniz.",
+      "publishedAt": "2023-07-08T07:30:17-07:00",
+      "durationSeconds": 1056,
+      "views": 209,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "t08hDZTqQhQ",
+      "title": "G-6. Flood Fill (Taşkın Doldurma) Algoritması | Java",
+      "description": "Bu videoda Flood Fill algoritmasını kodladık. Soruyu çözmeden önce konsept olarak hangi traversal (graf'da düğümler arası geçiş) tekniğini kullanacağımızı belirledik.",
+      "publishedAt": "2023-06-30T08:00:54-07:00",
+      "durationSeconds": 763,
+      "views": 316,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "tXob0RMzxDQ",
+      "title": "G-5. Derinlik-Önce Arama (DFS) | C++ ve Java | Grafiklerde Geçiş Tekniği",
+      "description": "Bugün Graf'larda önemli konseptlerden biri olan derinlik öncelikli sıralama (DFS) konusunu işledik ve konsepti pekiştiren bir soruyu kodladık.",
+      "publishedAt": "2023-06-29T03:33:42-07:00",
+      "durationSeconds": 736,
+      "views": 233,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "WskYTmKDzVI",
+      "title": "G-4. Genişlik (Yayılım) Öncelikli Arama (BFS) | Java | Graf'larda Geçiş Tekniği",
+      "description": "Merhaba! Bugün BFS traversal yöntemini inceledik. Konsept olarak bu tekniği anladıktan sonra konuyu daha iyi anlamak için örnek bir soru kodladık. İyi seyirler.",
+      "publishedAt": "2023-06-26T08:00:34-07:00",
+      "durationSeconds": 702,
+      "views": 346,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "uC2GTaekRGY",
+      "title": "G-3. What are Connected Components?",
+      "description": "Merhaba!\nBugün Bağlı Bileşenler (Connected Components) kavramının ne olduğunu ve günlük hayat problemlerine nasıl uygulanabilir olduğunu öğrendik. Bir kodlama sorusu çözerek de bu konuyu pekiştirmeyi hedefledik.\nİyi seyirler.",
+      "publishedAt": "2023-06-25T08:00:43-07:00",
+      "durationSeconds": 651,
+      "views": 356,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "uP5yo2hfh_o",
+      "title": "G-2. Java ile Graf (Graph) Gösterimi | Temsil Etmenin İki Yolu",
+      "description": "Bu videoda Graf veri yapısını kodda nasıl temsil edebilceğimizden bahsettik ve sıkça kullanılan 2 farklı yöntemi konuştuk. Detaylı açıklamaları ve çizimleri videoda görebilirsiniz.",
+      "publishedAt": "2023-06-24T03:19:23-07:00",
+      "durationSeconds": 838,
+      "views": 762,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "rRBH6UeWwIc",
+      "title": "G-1. Graf (Graph) veri yapısına Giriş | Türleri | Kullanılan Farklı Kurallar",
+      "description": "Merhaba!\n\nGraf veri yapısı konusuna odaklanmış bir video serisi başlattım. Graf veri yapısı, birçok algoritma ve problemin temelinde yer alan önemli bir kavramdır. Bu videolar dizisi boyunca, graf teorisi ve graf algoritmalarının temellerini ele alacak, graf temelli problemleri nasıl çözebileceğimizi öğreneceğiz.\n\nBu ilk videomu izleyerek graf veri yapısının ne olduğunu ve neden önemli olduğunu anlayabilirsiniz. Graf veri yapısının temel bileşenlerini ve farklı tiplerini keşfedeceğiz. Ayrıca, graf veri yapısını uygulamalarına ve gerçek dünya senaryolarına nasıl entegre edebileceğimizi de göreceğiz.",
+      "publishedAt": "2023-06-23T08:18:04-07:00",
+      "durationSeconds": 829,
+      "views": 1600,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "U1Xrj2eX4go",
+      "title": "Number of Provinces (İl Sayısı) - LeetCode 547 - Java - DFS (Derinlik Öncelikli Sıralama)",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/number-of-provinces/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-11T10:39:42-07:00",
+      "durationSeconds": 1152,
+      "views": 487,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
+      ]
+    },
+    {
+      "id": "O4--w6CJv28",
+      "title": "Level Order Traversal of Binary Tree, BFS, Java, LeetCode 102. Soru",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/binary-tree-level-order-traversal/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-10T07:55:44-07:00",
+      "durationSeconds": 603,
+      "views": 53,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "gFr4LCo4u9w",
+      "title": "Binary Tree Right Side View - LeetCode 199 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/binary-tree-right-side-view/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-10T03:03:52-07:00",
+      "durationSeconds": 801,
+      "views": 41,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "X24VwHWejFg",
+      "title": "Count Good Nodes in Binary Tree - LeetCode 1448 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-09T11:08:26-07:00",
+      "durationSeconds": 596,
+      "views": 27,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "4CGdod2J85c",
+      "title": "Leetcode #90 - Subsets II - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/subsets-ii/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-04T05:39:20-07:00",
+      "durationSeconds": 1021,
+      "views": 57,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "78XKmNPI5Uo",
+      "title": "LeetCode - Permutations - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/permutations/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-04T02:40:32-07:00",
+      "durationSeconds": 1039,
+      "views": 73,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "ODjJ_kNd_ZU",
+      "title": "Combination Sum - Backtracking (Kombinasyon Toplamı - Geri İzleme) - Leetcode 39 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/combination-sum/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-06-02T13:14:05-07:00",
+      "durationSeconds": 1027,
+      "views": 172,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "2vyE_4ntvOU",
+      "title": "Subsets - Backtracking - Leetcode 78",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/subsets/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-05-29T10:38:31-07:00",
+      "durationSeconds": 1150,
+      "views": 193,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9En1ER9rSSg6lP9jLm6f_OXt"
+      ]
+    },
+    {
+      "id": "LCrI7CIm9xk",
+      "title": "Longest Common Subsequence - Dynamic Programming - Leetcode 1143",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist? list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/longest-common-subsequence/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-05-01T08:00:14-07:00",
+      "durationSeconds": 901,
+      "views": 99,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "CovDCC6xUZE",
+      "title": "Longest Increasing Subsequence (En Uzun Artan Dizi) - Dinamik Programlama - Leetcode 300 Çözüm",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Linki: https://leetcode.com/problems/longest-increasing-subsequence/\n\nBlind 75 Çözüm dökümanı: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-30T08:00:07-07:00",
+      "durationSeconds": 882,
+      "views": 120,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "HK0jtjlINvM",
+      "title": "Merge K Sorted Lists - Leetcode 23 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/merge-k-sorted-lists/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-29T08:00:12-07:00",
+      "durationSeconds": 586,
+      "views": 49,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "sTXGOKMMTZ8",
+      "title": "Merge Two Sorted Lists - Leetcode 21 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/merge-two-sorted-lists/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-23T08:00:37-07:00",
+      "durationSeconds": 827,
+      "views": 76,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "htjrUyeNEws",
+      "title": "House Robber - Leetcode 198 - Java Dynamic Programming",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/house-robber/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-22T08:00:32-07:00",
+      "durationSeconds": 828,
+      "views": 72,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "G-J-rD8Ho6M",
+      "title": "Maximum Depth of Binary Tree - 3 Solutions - Leetcode 104 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-16T08:00:10-07:00",
+      "durationSeconds": 316,
+      "views": 49,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "4USjO7wYsAQ",
+      "title": "Longest Palindromic Substring - Java - Leetcode 5 - O(n) solution",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/longest-palindromic-substring/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-15T08:00:02-07:00",
+      "durationSeconds": 1034,
+      "views": 43,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "stnxpLBd8Cs",
+      "title": "Search in rotated sorted array - Leetcode 33 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/search-in-rotated-sorted-array/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
+      "publishedAt": "2023-04-09T08:00:39-07:00",
+      "durationSeconds": 1002,
+      "views": 41,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "mskR06EEAXg",
+      "title": "Find Minimum in Rotated Sorted Array - Binary Search - Leetcode 153 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #java",
+      "publishedAt": "2023-04-08T08:00:28-07:00",
+      "durationSeconds": 1151,
+      "views": 40,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "I6pXQ9X2ip4",
+      "title": "Jump Game - DP - Leetcode 55",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Linki: https://leetcode.com/problems/jump-game/\n\nMerhaba! \n\"Jump Game\" sorusunu çözdüğüm videoyu paylaşıyorum. Bu soru, bir dizi üzerinde zıplayarak son elemana ulaşılıp ulaşılamayacağını kontrol etmeyi gerektiriyor. Videoda çözüm adımlarını ve örnek girişlerle nasıl çalıştığını gösteriyorum. İyi seyirler!\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-04-04T00:22:35-07:00",
+      "durationSeconds": 897,
+      "views": 144,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "ARlcE0Bt_uY",
+      "title": "Construct Binary Tree from Inorder and Preorder Traversal - Leetcode 105 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-04-02T09:01:12-07:00",
+      "durationSeconds": 1571,
+      "views": 71,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "oLDdexnbZBw",
+      "title": "Subtree of Another Tree - Leetcode 572 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/subtree-of-another-tree/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-04-01T11:00:28-07:00",
+      "durationSeconds": 669,
+      "views": 42,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "7qVfgTEVwdQ",
+      "title": "Same Tree - Leetcode 100 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/same-tree/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #leetcode",
+      "publishedAt": "2023-04-01T10:54:18-07:00",
+      "durationSeconds": 476,
+      "views": 51,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "EayXIcoONuc",
+      "title": "Validate Binary Search Tree - Depth First Search - Leetcode 98",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/validate-binary-search-tree/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-29T00:30:04-07:00",
+      "durationSeconds": 870,
+      "views": 52,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "uC3vqcl0Vyk",
+      "title": "Valid Palindrome - Leetcode 125 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/valid-palindrome/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-25T11:25:19-07:00",
+      "durationSeconds": 457,
+      "views": 69,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "wn-LP6pB0-c",
+      "title": "Word Search - Backtracking - Leetcode 79 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/word-search\n\nMerhaba! ,\nLeetCode'da \"Word Search\" sorusunun çözümünün videosunu paylaşıyorum. Soru, bir karakter matrisinde belirli bir kelimenin bulunup bulunmadığını kontrol etmeyi gerektiriyor. Videoda sorunun detaylarını açıklıyor, yaklaşımımı adım adım gösteriyor ve kod parçalarını anlatıyorum. Ayrıca örnek girişlerle çözümün nasıl çalıştığını gösteriyorum. Son olarak, alternatif yaklaşımlar ve optimize etme hakkında konuşuyorum. İyi seyirler!\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-23T08:00:50-07:00",
+      "durationSeconds": 1062,
+      "views": 108,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "GzTpf7GM-80",
+      "title": "Reverse Linked List - Iterative AND Recursive - Leetcode 206 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-20T12:07:27-07:00",
+      "durationSeconds": 827,
+      "views": 62,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "-6lAz1pJczI",
+      "title": "Linked List Cycle - Floyd's Tortoise and Hare - Leetcode 141 - Java",
+      "description": "Problem Link: https://leetcode.com/problems/linked-list-cycle\n\nLeetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-19T14:50:42-07:00",
+      "durationSeconds": 938,
+      "views": 64,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "ALSBj_Ua_Ow",
+      "title": "Climbing Stairs - Dynamic Programming - Leetcode 70 - Java",
+      "description": "Problem Link: https://leetcode.com/problems/climbing-stairs/\n\nLeetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-19T12:13:53-07:00",
+      "durationSeconds": 661,
+      "views": 60,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "l0LV_nwWCmM",
+      "title": "Minimum Path Sum - Dynamic Programming - Leetcode 64 - Java",
+      "description": "Solve it yourself: https://leetcode.com/problems/minimum-path-sum\n\n#coding    #programming   #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-15T11:14:29-07:00",
+      "durationSeconds": 736,
+      "views": 86,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "POAcewfDXow",
+      "title": "Word Break - Dynamic Programming - Leetcode 139 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nSolve it yourself: https://leetcode.com/problems/word-break/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding    #programming   #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-11T23:30:12-08:00",
+      "durationSeconds": 816,
+      "views": 64,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "_tLUB9R20RM",
+      "title": "Maximum Subarray - Amazon Coding Interview Question - Leetcode 53 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nSolve it yourself: https://leetcode.com/problems/maximum-subarray/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding    #programming   #codinginterview #softwareengineering",
+      "publishedAt": "2023-03-11T23:09:21-08:00",
+      "durationSeconds": 739,
+      "views": 56,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "FbwBgtwPI-g",
+      "title": "Contains Duplicate - Leetcode 217 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-26T09:37:05-08:00",
+      "durationSeconds": 344,
+      "views": 102,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "clFPYPA7ELs",
+      "title": "Sliding Window: Best Time to Buy and Sell Stock - Leetcode 121 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-25T04:19:06-08:00",
+      "durationSeconds": 802,
+      "views": 134,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "sF-H-BCFLuo",
+      "title": "Two Sum - Leetcode 1 - HashMap - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-24T08:08:11-08:00",
+      "durationSeconds": 727,
+      "views": 183,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "19FMfRNhcCs",
+      "title": "Convert Sorted Array to Binary Search Tree Solution",
+      "description": "#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-19T03:51:02-08:00",
+      "durationSeconds": 689,
+      "views": 70,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "w8sCVVMoLCA",
+      "title": "Course Schedule - Graph Adjacency List - Leetcode 207",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-17T13:43:00-08:00",
+      "durationSeconds": 1682,
+      "views": 101,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "Gb8K28XQ1RE",
+      "title": "LeetCode 1302. Deepest Leaves Sum (Algorithm Explained)",
+      "description": "#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-10T09:43:34-08:00",
+      "durationSeconds": 549,
+      "views": 90,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "qwzl8zeDW5k",
+      "title": "Unique Paths - Dynamic Programming - Leetcode 62",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-04T09:48:04-08:00",
+      "durationSeconds": 785,
+      "views": 112,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "A-Rx7tydDcw",
+      "title": "Leetcode 322 - Coin Change - Dynamic Programming Bottom Up",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-02-03T13:56:45-08:00",
+      "durationSeconds": 1031,
+      "views": 390,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "pmvC8fETck0",
+      "title": "Recursion",
+      "description": "#coding #programming #codinginterview #recursion #softwareengineering",
+      "publishedAt": "2023-02-02T12:59:38-08:00",
+      "durationSeconds": 1437,
+      "views": 144,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnuW4i2jhpiJzaiXsEJOnK3"
+      ]
+    },
+    {
+      "id": "-l6y1pWGLpI",
+      "title": "Remove Islands",
+      "description": "#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-01-28T17:03:37-08:00",
+      "durationSeconds": 907,
+      "views": 40,
+      "isShort": false,
+      "playlists": []
+    },
+    {
+      "id": "1yDuTUnqh3w",
+      "title": "NUMBER OF ISLANDS - Leetcode 200 - Java",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #graphtheory #softwareengineering",
+      "publishedAt": "2023-01-26T13:11:25-08:00",
+      "durationSeconds": 639,
+      "views": 90,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "T7BdPOybesE",
+      "title": "Longest Palindromic Substring - Java - Leetcode 5",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\n#coding #programming #codinginterview #strings #softwareengineering",
+      "publishedAt": "2023-01-26T12:02:40-08:00",
+      "durationSeconds": 495,
+      "views": 82,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "cu8NUBlwRSk",
+      "title": "Invert Binary Tree - Depth First Search - Leetcode 226",
+      "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nleetcode 226\n\nProblem link: https://leetcode.com/problems/invert-binary-tree/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering",
+      "publishedAt": "2023-01-22T12:33:20-08:00",
+      "durationSeconds": 457,
+      "views": 88,
+      "isShort": false,
+      "playlists": [
+        "PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_"
+      ]
+    },
+    {
+      "id": "77QXSyIZX4k",
+      "title": "Evaluate Reverse Polish Notation - Leetcode 150 - Java",
+      "description": "Problem Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/description/\n\n#coding #programming #codinginterview #stacks #softwareengineering",
+      "publishedAt": "2023-01-22T08:16:55-08:00",
+      "durationSeconds": 770,
+      "views": 157,
+      "isShort": false,
+      "playlists": []
+    }
+  ]
+}

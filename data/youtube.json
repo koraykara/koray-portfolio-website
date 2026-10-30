@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-10-29T10:44:22.959Z",
+  "fetchedAt": "2026-10-30T10:52:01.876Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -73,7 +73,7 @@
       "description": "Bu videoda Binary Tree Right View ve Left View kavramlarını kapsamlı şekilde ele alıyoruz. “View” problemlerinde amaç şudur:\n\n✅ Left View: Ağaca soldan baktığında her seviyede görünen ilk düğümler\n✅ Right View: Ağaca sağdan baktığında her seviyede görünen son düğümler\n\nYani aslında bu problem, tree’yi level level düşündüğünde her level’dan sadece 1 tane temsilci node seçmek demektir.\n\nNeden önemli?\n\nRight/Left view soruları, tree’de:\n\nLevel order (BFS) mantığını\n\nveya DFS ile level takip etmeyi\nöğreten çok güçlü problemlerdir. Ayrıca LeetCode “Binary Tree Right Side View” gibi klasik soruların temelidir.\n\nYaklaşım 1: BFS (Level Order) ile çözüm (en net yöntem)\n\nBFS ile:\n\nQueue’ya root’u koyarsın\n\nHer seviyede levelSize kadar node’u sırayla pop edersin\n\nLeft view için: o seviyede pop edilen ilk node’u kaydedersin\n\nRight view için: o seviyede pop edilen son node’u kaydedersin\n\nÇocukları queue’ya ekleyip sonraki seviyeye geçersin\n\nBu yöntem hem anlaşılır hem de doğru “level-by-level” yaklaşımıyla sorunu çözer.\n\nYaklaşım 2: DFS ile çözüm (recursion + level)\n\nDFS’te kritik fikir:\n\nHer node’a bir level (depth) bilgisi taşırsın\n\nBir seviyeyi ilk kez gördüğünde listeye eklersin\n\nRight view istiyorsan DFS’te genelde önce right, sonra left gezersin.\nLeft view istiyorsan önce left, sonra right gezersin.\nÇünkü “ilk görülen node” o seviyenin view sonucu olur.\n\nEdge-case’ler\n\nBoş ağaç\n\nTek node\n\nDengesiz (zincir) ağaçlar\n\nAynı seviyede kaç node olduğu (BFS’te levelSize yönetimi)\n\nKarmaşıklık\n\nZaman: O(n) (her node en fazla bir kez işlenir)\n\nEk bellek:\n\nBFS: O(w) (en geniş seviyedeki node sayısı)\n\nDFS: O(h) (ağacın yüksekliği, recursion stack)\n\nBu dersin sonunda right/left view sorularını hem BFS hem DFS ile rahatça çözebilecek ve tree’de “level mantığı”nı çok daha sağlam oturtmuş olacaksın.\n\n#BinaryTree #RightView #LeftView #RightSideView #LeftSideView #TreeView #Java #JavaProgramming #BinaryTreeJava #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #TreeProblems #TreeTraversal #BFS #DFS #LevelOrderTraversal\n#BreadthFirstSearch #DepthFirstSearch #Queue #Recursion #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #CodingTutorial #LearnJava #Programming\n#Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#AlgorithmTutorial #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreePatterns #LevelBasedProblems #TreeConcepts",
       "publishedAt": "2026-03-20T06:11:12-07:00",
       "durationSeconds": 770,
-      "views": 74,
+      "views": 75,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -193,7 +193,7 @@
       "description": "Bu videoda Binary Tree Level Order Traversal konusunu kapsamlı şekilde ele alıyoruz. Level order traversal, bir binary tree’de düğümleri seviyelere (level) göre, yani katman katman ziyaret etme yöntemidir. Bu traversal yaklaşımı BFS (Breadth-First Search) mantığıyla çalışır.\n\n✅ Level Order (BFS) fikri:\nÖnce root, sonra root’un çocukları, sonra onların çocukları… yani “yakından uzağa” ilerleriz.\n\nNeden Queue kullanılır?\n\nBFS’te ziyaret edeceğimiz düğümleri sıraya koymamız gerekir. Queue (FIFO) bu iş için idealdir:\n\nRoot’u queue’ya ekleriz\n\nQueue’dan sıradaki node’u alırız\n\nOnun çocuklarını (left/right) queue’ya ekleriz\n\nQueue bitene kadar devam ederiz\n\nBu sayede her node doğru sırayla (level level) işlenir.\n\nLevel order traversal nerelerde çok kullanılır?\n\nLevel-by-level çıktı üretmek (ör. her seviyeyi ayrı liste olarak)\n\nEn kısa yol / en az adım mantığına benzeyen problemler (tree’de “en yakın” node aramak gibi)\n\nZigzag level order, right-side view, minimum depth gibi LeetCode sorularının temeli\n\nTree’de “katman bilgisi” (depth/level) gereken her yerde\n\nBu videoda neleri netleştiriyoruz?\n\nBFS ile DFS farkı (neden BFS “genişler”, DFS “derinleşir”?)\n\nJava’da queue ile level order traversal nasıl yazılır?\n\nNull kontrolleri, edge-case’ler (boş ağaç, tek node)\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez işlenir)\n\nEk bellek: O(w) (en geniş level’daki node sayısı; queue bu kadar büyüyebilir)\n\nBu dersin sonunda Level Order Traversal’ı Java ile rahatça yazabilecek ve level tabanlı tree sorularında doğru yaklaşımı hızlıca seçebileceksin.\n\n#BinaryTree #LevelOrderTraversal #BFS #BreadthFirstSearch #TreeTraversal #Queue #Java #JavaProgramming #DataStructures #Algorithms\n#DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #LevelOrderTraversalJava #BFSJava #QueueDataStructure #TreeDataStructure\n#TreeAlgorithms #TraversalAlgorithms #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving\n#BigO #TimeComplexity #SpaceComplexity #MinimumDepth #ZigzagTraversal #RightSideView #LeetCodeJava #TreeProblems #LevelOrder #BreadthFirstTraversal\n#GraphTraversal #BFSAlgorithm #JavaDSA #DataStructuresInJava #AlgorithmTutorial #CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava",
       "publishedAt": "2026-03-19T05:28:32-07:00",
       "durationSeconds": 612,
-      "views": 20,
+      "views": 21,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -431,7 +431,7 @@
       "description": "Bu videoda LeetCode’daki Asteroid Collision sorusunu beraber çözüyoruz.\nÇarpışan asteroidlerin mantığını stack kullanarak nasıl modelleyeceğimizi adım adım anlatıyorum.\n\nKafanda \"Neden stack?\", \"Nasıl çalışıyor bu mantık?\" gibi sorular varsa bu video sana göre.\nKod kısmına geçmeden önce sorunun mantığını oturtuyoruz, sonra beraber kodluyoruz.\n\n💬 Videoda neler var?\n\nSoruyu sade bir şekilde anlatıyorum\n\nStack’in neden işe yaradığını açıklıyorum\n\nKodu satır satır yazıp anlatıyorum\n\nUç durumları da beraber düşünüyoruz\n\nEğer sen de algoritma pratiği yapmak istiyorsan ya da stack konusunu daha iyi kavramak istiyorsan, beklerim! 🙌\nYeni videolar için abone olmayı unutma. 😊",
       "publishedAt": "2025-07-05T08:45:11-07:00",
       "durationSeconds": 1078,
-      "views": 122,
+      "views": 123,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"
@@ -455,7 +455,7 @@
       "description": "Bu bölümde konuğum Hüseyin Ömer ile yazılım kariyerinde yurt dışına açılma yolculuğunu konuştuk. Türkiye’den Kanada’ya göç, ardından Microsoft’ta yazılımcı olarak işe başlama süreci, Silikon Vadisi tarzı mülakatlar ve FAANG’e giriş için altın değerinde tavsiyeler bu videoda!\n\nKonuştuğumuz Başlıca Konular:\n\nKanada’ya göç süreci ve yazılımcı olarak yerleşmek\n\nMicrosoft mülakatları nasıl geçiyor?\n\nLeetCode ve teknik hazırlık süreci\n\nGitHub projeleri, sistem tasarımı ve algoritmalar\n\nFAANG’e başvuran Türk yazılımcılara özel öneriler\n\nEğer sen de yazılım kariyerini yurt dışına taşımayı düşünüyorsan ya da FAANG şirketlerine hazırlanıyorsan, bu videoyu mutlaka sonuna kadar izle!\n\n📌 Konuğum Hüseyin Ömer Güray hakkında:\n\n🔗 LinkedIn: linkedin.com/in/huseyinomerguray\n🌐 Projesi: cornerstrikers.com\n\n🔔 Abone olmayı unutma ve videoyu beğenerek bize destek olabilirsin!",
       "publishedAt": "2025-05-02T10:00:20-07:00",
       "durationSeconds": 3711,
-      "views": 823,
+      "views": 833,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Ekp3zlDQ7POJ2h8f2VNamPx"
@@ -671,7 +671,7 @@
       "description": "Merhaba\n\nBugün LCS konusuna devam ediyoruz. Bu problem iki string içerisinde en uzun ortak alt diziyi bulmaya yarayan algoritmayı içeren bir soru. Biz bu sorunun çözümüyle birlikte çok fazla problem çözebiliriz. Bu videoda da bu problemlerden birinin çözümünü paylaşıyorum. Soru çözüm videosunda bir dizi içerisinde en uzun palindromic alt dizinin uzunluğunu nasıl bulacağımızı detaylı bir şekilde anlattım. Sorularınız olursa yorumlar kısmına yazmaktan çekinmeyin. \n\nİyi seyirler.\nLeetcode Problem Linki: https://leetcode.com/problems/longest-palindromic-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2024-01-10T11:07:27-08:00",
       "durationSeconds": 804,
-      "views": 222,
+      "views": 223,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -695,7 +695,7 @@
       "description": "Merhaba\n\nBugün LCS sorusunun devamı niteliğinde bir soruya bakacağız. Geçtiğimiz 2 videoda LCS problemini memoization ve tabulation yöntemlerini kullanarak çözmüştük. Bu videoda da bize verilen 2 string'in LCS string değerini tabulation yöntemindeki dp array'ini kullanarak bulmaya çalıştık. \n\nİyi seyirller...\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-28T13:00:33-08:00",
       "durationSeconds": 1015,
-      "views": 365,
+      "views": 366,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -743,7 +743,7 @@
       "description": "Merhaba,\n\nBugün DP on Subsequence konusuyla alakalı bir soru çözeceğiz. Kodlama ve seçip seçmeme (pick-non pick) konseptini içeren bu dinamik programlama sorusunda bize verilen problemleri alt problemlere bölüp optimal çözüme ulaşmayı hedefledik. \n\nO(n) time ve O(1) space ile çözdüğüm videoya bu linkten ulaşabilirsiniz: https://www.youtube.com/watch?v=clFPYPA7ELs&t=9s\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-11T22:00:14-08:00",
       "durationSeconds": 1199,
-      "views": 246,
+      "views": 248,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -851,7 +851,7 @@
       "description": "Dinamik programlama konusunda yeni bir seriye başlıyoruz! \n\nSerinin ilk videosu olan bu videoda dinamik programlanın ne olduğunu, ne tarz problemlere uygulanabileceğini ve soruları çözerken sıkça uygulanan optimizasyon tekniklerini açıkladık. \n\nFibonacci sorusunu memoization, tabulation ve space optimizasyon teknikleriyle çözdük. \n\nAbone olmayı unutmayın! 🚀🎥 \n\n#programlama  #DinamikProgramlama #fibonacci \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-06T02:02:15-07:00",
       "durationSeconds": 1657,
-      "views": 6200,
+      "views": 6300,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -887,7 +887,7 @@
       "description": "Merhaba arkadaşlar! \n\nBu videoda, LeetCode platformundaki \"Is Graph Bipartite? (Grafik İki Parçalı mı?)\" sorusunu çözeceğim. Bu soru, graf teorisi ve derinlik öncelikli arama (DFS) veya genişlik öncelikli arama (BFS) kullanarak çözebileceğimiz bir problemdir. (Ben videoda BFS yöntemini kullandım.)\n\nSorun kısaca şöyle: Bize bir graf veriliyor ve bu grafın düğümlerini iki gruba ayırmamızı istiyor. Her iki gruptaki düğümler, grafın kenarlarıyla bağlanmaması gerek. Yani, aynı gruptaki düğümler arasında kenar olmamalıdır. Amacımız, verilen grafın iki renk kullanarak iki gruba ayrılıp ayrılamayacağını belirlemektir. Bu tür problemler, sosyal ağ analizi, harita düzenleme ve veritabanı yönetimi gibi birçok alanda uygulamalı olarak karşımıza çıkabilir.\n\nBu videoyu izleyerek, \"Is Bipartite?\" sorusunun nasıl çözüleceğini adım adım göreceksiniz. Graf teorisine ve DFS/BFS algoritmalarının nasıl uygulanacağına dair temel bilgilere sahip olacaksınız.\n\nAyrıca, çözümün karmaşıklığı ve neden bu yaklaşımın tercih edildiğini de açıklayarak, algoritmanın nasıl çalıştığını daha iyi anlamış olacaksınız.\n\nKanalıma abone olmayı ve videoyu beğenmeyi unutmayın, böylece algoritmalar ve programlama konularında daha fazla içerik üretmeme destek olmuş olursunuz.\n\nTeşekkürler, iyi seyirler!",
       "publishedAt": "2023-07-18T07:30:04-07:00",
       "durationSeconds": 1716,
-      "views": 230,
+      "views": 231,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"

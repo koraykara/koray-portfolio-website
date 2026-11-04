@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-03T11:55:36.056Z",
+  "fetchedAt": "2026-11-04T12:06:39.052Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -527,7 +527,7 @@
       "description": "Selamlar\n\nBugün, Bağlantılı Liste (Linked List) kullanarak Kuyruk (Queue) veri yapısının nasıl implement edileceğini adım adım anlatıyoruz. Kuyruklar, veri yapılarında sıklıkla kullanılan ve FIFO (First In, First Out - İlk Giren İlk Çıkar) prensibiyle çalışan bir veri yapısıdır. Bağlantılı listeler ise, dinamik veri yapıları arasında ÇOK ÖNEMLİ bir yere sahiptir. Bu video sayesinde, kuyruk veri yapısını bağlantılı liste ile nasıl inşa edeceğinizi ve verimli bir şekilde nasıl kullanabileceğinizi öğreneceksiniz. Videoda, uygulama adımlarını ve kod örneklerini bulacaksınız. Kodlamaya meraklıysanız ya da veri yapıları konusunda kendinizi geliştirmek istiyorsanız, bu video tam size göre! Sorularınızın olması durumunda yorumlar kısmına beklerim. 😉\n\nEğer videoyu beğendiyseniz, kanalıma abone olmayı ve bildirimleri açmayı unutmayın! Yorumlarınızı da bekliyorum.\n\nİyi seyirler!\n\n#leetcodesolutions  #CodingChallenges\n#LeetCode, #LeetCodeSolutions, #CodingChallenges, #Programming, #Algorithms, #DataStructures, #InterviewPreparation, #CodingInterviews  #TechInterview  #DynamicProgramming, #Backtracking, #Recursion, #TreeTraversal, #GraphAlgorithms, #BinarySearch, #SortingAlgorithms, #LinkedList #LearnToCode, #CodingTutorials, #ProgrammingForBeginners #CodeWithMe, #DeveloperCommunity, #Motivation #DailyCoding#TechYouTuber, #SoftwareEngineering#CodingLifestyle #problemsolvingfun #stack #stackqueue#queue #queues#Yığın #Kuyruk #VeriYapıları #StackAlgoritmaları #QueueAlgoritmaları #YığınNedir #KuyrukNedir #YığınUygulamaları #KuyrukUygulamaları #YığınVeriYapısı #KuyrukVeriYapısı #StackVsQueue #YığınÖrnekleri #KuyrukÖrnekleri #VeriYapısıÇözümleri #YığınVeKuyrukFarkları #VeriYapılarıDersi #AlgoritmaVeVeriYapıları #ProgramlamaTemelleri #YığınKullanımı #KuyrukKullanımı #BilgisayarBilimi #YığınVeKuyrukİşlemleri #LIFO #FIFO #YığınKuyrukAlgoritmalar#Stack #Queue #DataStructures #StackAlgorithms #QueueAlgorithms #WhatIsStack #WhatIsQueue #StackApplications #QueueApplications #StackDataStructure #QueueDataStructure #StackVsQueue #StackExamples #QueueExamples #DataStructureSolutions #StackAndQueueDifference#DataStructures #Algorithms #DSA #Programming #Coding #InterviewPrep #SoftwareEngineering #TechInterview #LeetCode #CodeChallenges #ProblemSolving #BigO #Recursion #DynamicProgramming #GraphTheory #TreeTraversal #SortingAlgorithms #LinkedLists #BinarySearch #Stack #Queue #Array #HashTable #PriorityQueue #BinaryTree #GraphTraversal #Backtracking #GreedyAlgorithms #DivideAndConquer #SlidingWindow #TwoPointers #Trie #BitManipulation #Heaps #Graphs #Sets #StringManipulation #DynamicArrays #RecursionProblems #PathFinding #BreadthFirstSearch #DepthFirstSearch #MergeSort #QuickSort #BubbleSort #SelectionSort #InsertionSort #RadixSort #CountingSort #KMPAlgorithm #Knapsack #LongestCommonSubsequence #ShortestPath #BellmanFord #Dijkstra #Prim #Kruskal #MinimumSpanningTree #GraphProblems #TreeProblems #FloydWarshall #BinarySearchTree #HeapSort #DisjointSet #SegmentTree #AVLTree #FenwickTree #SplayTree #UnionFind #TopologicalSort #Matrix",
       "publishedAt": "2024-08-18T03:56:36-07:00",
       "durationSeconds": 917,
-      "views": 145,
+      "views": 146,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EnmmWqu7Q0xJkNZP1BMnkAI"

@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-09T12:51:08.728Z",
+  "fetchedAt": "2026-11-10T12:37:47.500Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -719,7 +719,7 @@
       "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-18T02:42:44-08:00",
       "durationSeconds": 1620,
-      "views": 527,
+      "views": 529,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"

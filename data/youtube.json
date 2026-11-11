@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-10T12:37:47.500Z",
+  "fetchedAt": "2026-11-11T11:52:17.706Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -97,7 +97,7 @@
       "description": "Bu videoda iki binary tree’nin identical (aynı) olup olmadığını kapsamlı şekilde ele alıyoruz. “Identical trees” demek, iki ağacın sadece aynı değerleri içermesi değil; aynı zamanda tam olarak aynı yapıya (structure) sahip olması demektir.\n\n✅ İki ağaç identical ise:\n\nHer iki ağaçta karşılaştırılan düğümlerin değeri aynı olmalı\n\nVe bu düğümlerin sol alt ağaçları da aynı, sağ alt ağaçları da aynı olmalı\n\nYani “node değerleri + yerleşim (sol/sağ) + null’lar” dahil her şey birebir eşleşmeli\n\nNeden önemli?\n\nBu problem, tree konusundaki en temel düşünme biçimlerinden birini öğretir:\n\n“Bir node eşitse, alt ağaçları da eşit mi?” mantığı\n\nDFS/recursion ile iki yapıyı aynı anda gezme\nAyrıca interview’larda çok sık sorulan “same tree / identical tree” tipi soruların temelidir.\n\nEn klasik çözüm: DFS + Recursion (aynı anda gez)\n\nMantık çok nettir:\n\nİki node da null ise → bu kısım eşleşiyor (true)\n\nSadece biri null ise → yapı bozulmuş demektir (false)\n\nİkisi de null değilse:\n\nDeğerleri eşit mi?\n\nSol alt ağaçlar eşit mi?\n\nSağ alt ağaçlar eşit mi?\nHepsi “evet” ise ağaçlar identical’dır.\n\nBu yaklaşım, preorder/inorder/postorder fark etmeksizin uygulanabilir; önemli olan iki ağacı aynı anda senkron şekilde gezmektir.\n\nAlternatif yaklaşım: Iterative (Queue/Stack)\n\nRecursion yerine:\n\nİki ağacı iki queue ile BFS yaparak karşılaştırabilir\n\nveya stack ile DFS yapabilirsin\nAma recursion genelde en temiz ve en anlaşılır çözümdür.\n\nEdge-case’ler (çok önemli)\n\nHer iki ağaç boşsa → identical (true)\n\nDeğerler aynı ama yapı farklıysa → identical değildir\n\nBir tarafta child varken diğer tarafta null varsa → identical değildir\n\nKarmaşıklık\n\nZaman: O(n) (en kötü durumda tüm düğümler karşılaştırılır)\n\nEk bellek: O(h) (recursion stack; iterative’de queue/stack boyutuna göre değişir)\n\nBu dersin sonunda “same tree / identical tree” sorularını Java’da temiz şekilde çözecek ve tree karşılaştırma mantığını sağlam oturtmuş olacaksın.\n\n#IdenticalTrees #SameTree #BinaryTree #TreeComparison #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #TreeTraversal #TreeProblems #TreeAlgorithms #TreeDataStructure #DepthFirstSearch\n#AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO\n#TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava\n#StructuralEquality #TreeEquality #BinaryTrees #RecursionInJava #IterativeDFS #BFS #Queue #Stack #NullCheck #SameStructure",
       "publishedAt": "2026-03-20T05:59:56-07:00",
       "durationSeconds": 477,
-      "views": 12,
+      "views": 13,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -193,7 +193,7 @@
       "description": "Bu videoda Binary Tree Level Order Traversal konusunu kapsamlı şekilde ele alıyoruz. Level order traversal, bir binary tree’de düğümleri seviyelere (level) göre, yani katman katman ziyaret etme yöntemidir. Bu traversal yaklaşımı BFS (Breadth-First Search) mantığıyla çalışır.\n\n✅ Level Order (BFS) fikri:\nÖnce root, sonra root’un çocukları, sonra onların çocukları… yani “yakından uzağa” ilerleriz.\n\nNeden Queue kullanılır?\n\nBFS’te ziyaret edeceğimiz düğümleri sıraya koymamız gerekir. Queue (FIFO) bu iş için idealdir:\n\nRoot’u queue’ya ekleriz\n\nQueue’dan sıradaki node’u alırız\n\nOnun çocuklarını (left/right) queue’ya ekleriz\n\nQueue bitene kadar devam ederiz\n\nBu sayede her node doğru sırayla (level level) işlenir.\n\nLevel order traversal nerelerde çok kullanılır?\n\nLevel-by-level çıktı üretmek (ör. her seviyeyi ayrı liste olarak)\n\nEn kısa yol / en az adım mantığına benzeyen problemler (tree’de “en yakın” node aramak gibi)\n\nZigzag level order, right-side view, minimum depth gibi LeetCode sorularının temeli\n\nTree’de “katman bilgisi” (depth/level) gereken her yerde\n\nBu videoda neleri netleştiriyoruz?\n\nBFS ile DFS farkı (neden BFS “genişler”, DFS “derinleşir”?)\n\nJava’da queue ile level order traversal nasıl yazılır?\n\nNull kontrolleri, edge-case’ler (boş ağaç, tek node)\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez işlenir)\n\nEk bellek: O(w) (en geniş level’daki node sayısı; queue bu kadar büyüyebilir)\n\nBu dersin sonunda Level Order Traversal’ı Java ile rahatça yazabilecek ve level tabanlı tree sorularında doğru yaklaşımı hızlıca seçebileceksin.\n\n#BinaryTree #LevelOrderTraversal #BFS #BreadthFirstSearch #TreeTraversal #Queue #Java #JavaProgramming #DataStructures #Algorithms\n#DSA #CodingInterview #LeetCode #ComputerScience #BinaryTrees #BinaryTreeJava #LevelOrderTraversalJava #BFSJava #QueueDataStructure #TreeDataStructure\n#TreeAlgorithms #TraversalAlgorithms #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving\n#BigO #TimeComplexity #SpaceComplexity #MinimumDepth #ZigzagTraversal #RightSideView #LeetCodeJava #TreeProblems #LevelOrder #BreadthFirstTraversal\n#GraphTraversal #BFSAlgorithm #JavaDSA #DataStructuresInJava #AlgorithmTutorial #CodingQuestions #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava",
       "publishedAt": "2026-03-19T05:28:32-07:00",
       "durationSeconds": 612,
-      "views": 21,
+      "views": 22,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -205,7 +205,7 @@
       "description": "Bu videoda Binary Tree Postorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Postorder traversal, bir binary tree’de düğümleri belirli bir sırayla ziyaret etme yöntemidir ve temel kuralı şudur:\n\n✅ Postorder sırası: Left → Right → Root\n\nBu sıralama, özellikle “önce alt ağaçları tamamen işle, en sonda kökü işle” mantığı istediğimiz durumlarda çok güçlüdür. Yani postorder, bir node’a ait karar/sonuç üretmeden önce onun çocuklarından gelen sonuçların hazır olmasını sağlar.\n\nPostorder ne zaman çok işimize yarar?\n\nTree deletion / memory cleanup: Önce çocukları silip en son kökü silmek mantıklıdır.\n\nExpression Tree değerlendirme: Operatörler kökteyken, önce operandları (alt ağaçları) hesaplamak gerekir.\n\nAlt ağaçlardan bilgi toplayan problemler:\nÖrn: “height, subtree sum, diameter, balanced kontrolü” gibi sorularda önce çocukların değerleri hesaplanır, sonra kök için sonuç üretilir.\n\nBu videoda neleri netleştiriyoruz?\n\nPostorder mantığı: Neden Left-Right-Root?\n\nRecursive yaklaşım (en yaygın):\nFonksiyon akışı nasıl ilerler, call stack nasıl çalışır, hangi sırayla print/visit olur?\n\nIterative yaklaşım (Stack ile):\nRecursion kullanmadan postorder nasıl yapılır? (İpucu: tek stack + takip edilen “son ziyaret edilen node” mantığı veya 2 stack yaklaşımı)\n\nTraversal karşılaştırması:\n\nPreorder: Root-Left-Right\n\nInorder: Left-Root-Right\n\nPostorder: Left-Right-Root\nHangi problemde hangisi daha uygun?\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: O(h) (ağacın yüksekliği; recursion/stack nedeniyle)\n\nBu dersin sonunda postorder traversal’ı Java’da rahatça okuyup yazabilecek ve tree sorularında doğru traversal seçimini daha hızlı yapabileceksin.\n\nPlaylist: https://youtu.be/UOvIjcrzo7c?si=aba-HL2341GOtVoR",
       "publishedAt": "2026-03-19T05:10:50-07:00",
       "durationSeconds": 386,
-      "views": 8,
+      "views": 9,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -217,7 +217,7 @@
       "description": "Bu videoda Binary Tree Inorder Traversal konusunu kapsamlı şekilde ele alıyoruz. Inorder traversal, bir binary tree’de düğümleri belirli bir sırayla ziyaret etme yöntemidir ve temel kuralı şudur:\n\n✅ Inorder sırası: Left → Root → Right\n\nBu yaklaşım özellikle Binary Search Tree (BST) yapılarında çok kritik bir yere sahiptir; çünkü BST üzerinde inorder traversal uyguladığınızda, düğümler genellikle küçükten büyüğe sıralı şekilde elde edilir (BST kuralı: sol alt ağaç - kök - sağ alt ağaç). Bu yüzden inorder traversal, “ağacı sıralı olarak okumak”, “veriyi artan sırada almak”, “BST doğrulamak” gibi birçok problemde en temel araçlardan biridir.\n\nBu videoda öğreneceklerin\n\nInorder traversal mantığı: Neden önce sol alt ağaç, sonra kök, sonra sağ alt ağaç?\n\nRecursive yaklaşım: En yaygın ve en anlaşılır yöntem. Çağrı yığını (call stack) nasıl çalışır?\n\nIterative yaklaşım (Stack ile): Recursion kullanmadan inorder nasıl yazılır? Stack neden gerekiyor?\n\nTraversal karşılaştırması: Preorder / Inorder / Postorder farkı, hangi senaryoda hangisi seçilir?\n\nKarmaşıklık:\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: recursive’de O(h) (ağacın yüksekliği), iterative’de de stack nedeniyle benzer\n\nSık yapılan hatalar: “Left-Root-Right” sırasını karıştırmak, stack kullanımında yanlış push/pop, null kontrolleri.\n\n📌 Eğer ağaç (tree) sorularında zorlanıyorsan, inorder traversal’ı iyi oturtmak sana hem LeetCode sorularında hem de coding interview’lerde ciddi hız kazandırır.\n\n#BinaryTree#InorderTraversal#Inorder#TreeTraversal#DFS#DepthFirstSearch#DataStructures#Algorithms#DSA#CodingInterview#LeetCode#Java#JavaProgramming#ComputerScience#BinarySearchTree#BST#Recursive#Recursion#Stack#IterativeTraversal#TreeAlgorithms#TreeDataStructure#BinaryTrees#LeetCodeJava#InterviewPrep#SoftwareEngineering#AlgorithmTutorial#DataStructuresInJava#TreeProblems#TraversalAlgorithms#InorderTraversalJava#BinaryTreeJava#BSTTraversal#SortedTraversal#TreeBasics#TreeConcepts#CodingTutorial#LearnJava#Programming#Coding#TechInterview#CSFundamentals#ProblemSolving#BigO#TimeComplexity#SpaceComplexity#CallStack#StackDataStructure#CodingQuestions#LeetCodeProblems",
       "publishedAt": "2026-01-25T04:01:59-08:00",
       "durationSeconds": 341,
-      "views": 52,
+      "views": 54,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -229,7 +229,7 @@
       "description": "Bu videoda Binary Tree üzerinde Preorder Traversal (Root → Left → Right) mantığını çok net bir şekilde anlatıyorum ve Java kodunu satır satır açıklıyoruz.\n\n✅ Bu videodan sonra:\n\nPreorder sırasının neden Root-Left-Right olduğunu anlarsın\n\nRecursive yaklaşımı rahatça yazarsın\n\nPreorder çıktısını elle takip edebilir hale gelirsin (mülakatlarda çok işine yarar)\n\n📌 Playlist: Binary Trees https://youtu.be/66ZwT8E7lJI?si=_TZQ3BF5L5T1Hmyg",
       "publishedAt": "2026-01-18T01:00:06-08:00",
       "durationSeconds": 466,
-      "views": 32,
+      "views": 33,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -241,7 +241,7 @@
       "description": "Bu videoda Binary Tree üzerinde en temel traversal yöntemlerini öğreniyoruz:\n✅ BFS (Level Order Traversal) ve ✅ DFS (Preorder / Inorder / Postorder).\n\n🎯 Bu videodan sonra:\n\nDFS’in 3 türünü (pre/in/post) karıştırmazsın\n\n⏱️ Chapters:\n00:00 Giriş: Traversal nedir?\n00:32 DFS – Inorder Traversal \n03:20 DFS – Preorder Traversal\n05:45 DFS – Postorder Traversal\n08:31 Özet + sonraki ders\n09:16 BFS - Level Order Traversal\n\n#BinaryTree #TreeTraversal #BFS\n#DFS #LevelOrder #Preorder #Inorder #Postorder\n#DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #Java #computerscience",
       "publishedAt": "2026-01-11T06:11:18-08:00",
       "durationSeconds": 622,
-      "views": 42,
+      "views": 43,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -253,7 +253,7 @@
       "description": "Bu videoda Binary Tree’yi Java’da nasıl temsil edeceğini (Node sınıfı, left/right referansları) ve kod üzerinden ağaç oluşturma mantığını anlatıyorum.\n\n✅ Bu videodan sonra:\n\nNode sınıfı ile Binary Tree modellemeyi bilirsin\n\nleft / right ilişkisini doğru kurarsın\n\nAğaç oluşturma (manual build) ve temel kullanım netleşir\n\n⏱️ Chapters:\n00:00 Introduction\n02:03 Java’da Binary Tree yapısı (Node class)\n02:36 Tree oluşturma örneği (code)\n05:05 Kısa özet + sonraki ders\n\n📌 Playlist: (link)\n💬 Sorun olursa yorumlara yaz\n\n#BinaryTree #Java #DataStructures\n#Algorithms #DSA #BinaryTrees #CodingInterview #LeetCode #ComputerScience #TreeDataStructure #JavaProgramming #SoftwareEngineering",
       "publishedAt": "2026-01-08T07:30:14-08:00",
       "durationSeconds": 313,
-      "views": 45,
+      "views": 46,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -265,7 +265,7 @@
       "description": "Bu videoda Trees konusuna giriş yapıyoruz ve en sık kullanılan ağaç türlerini net örneklerle ayırıyoruz: Full, Complete, Perfect ve Balanced Binary Tree.\n\n✅ Bu videodan sonra:\n\nTree temel terminolojisini (root/child/leaf) kavrarsın\n\nFull vs Complete vs Perfect farkını karıştırmazsın\n\n“Balanced” ne demek, ne zaman önemli — netleşir\n\n🧠 Not: Bu seri Binary Trees playlist’inin 1. dersi. \n\n00:00 Introduction\n04:01 Full Binary Tree\n04:48 Complete Binary Tree\n06:09 Perfect Binary Tree\n06:50 Balanced Binary Tree\n08:11 Degenerate Binary Tree\n08:41 Summary + Next Lesson\n\n💬 Sorun olursa yoruma yaz, birlikte çözelim.\n\n#BinaryTree #DataStructures #Algorithms\n#Trees #BinaryTrees #DSA #ComputerScience #CodingInterview #LeetCode #Java #BinaryTreeTypes #FullBinaryTree #CompleteBinaryTree #PerfectBinaryTree #BalancedBinaryTree",
       "publishedAt": "2026-01-06T07:30:21-08:00",
       "durationSeconds": 561,
-      "views": 54,
+      "views": 57,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"

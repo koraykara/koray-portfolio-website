@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-11T11:52:17.706Z",
+  "fetchedAt": "2026-11-12T12:41:32.188Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -253,7 +253,7 @@
       "description": "Bu videoda Binary Tree’yi Java’da nasıl temsil edeceğini (Node sınıfı, left/right referansları) ve kod üzerinden ağaç oluşturma mantığını anlatıyorum.\n\n✅ Bu videodan sonra:\n\nNode sınıfı ile Binary Tree modellemeyi bilirsin\n\nleft / right ilişkisini doğru kurarsın\n\nAğaç oluşturma (manual build) ve temel kullanım netleşir\n\n⏱️ Chapters:\n00:00 Introduction\n02:03 Java’da Binary Tree yapısı (Node class)\n02:36 Tree oluşturma örneği (code)\n05:05 Kısa özet + sonraki ders\n\n📌 Playlist: (link)\n💬 Sorun olursa yorumlara yaz\n\n#BinaryTree #Java #DataStructures\n#Algorithms #DSA #BinaryTrees #CodingInterview #LeetCode #ComputerScience #TreeDataStructure #JavaProgramming #SoftwareEngineering",
       "publishedAt": "2026-01-08T07:30:14-08:00",
       "durationSeconds": 313,
-      "views": 46,
+      "views": 47,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"

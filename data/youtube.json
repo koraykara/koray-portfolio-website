@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-12T12:41:32.188Z",
+  "fetchedAt": "2026-11-13T12:11:09.235Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -851,7 +851,7 @@
       "description": "Dinamik programlama konusunda yeni bir seriye başlıyoruz! \n\nSerinin ilk videosu olan bu videoda dinamik programlanın ne olduğunu, ne tarz problemlere uygulanabileceğini ve soruları çözerken sıkça uygulanan optimizasyon tekniklerini açıkladık. \n\nFibonacci sorusunu memoization, tabulation ve space optimizasyon teknikleriyle çözdük. \n\nAbone olmayı unutmayın! 🚀🎥 \n\n#programlama  #DinamikProgramlama #fibonacci \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-06T02:02:15-07:00",
       "durationSeconds": 1657,
-      "views": 6300,
+      "views": 6400,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -971,7 +971,7 @@
       "description": "Merhaba!\nBugün Bağlı Bileşenler (Connected Components) kavramının ne olduğunu ve günlük hayat problemlerine nasıl uygulanabilir olduğunu öğrendik. Bir kodlama sorusu çözerek de bu konuyu pekiştirmeyi hedefledik.\nİyi seyirler.",
       "publishedAt": "2023-06-25T08:00:43-07:00",
       "durationSeconds": 651,
-      "views": 356,
+      "views": 357,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"

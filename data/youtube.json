@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-13T12:11:09.235Z",
+  "fetchedAt": "2026-11-14T11:27:33.813Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -719,7 +719,7 @@
       "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-18T02:42:44-08:00",
       "durationSeconds": 1620,
-      "views": 529,
+      "views": 530,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -731,7 +731,7 @@
       "description": "Merhaba,\n\nBugün DP on Grids konusuyla alakalı bir soru çözeceğiz. Kodlamayı ve konsept olarak yaklaşımı yine seçip seçmeme (pick-non pick) konsepti ile yapacağız. Fakat bu sefer gidebileceğimiz yer 4 adet. Soruda bize verilen problemleri alt problemlere nasıl bölüp optimal çözüme ulaşacağımızı anlattık. \n\nProblem linki: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-17T00:20:12-08:00",
       "durationSeconds": 1220,
-      "views": 249,
+      "views": 250,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -827,7 +827,7 @@
       "description": "Merhaba arkadaşlar! \nBu videoda, \"Maximum Sum of Non-Adjacent Elements\" problemini çözerek dinamik programlamanın temelini öğrenmeyi hedefliyoruz. Java dilini kullanarak adım adım ilerliyoruz ve 1 boyutlu DP konseptini örneklerle açıklıyoruz. En büyük toplamı nasıl elde edebileceğinizi öğrenmek için videoyu sonuna kadar izlemeyi unutmayın. Videoda dinamik programlamada optimizasyon yöntemlerinden olan \"Memoization\" ve \"Tabulation\" yöntemlerine ek olarak \"SPACE OPTİMİZATİON\" metodunu da öğreniyoruz. \n\n Beğenmeyi ve kanala abone olmayı unutmayın, iyi seyirler!\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-20T00:00:11-07:00",
       "durationSeconds": 1714,
-      "views": 721,
+      "views": 722,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"

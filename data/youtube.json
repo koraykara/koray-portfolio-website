@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-16T12:43:25.872Z",
+  "fetchedAt": "2026-11-17T13:21:57.431Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -587,7 +587,7 @@
       "description": "Merhaba \n\nBugün LeetCode 'da Perfect Square isminde bir soruyu inceledik. \n \nPerfect Square problemi, bir sayının bir karesi olup olmadığını belirlemeyi amaçlar. Örneğin, 9'un bir karesi olduğunu biliyoruz çünkü 3 * 3 = 9. Ancak, 10'un bir tam kare değildir çünkü hiçbir tam sayının karesi 10'a eşit değildir.\n\nBu problemi çözmek için farklı yaklaşımlar kullanılabilir, ancak en etkili ve yaygın olanlardan biri dinamik programlama ve matematiksel yöntemlerdir.\n\nDinamik programlama kullanarak, bir tablo oluştururuz ve her bir sayının bir kare olup olmadığını işaretleriz. Daha sonra, verilen bir sayının bir kare olup olmadığını kontrol etmek için bu tabloya bakabiliriz. Videoda probleme nasıl yaklaşmamız gerektiğini ve dinamik programlamada kullandığımız \"Memoization\" optimizasyon yöntemine giden yolları adım adım göreceksiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-04-27T02:45:51-07:00",
       "durationSeconds": 1351,
-      "views": 193,
+      "views": 194,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -599,7 +599,7 @@
       "description": "Merhaba,\n\nBugün Dinamik Programlama konusunda popüler bir soru olan Longest Increasing Subsequence sorusunu çözdük. Videoda probleme nasıl yaklaşmamız gerektiğini konsept olarak anlamaya ve sonrasında kodlamaya çalıştık ve çözümümüzü memoization optimizasyon yöntemini kullanarak optimize etmeye çalıştık.   \n\nİyi seyiler:\n\nProblem Linki: https://leetcode.com/problems/longest-increasing-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-04-01T13:50:33-07:00",
       "durationSeconds": 1474,
-      "views": 175,
+      "views": 176,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -611,7 +611,7 @@
       "description": "Merhaba\n\nBugün Leetcode'da dinamik stringler üzerinde DP konusu ile alakalı bir soru çözümü yaptık. Bize verilen bir string'e minimum kaç tane ekleme yapmalıyız ki o string palindrome olsun sorusuna çözüm aradık ve problemi küçük parçalara ayırıp hangi konseptleri kullanarak optimizasyon yapacağımızı anlamaya çalıştık. Sorularınızın olması durumunda yorumlar kısmına beklerim. \n\nİyi seyiler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-03-23T05:36:23-07:00",
       "durationSeconds": 870,
-      "views": 165,
+      "views": 166,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -671,7 +671,7 @@
       "description": "Merhaba\n\nBugün LCS konusuna devam ediyoruz. Bu problem iki string içerisinde en uzun ortak alt diziyi bulmaya yarayan algoritmayı içeren bir soru. Biz bu sorunun çözümüyle birlikte çok fazla problem çözebiliriz. Bu videoda da bu problemlerden birinin çözümünü paylaşıyorum. Soru çözüm videosunda bir dizi içerisinde en uzun palindromic alt dizinin uzunluğunu nasıl bulacağımızı detaylı bir şekilde anlattım. Sorularınız olursa yorumlar kısmına yazmaktan çekinmeyin. \n\nİyi seyirler.\nLeetcode Problem Linki: https://leetcode.com/problems/longest-palindromic-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2024-01-10T11:07:27-08:00",
       "durationSeconds": 804,
-      "views": 226,
+      "views": 227,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -695,7 +695,7 @@
       "description": "Merhaba\n\nBugün LCS sorusunun devamı niteliğinde bir soruya bakacağız. Geçtiğimiz 2 videoda LCS problemini memoization ve tabulation yöntemlerini kullanarak çözmüştük. Bu videoda da bize verilen 2 string'in LCS string değerini tabulation yöntemindeki dp array'ini kullanarak bulmaya çalıştık. \n\nİyi seyirller...\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-28T13:00:33-08:00",
       "durationSeconds": 1015,
-      "views": 370,
+      "views": 371,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -707,7 +707,7 @@
       "description": "Selamlar,\n\nBugün serinin bir önceki videosundaki soruyu memoization optimizasyon yöntemini  kullanarak çözmüştük. Bu videoda bu yöntemi kullanarak nasıl tabulation yöntemiyle çevirebileceğimizi göreceğiz.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-22T07:00:31-08:00",
       "durationSeconds": 942,
-      "views": 352,
+      "views": 354,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -719,7 +719,7 @@
       "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-18T02:42:44-08:00",
       "durationSeconds": 1620,
-      "views": 532,
+      "views": 533,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -923,7 +923,7 @@
       "description": "Bu videoda bir undirected Graf'da herhangi bir döngü (Cycle) bulunup bulunmadığını algılamak için bir algoritma geliştirdik. Sorunun konsept ve kodlama olarak çözümünü videoda bulabilirsiniz.",
       "publishedAt": "2023-07-08T07:30:17-07:00",
       "durationSeconds": 1056,
-      "views": 209,
+      "views": 210,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"

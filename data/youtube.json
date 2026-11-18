@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-17T13:21:57.431Z",
+  "fetchedAt": "2026-11-18T13:01:05.640Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -347,7 +347,7 @@
       "description": "Günde 1 LeetCode serimizde bugün Climbing Stairs (LC70) sorununu memoization (top-down DP) ile çözdük. 🪜\nFikir: f(n) = f(n-1) + f(n-2) → sonuçları cache’leyip tekrar hesaplamayı önlüyoruz.\nZaman: O(n) | Bellek: O(n)\n\nDaha fazla DP için abone olmayı unutma! 🔔\n\n#leetcode #uniquepaths #dynamicprogramming #leetcode75 #leetcodeproblems #dailycodingproblem #programming #computerscience #dsa #algorithms #datastructures #interviewprep #codinginterview #softwareengineering #devcommunity #codinglife #csstudent #technicalinterview #gridproblems #javaprogramming #pythoncode #100daysofcode #youtubeshorts #shorts #techshorts #viralshorts #studytok #studywithme #techcareer #developerlife #climbingstairs",
       "publishedAt": "2025-10-12T11:20:00-07:00",
       "durationSeconds": 359,
-      "views": 75,
+      "views": 76,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9ElzrEysyDA9k4K_5KTWvHa6"
@@ -587,7 +587,7 @@
       "description": "Merhaba \n\nBugün LeetCode 'da Perfect Square isminde bir soruyu inceledik. \n \nPerfect Square problemi, bir sayının bir karesi olup olmadığını belirlemeyi amaçlar. Örneğin, 9'un bir karesi olduğunu biliyoruz çünkü 3 * 3 = 9. Ancak, 10'un bir tam kare değildir çünkü hiçbir tam sayının karesi 10'a eşit değildir.\n\nBu problemi çözmek için farklı yaklaşımlar kullanılabilir, ancak en etkili ve yaygın olanlardan biri dinamik programlama ve matematiksel yöntemlerdir.\n\nDinamik programlama kullanarak, bir tablo oluştururuz ve her bir sayının bir kare olup olmadığını işaretleriz. Daha sonra, verilen bir sayının bir kare olup olmadığını kontrol etmek için bu tabloya bakabiliriz. Videoda probleme nasıl yaklaşmamız gerektiğini ve dinamik programlamada kullandığımız \"Memoization\" optimizasyon yöntemine giden yolları adım adım göreceksiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-04-27T02:45:51-07:00",
       "durationSeconds": 1351,
-      "views": 194,
+      "views": 195,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -707,7 +707,7 @@
       "description": "Selamlar,\n\nBugün serinin bir önceki videosundaki soruyu memoization optimizasyon yöntemini  kullanarak çözmüştük. Bu videoda bu yöntemi kullanarak nasıl tabulation yöntemiyle çevirebileceğimizi göreceğiz.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-22T07:00:31-08:00",
       "durationSeconds": 942,
-      "views": 354,
+      "views": 355,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -719,7 +719,7 @@
       "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-18T02:42:44-08:00",
       "durationSeconds": 1620,
-      "views": 533,
+      "views": 535,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -731,7 +731,7 @@
       "description": "Merhaba,\n\nBugün DP on Grids konusuyla alakalı bir soru çözeceğiz. Kodlamayı ve konsept olarak yaklaşımı yine seçip seçmeme (pick-non pick) konsepti ile yapacağız. Fakat bu sefer gidebileceğimiz yer 4 adet. Soruda bize verilen problemleri alt problemlere nasıl bölüp optimal çözüme ulaşacağımızı anlattık. \n\nProblem linki: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-17T00:20:12-08:00",
       "durationSeconds": 1220,
-      "views": 252,
+      "views": 253,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -767,7 +767,7 @@
       "description": "Selamlar\n\nBugün yine bir dinamik programlama çözeceğiz. Soruyu kısaca açıklayalım. \nBize pozitif tamsayılardan oluşan 0-indeksli m x n matris gridi veriliyor. Matrisin ilk sütunundaki herhangi bir hücreden başlayabilir ve grid üzerinde şu şekilde hareket edebiliriz.\n\nBir hücreden (satır, sütun), herhangi bir hücreye geçebilirsiniz: (satır - 1, sütun + 1), (satır, sütun + 1) ve (satır + 1, sütun + 1), öyle ki değeri taşındığımız hücre, mevcut hücrenin değerinden kesinlikle daha büyük olmalıdır.\n\nSoru bizden olabilecek maksimum hareket sayısını döndürmemizi istiyor.\n\nAyrıca sosyal hesaplarımdan da benimle iletişime geçebilirsiniz: \nYoutube\nyoutube.com/@koraykara6270\nInstagram\ninstagram.com/koraykara98\nLinkedIn\nlinkedin.com/in/koray-kara-424b19146\nMedium\nmedium.com/@koray.kara98.kk\n#programlama #dinamik programlama #recursion #leetcodesolutions \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-10-23T08:51:15-07:00",
       "durationSeconds": 1037,
-      "views": 313,
+      "views": 314,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -779,7 +779,7 @@
       "description": "Soru Linki: https://leetcode.com/problems/minimum-path-sum/description/\n\nTam Oynatma Listesi:\n https://www.youtube.com/watch?v=JkHCDroTV4E&list=PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh\n\nBu videoda size ızgaralardaki yol toplamı özelliğini öğreten Minimum Yol toplamı problemini çözüyoruz.\n\nAyrıca sosyal hesaplarımdan da benimle iletişime geçebilirsiniz: \nYoutube\nyoutube.com/@koraykara6270\nInstagram\ninstagram.com/koraykara98\nLinkedIn\nlinkedin.com/in/koray-kara-424b19146\nMedium\nmedium.com/@koray.kara98.kk\n#programlama #dinamik programlama #recursion #leetcodesolution",
       "publishedAt": "2023-09-30T02:26:02-07:00",
       "durationSeconds": 1228,
-      "views": 475,
+      "views": 477,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -803,7 +803,7 @@
       "description": "Merhaba arkadaşlar! \nBu videoda, LeetCode üzerindeki \"Unique Paths\" sorusunu nasıl çözeceğinizi ve sorunun çözümünü adım adım nasıl anlayabileceğinizi göstereceğim. Bu soruda, dinamik programlama konseptini kullanarak bir ızgarada farklı yolları hesaplayacağız.\n\nVideoyu Beğenmeyi, Paylaşmayı ve Abone Olmayı Unutmayın!\n\nEğer bu video size yardımcı olduysa, lütfen beğenmeyi unutmayın, böylece daha fazla kişiye ulaşabiliriz. Eğer problemle ilgili sorularınız varsa, lütfen yorumlar bölümünde paylaşın ve ben veya diğer izleyiciler size yardımcı olmaktan mutluluk duyarız.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-09-15T08:10:17-07:00",
       "durationSeconds": 1053,
-      "views": 454,
+      "views": 455,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -815,7 +815,7 @@
       "description": "Merhaba arkadaşlar! \n\nBu videoda, LeetCode'in zorlu sorularından biri olan 'House Robber 2' sorusunun çözümünü inceleyeceğiz. \n\nSorunun mantığını, stratejisini ve kodlama adımlarını öğrenmek için videonun konsepti anlattığım kısmını izlemeyi unutmayın.\n\nSorularınız veya yorumlarınız varsa lütfen paylaşın. Abone olmayı ve beğenmeyi unutmayın, böylece daha fazla programlama içeriği için bildirimleri alabilirsiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-09-03T01:53:30-07:00",
       "durationSeconds": 1222,
-      "views": 583,
+      "views": 584,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -827,7 +827,7 @@
       "description": "Merhaba arkadaşlar! \nBu videoda, \"Maximum Sum of Non-Adjacent Elements\" problemini çözerek dinamik programlamanın temelini öğrenmeyi hedefliyoruz. Java dilini kullanarak adım adım ilerliyoruz ve 1 boyutlu DP konseptini örneklerle açıklıyoruz. En büyük toplamı nasıl elde edebileceğinizi öğrenmek için videoyu sonuna kadar izlemeyi unutmayın. Videoda dinamik programlamada optimizasyon yöntemlerinden olan \"Memoization\" ve \"Tabulation\" yöntemlerine ek olarak \"SPACE OPTİMİZATİON\" metodunu da öğreniyoruz. \n\n Beğenmeyi ve kanala abone olmayı unutmayın, iyi seyirler!\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-20T00:00:11-07:00",
       "durationSeconds": 1714,
-      "views": 723,
+      "views": 725,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -1007,7 +1007,7 @@
       "description": "Leetcode BLIND-75 Solutions: https://www.youtube.com/playlist?list=PLYz3B3MBs9EnnNxfkOZwbchV34b84H_1_\n\nProblem Link: https://leetcode.com/problems/number-of-provinces/description/\n\nBlind 75 Solutions Spread Sheet: https://docs.google.com/spreadsheets/d/1AoIbF_6hTNqNWyqk70MnpquTFKUhX0JCqqk7woqN7AQ/edit?usp=sharing\n\n#coding #programming #codinginterview #softwareengineering #javaprogramming #java",
       "publishedAt": "2023-06-11T10:39:42-07:00",
       "durationSeconds": 1152,
-      "views": 489,
+      "views": 490,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"

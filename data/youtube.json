@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-19T13:01:06.821Z",
+  "fetchedAt": "2026-11-20T12:51:57.876Z",
   "playlists": [
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
@@ -599,7 +599,7 @@
       "description": "Merhaba,\n\nBugün Dinamik Programlama konusunda popüler bir soru olan Longest Increasing Subsequence sorusunu çözdük. Videoda probleme nasıl yaklaşmamız gerektiğini konsept olarak anlamaya ve sonrasında kodlamaya çalıştık ve çözümümüzü memoization optimizasyon yöntemini kullanarak optimize etmeye çalıştık.   \n\nİyi seyiler:\n\nProblem Linki: https://leetcode.com/problems/longest-increasing-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-04-01T13:50:33-07:00",
       "durationSeconds": 1474,
-      "views": 176,
+      "views": 177,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"

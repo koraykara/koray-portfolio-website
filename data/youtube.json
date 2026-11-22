@@ -3,8 +3,13 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-20T12:51:57.876Z",
+  "fetchedAt": "2026-11-22T12:33:53.849Z",
   "playlists": [
+    {
+      "id": "PLI2J2W2RuSxQ",
+      "title": "Sıralama Algoritmaları (Sorting Algorithms)",
+      "videoCount": 2
+    },
     {
       "id": "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv",
       "title": "Binary Trees",
@@ -455,7 +460,7 @@
       "description": "Bu bölümde konuğum Hüseyin Ömer ile yazılım kariyerinde yurt dışına açılma yolculuğunu konuştuk. Türkiye’den Kanada’ya göç, ardından Microsoft’ta yazılımcı olarak işe başlama süreci, Silikon Vadisi tarzı mülakatlar ve FAANG’e giriş için altın değerinde tavsiyeler bu videoda!\n\nKonuştuğumuz Başlıca Konular:\n\nKanada’ya göç süreci ve yazılımcı olarak yerleşmek\n\nMicrosoft mülakatları nasıl geçiyor?\n\nLeetCode ve teknik hazırlık süreci\n\nGitHub projeleri, sistem tasarımı ve algoritmalar\n\nFAANG’e başvuran Türk yazılımcılara özel öneriler\n\nEğer sen de yazılım kariyerini yurt dışına taşımayı düşünüyorsan ya da FAANG şirketlerine hazırlanıyorsan, bu videoyu mutlaka sonuna kadar izle!\n\n📌 Konuğum Hüseyin Ömer Güray hakkında:\n\n🔗 LinkedIn: linkedin.com/in/huseyinomerguray\n🌐 Projesi: cornerstrikers.com\n\n🔔 Abone olmayı unutma ve videoyu beğenerek bize destek olabilirsin!",
       "publishedAt": "2025-05-02T10:00:20-07:00",
       "durationSeconds": 3711,
-      "views": 838,
+      "views": 839,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Ekp3zlDQ7POJ2h8f2VNamPx"
@@ -815,7 +820,7 @@
       "description": "Merhaba arkadaşlar! \n\nBu videoda, LeetCode'in zorlu sorularından biri olan 'House Robber 2' sorusunun çözümünü inceleyeceğiz. \n\nSorunun mantığını, stratejisini ve kodlama adımlarını öğrenmek için videonun konsepti anlattığım kısmını izlemeyi unutmayın.\n\nSorularınız veya yorumlarınız varsa lütfen paylaşın. Abone olmayı ve beğenmeyi unutmayın, böylece daha fazla programlama içeriği için bildirimleri alabilirsiniz. \n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-09-03T01:53:30-07:00",
       "durationSeconds": 1222,
-      "views": 584,
+      "views": 585,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -827,7 +832,7 @@
       "description": "Merhaba arkadaşlar! \nBu videoda, \"Maximum Sum of Non-Adjacent Elements\" problemini çözerek dinamik programlamanın temelini öğrenmeyi hedefliyoruz. Java dilini kullanarak adım adım ilerliyoruz ve 1 boyutlu DP konseptini örneklerle açıklıyoruz. En büyük toplamı nasıl elde edebileceğinizi öğrenmek için videoyu sonuna kadar izlemeyi unutmayın. Videoda dinamik programlamada optimizasyon yöntemlerinden olan \"Memoization\" ve \"Tabulation\" yöntemlerine ek olarak \"SPACE OPTİMİZATİON\" metodunu da öğreniyoruz. \n\n Beğenmeyi ve kanala abone olmayı unutmayın, iyi seyirler!\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-20T00:00:11-07:00",
       "durationSeconds": 1714,
-      "views": 725,
+      "views": 728,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -851,7 +856,7 @@
       "description": "Dinamik programlama konusunda yeni bir seriye başlıyoruz! \n\nSerinin ilk videosu olan bu videoda dinamik programlanın ne olduğunu, ne tarz problemlere uygulanabileceğini ve soruları çözerken sıkça uygulanan optimizasyon tekniklerini açıkladık. \n\nFibonacci sorusunu memoization, tabulation ve space optimizasyon teknikleriyle çözdük. \n\nAbone olmayı unutmayın! 🚀🎥 \n\n#programlama  #DinamikProgramlama #fibonacci \n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-08-06T02:02:15-07:00",
       "durationSeconds": 1657,
-      "views": 6400,
+      "views": 6500,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -1514,6 +1519,30 @@
       "views": 157,
       "isShort": false,
       "playlists": []
+    },
+    {
+      "id": "P0JSaLD06Rk",
+      "title": "",
+      "description": "",
+      "publishedAt": null,
+      "durationSeconds": 0,
+      "views": 104,
+      "isShort": true,
+      "playlists": [
+        "PLI2J2W2RuSxQ"
+      ]
+    },
+    {
+      "id": "Fyg0h-Sh7mA",
+      "title": "",
+      "description": "",
+      "publishedAt": null,
+      "durationSeconds": 0,
+      "views": 63,
+      "isShort": true,
+      "playlists": [
+        "PLI2J2W2RuSxQ"
+      ]
     }
   ]
 }

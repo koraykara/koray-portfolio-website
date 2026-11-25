@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-24T14:51:25.824Z",
+  "fetchedAt": "2026-11-25T14:19:06.589Z",
   "playlists": [
     {
       "id": "PLI2J2W2RuSxQ",
@@ -78,7 +78,7 @@
       "description": "Bu videoda Binary Tree Right View ve Left View kavramlarını kapsamlı şekilde ele alıyoruz. “View” problemlerinde amaç şudur:\n\n✅ Left View: Ağaca soldan baktığında her seviyede görünen ilk düğümler\n✅ Right View: Ağaca sağdan baktığında her seviyede görünen son düğümler\n\nYani aslında bu problem, tree’yi level level düşündüğünde her level’dan sadece 1 tane temsilci node seçmek demektir.\n\nNeden önemli?\n\nRight/Left view soruları, tree’de:\n\nLevel order (BFS) mantığını\n\nveya DFS ile level takip etmeyi\nöğreten çok güçlü problemlerdir. Ayrıca LeetCode “Binary Tree Right Side View” gibi klasik soruların temelidir.\n\nYaklaşım 1: BFS (Level Order) ile çözüm (en net yöntem)\n\nBFS ile:\n\nQueue’ya root’u koyarsın\n\nHer seviyede levelSize kadar node’u sırayla pop edersin\n\nLeft view için: o seviyede pop edilen ilk node’u kaydedersin\n\nRight view için: o seviyede pop edilen son node’u kaydedersin\n\nÇocukları queue’ya ekleyip sonraki seviyeye geçersin\n\nBu yöntem hem anlaşılır hem de doğru “level-by-level” yaklaşımıyla sorunu çözer.\n\nYaklaşım 2: DFS ile çözüm (recursion + level)\n\nDFS’te kritik fikir:\n\nHer node’a bir level (depth) bilgisi taşırsın\n\nBir seviyeyi ilk kez gördüğünde listeye eklersin\n\nRight view istiyorsan DFS’te genelde önce right, sonra left gezersin.\nLeft view istiyorsan önce left, sonra right gezersin.\nÇünkü “ilk görülen node” o seviyenin view sonucu olur.\n\nEdge-case’ler\n\nBoş ağaç\n\nTek node\n\nDengesiz (zincir) ağaçlar\n\nAynı seviyede kaç node olduğu (BFS’te levelSize yönetimi)\n\nKarmaşıklık\n\nZaman: O(n) (her node en fazla bir kez işlenir)\n\nEk bellek:\n\nBFS: O(w) (en geniş seviyedeki node sayısı)\n\nDFS: O(h) (ağacın yüksekliği, recursion stack)\n\nBu dersin sonunda right/left view sorularını hem BFS hem DFS ile rahatça çözebilecek ve tree’de “level mantığı”nı çok daha sağlam oturtmuş olacaksın.\n\n#BinaryTree #RightView #LeftView #RightSideView #LeftSideView #TreeView #Java #JavaProgramming #BinaryTreeJava #DataStructures\n#Algorithms #DSA #CodingInterview #LeetCode #ComputerScience #TreeProblems #TreeTraversal #BFS #DFS #LevelOrderTraversal\n#BreadthFirstSearch #DepthFirstSearch #Queue #Recursion #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #CodingTutorial #LearnJava #Programming\n#Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#AlgorithmTutorial #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreePatterns #LevelBasedProblems #TreeConcepts",
       "publishedAt": "2026-03-20T06:11:12-07:00",
       "durationSeconds": 770,
-      "views": 89,
+      "views": 90,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -114,7 +114,7 @@
       "description": "Bu videoda Binary Tree Maximum Path Sum konusunu kapsamlı şekilde ele alıyoruz. Bu problem, tree soruları içinde en çok kafa karıştıran ama mantığı oturduğunda çok hızlı çözülen “klasik”lerden biridir.\n\n✅ Maximum Path Sum nedir?\nBir path (yol), ağaçta bir düğümden başlayıp diğer bir düğümde bitebilir ve path boyunca her adımda parent-child bağlantısını takip eder.\nPath mutlaka root’tan başlamak zorunda değildir ve leaf’te bitmek zorunda da değildir. Önemli olan: Seçtiğin yol üzerindeki düğüm değerlerinin toplamı maksimum olsun.\n\nNeden zor görünüyor?\n\nÇünkü burada iki farklı kavram aynı anda yönetilir:\n\nBir node üzerinden geçen en iyi “tam yol” (left + node + right)\n\nParent’a döndürebileceğin en iyi “tek kol” (node + max(left, right))\nParent’a aynı anda iki kolu birden götüremezsin; çünkü parent ile path birleşirken sadece tek taraftan devam edebilir.\n\nTemel fikir (Bottom-up DFS / Postorder mantığı)\n\nHer node için şu iki şeyi düşünürüz:\n\nA) Downward gain (parent’a dönen değer):\nBu node’dan başlayıp aşağı doğru giden en iyi toplam.\nBurada negatif katkı yapan alt ağaçları genelde 0’a kırpma fikri vardır (negatifse ekleme, yolu kötüleştirir).\n\nB) Global maximum (cevap):\nBu node’u “tepe” kabul edip sol ve sağdan gelen katkıları birleştiririz:\nleftGain + nodeVal + rightGain\nVe bunu global maksimumla kıyaslayıp güncelleriz.\n\nBu yaklaşım sayesinde her node bir kez işlenir, maksimum path sum hızlı ve doğru çıkar.\n\nEdge-case’ler (çok önemli)\n\nAğaçta tüm değerler negatif olabilir. Bu durumda “0’a kırpma” mantığını doğru uygulamak gerekir; genelde cevap en büyük (en az negatif) tek node olur.\n\nBoş ağaç / tek node gibi durumlar\n\nDengesiz (zincir) ağaçlar\n\nKarmaşıklık\n\nZaman: O(n) (her node bir kez ziyaret edilir)\n\nEk bellek: O(h) (recursion stack; h = tree height)\n\nBu dersin sonunda “Maximum Path Sum” probleminin mantığını net oturtacak ve Java ile interview seviyesinde temiz bir çözüm yazabileceksin.\n\n#MaximumPathSum #BinaryTree #MaxPathSum #BinaryTreeProblems #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #PostorderTraversal #TreeDP #DynamicProgramming #TreeAlgorithms #TreeDataStructure\n#DepthFirstSearch #AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding #InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving\n#BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava #CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview\n#ProblemSolvingJava #BottomUpDP #PathSum #TreePath #MaxSumPath #NegativeValues #GlobalMaximum #DownwardGain #BinaryTrees #RecursionInJava",
       "publishedAt": "2026-03-20T05:54:51-07:00",
       "durationSeconds": 1061,
-      "views": 10,
+      "views": 11,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -138,7 +138,7 @@
       "description": "Bu videoda Balanced Binary Tree kavramını ve bir binary tree’nin balanced olup olmadığını Java ile nasıl kontrol edeceğimizi kapsamlı şekilde anlatıyoruz.\n\n✅ Balanced Binary Tree (yaygın tanım):\nBir ağaçta her node için sol ve sağ alt ağaçların yükseklik (height) farkı en fazla 1 ise ağaç “balanced” kabul edilir.\nYani her node için şu koşul sağlanmalı:\n|height(left) − height(right)| ≤ 1\n\nBu tanım (özellikle LeetCode’daki “Balanced Binary Tree” probleminde) standarttır ve performans açısından çok kritik bir fikri temsil eder: Ağaç çok dengesiz olursa bazı işlemler (arama/ekleme gibi) pratikte yavaşlar.\n\nNeden “her node için” şartı önemli?\n\nSadece root’taki yükseklik farkına bakmak yetmez. Root dengeli görünse bile alt ağaçların içinde dengesizlik olabilir. Bu yüzden kontrolü tüm node’lar için doğru yapmamız gerekir.\n\nEn iyi yaklaşım: Bottom-up DFS (yükseklikle birlikte denge kontrolü)\n\nBalanced kontrolü için en verimli yöntem şudur:\n\nÖnce alt ağaçların height’ını hesaplarız (postorder mantığı)\n\nAynı anda “dengesiz” bir durum görürsek bunu yukarıya taşırız\n\nBöylece her node’u bir kez işleyerek sonuca gideriz\n\nPratikte bu yaklaşım, “height hesapla” probleminin bir üst versiyonu gibidir:\n\nEğer alt ağaç dengesizse → direkt “dengesiz” bilgisi döndür\n\nDeğilse → height farkına bak, şart bozuluyorsa “dengesiz” de\n\nHer şey yolundaysa → height = 1 + max(leftHeight, rightHeight)\n\nBu yöntem, gereksiz tekrar hesaplamaları önlediği için interview’larda da en çok beklenen çözümdür.\n\nBu videoda neleri netleştiriyoruz?\n\nBalanced binary tree ne demek? (tanım + örnekler)\n\nNeden sadece root kontrolü yetmez?\n\nDFS ile “height + balance” bilgisini birlikte üretme mantığı\n\nEdge-case’ler: boş ağaç (balanced sayılır), tek node, zincir ağaçlar\n\nKarmaşıklık:\n\nZaman: O(n)\n\nEk bellek: O(h) (recursion stack)\n\nBu dersin sonunda balanced tree kontrolünü Java’da temiz şekilde yazabilecek ve “bottom-up” düşünme mantığını güçlü bir şekilde oturtmuş olacaksın.\n\n#BalancedBinaryTree #BinaryTree #CheckBalanced #TreeBalance #Java #JavaProgramming #BinaryTreeJava #DataStructures #Algorithms #DSA\n#CodingInterview #LeetCode #ComputerScience #DFS #Recursion #PostorderTraversal #TreeHeight #HeightOfBinaryTree #MaximumDepth #TreeDepth\n#TreeProblems #TreeAlgorithms #TreeDataStructure #TraversalAlgorithms #DepthFirstSearch #AlgorithmTutorial #CodingTutorial #LearnJava #Programming #Coding\n#InterviewPrep #SoftwareEngineering #CSFundamentals #ProblemSolving #BigO #TimeComplexity #SpaceComplexity #JavaDSA #DataStructuresInJava\n#CodingQuestions #LeetCodeJava #LeetCodeProblems #BinaryTreeSeries #TechInterview #ProblemSolvingJava #TreeDP #BottomUpDP #BinaryTrees #AVLTree",
       "publishedAt": "2026-03-20T05:41:52-07:00",
       "durationSeconds": 730,
-      "views": 9,
+      "views": 10,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9EkOvN_FsCkInJPJEWEIj9Sv"
@@ -904,7 +904,7 @@
       "description": "",
       "publishedAt": "2023-07-17T13:27:34-07:00",
       "durationSeconds": 50,
-      "views": 359,
+      "views": 358,
       "isShort": true,
       "playlists": [
         "PLYz3B3MBs9EmEtbovIpZHZ2dyQF5AGJIX"
@@ -1526,7 +1526,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 801,
+      "views": 804,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1550,7 +1550,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 46,
+      "views": 50,
       "isShort": true,
       "playlists": []
     },
@@ -1560,7 +1560,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 613,
+      "views": 619,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1572,7 +1572,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 276,
+      "views": 277,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1596,7 +1596,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 430,
+      "views": 433,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1608,7 +1608,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 229,
+      "views": 234,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"

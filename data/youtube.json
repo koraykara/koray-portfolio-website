@@ -3,7 +3,7 @@
     "handle": "@koraykara6270",
     "url": "https://www.youtube.com/@koraykara6270"
   },
-  "fetchedAt": "2026-11-27T13:50:00.194Z",
+  "fetchedAt": "2026-11-28T12:58:00.951Z",
   "playlists": [
     {
       "id": "PLI2J2W2RuSxQ",
@@ -580,7 +580,7 @@
       "description": "Selamlar\n\nBugün çok güzel ve popüler bir soruya bakıyoruz. Soru kısaca bizden bize verilen integer n değeri ile kaç farklı BST üretebileceğimizi soruyor. Videoda probleme nasıl yaklaşılması gerektiği konsept olarak anlatıldıktan sonra problemin çok basit bir kodlamaya nasıl dönüştüğünü göreceksiniz. Sorularınızın olması durumunda yorumlar kısmına beklerim.\n\nİyi seyirler.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures #algorithms #data-structure #algorithms #queue #stack #datastructuresandalgorithms #computerscience #yazılım #yazılımdersleri #yazılımmühendisliği #yazılımgeliştirme #yazılımcı #yazilim #bilgisayarprogramcılığı #bilgisayarmühendisliği #bilgisayarmühendisi #java #javaprogramming #leetcode #leetcodeproblems #leetcodequestions #leetcodechallenge #leetcodejava #leetcodethehardway #geeksforgeeksgate",
       "publishedAt": "2024-04-30T13:49:51-07:00",
       "durationSeconds": 1207,
-      "views": 324,
+      "views": 325,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -700,7 +700,7 @@
       "description": "Merhaba\n\nBugün LCS sorusunun devamı niteliğinde bir soruya bakacağız. Geçtiğimiz 2 videoda LCS problemini memoization ve tabulation yöntemlerini kullanarak çözmüştük. Bu videoda da bize verilen 2 string'in LCS string değerini tabulation yöntemindeki dp array'ini kullanarak bulmaya çalıştık. \n\nİyi seyirller...\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-28T13:00:33-08:00",
       "durationSeconds": 1015,
-      "views": 371,
+      "views": 372,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -712,7 +712,7 @@
       "description": "Selamlar,\n\nBugün serinin bir önceki videosundaki soruyu memoization optimizasyon yöntemini  kullanarak çözmüştük. Bu videoda bu yöntemi kullanarak nasıl tabulation yöntemiyle çevirebileceğimizi göreceğiz.\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-22T07:00:31-08:00",
       "durationSeconds": 942,
-      "views": 355,
+      "views": 356,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -724,7 +724,7 @@
       "description": "Merhaba,\n\nBugün Longest Common Subsequence (LCS), sorusuna bakarak String'ler içerisinde dinamik programlama konseptine giriş yapmış olduk. Konseptin anlaşılması için en önemli adımları da anlattığım bu videoda bize verilen 2 string içerindeki en uzun ortak alt diziyi nasıl bulabileceğimizi öğreneceksiniz.\n\nProblem Linki: https://leetcode.com/problems/longest-common-subsequence/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-18T02:42:44-08:00",
       "durationSeconds": 1620,
-      "views": 535,
+      "views": 539,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -736,7 +736,7 @@
       "description": "Merhaba,\n\nBugün DP on Grids konusuyla alakalı bir soru çözeceğiz. Kodlamayı ve konsept olarak yaklaşımı yine seçip seçmeme (pick-non pick) konsepti ile yapacağız. Fakat bu sefer gidebileceğimiz yer 4 adet. Soruda bize verilen problemleri alt problemlere nasıl bölüp optimal çözüme ulaşacağımızı anlattık. \n\nProblem linki: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-17T00:20:12-08:00",
       "durationSeconds": 1220,
-      "views": 254,
+      "views": 255,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -748,7 +748,7 @@
       "description": "Merhaba,\n\nBugün DP on Subsequence konusuyla alakalı bir soru çözeceğiz. Kodlama ve seçip seçmeme (pick-non pick) konseptini içeren bu dinamik programlama sorusunda bize verilen problemleri alt problemlere bölüp optimal çözüme ulaşmayı hedefledik. \n\nO(n) time ve O(1) space ile çözdüğüm videoya bu linkten ulaşabilirsiniz: https://www.youtube.com/watch?v=clFPYPA7ELs&t=9s\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-11T22:00:14-08:00",
       "durationSeconds": 1199,
-      "views": 252,
+      "views": 253,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -760,7 +760,7 @@
       "description": "Selamlar, \n\nBugün yine bir dinamik programlama sorusuyla  devam ediyoruz. Problemin ismi Triangle. Bu problem bize bir üçgen dizisi verildiğinde, minimum yol toplamını yukarıdan aşağıya döndürmemizi istiyor. İlk önce soruya nasıl yaklaşmamız gerektiğini gösterip \"Brute Force\" bir şekilde çözdükten sonra Memoization optimizasyon yöntemini kullanarak problemi optimize ettik. \n\nProbleme aşağıdaki linkten ulaşabillirsiniz.\nİyi seyirler. \nProblem linki: https://leetcode.com/problems/triangle/\n\n#leetcode #dynamicprogramming #recursion #javaprogramming #easysolution #problemsolving #algorithms #datastructures",
       "publishedAt": "2023-11-07T12:26:19-08:00",
       "durationSeconds": 1123,
-      "views": 236,
+      "views": 237,
       "isShort": false,
       "playlists": [
         "PLYz3B3MBs9Emy7PbU195IoM0nSLstjvTh"
@@ -1526,7 +1526,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 820,
+      "views": 822,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1550,7 +1550,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 51,
+      "views": 54,
       "isShort": true,
       "playlists": []
     },
@@ -1560,7 +1560,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 625,
+      "views": 626,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
@@ -1608,7 +1608,7 @@
       "description": "",
       "publishedAt": null,
       "durationSeconds": 0,
-      "views": 240,
+      "views": 242,
       "isShort": true,
       "playlists": [
         "PLI2J2W2RuSxQ"
